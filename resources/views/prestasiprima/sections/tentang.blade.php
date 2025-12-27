@@ -5,7 +5,7 @@
     <!-- ========== Background Dekoratif ========== -->
     <div class="absolute inset-0 pointer-events-none">
       <img src="assets/images/dekorasi/lingkaran.svg" alt="Dekorasi Lingkaran"
-        class="absolute -bottom-20 -right-22.5 w-70 md:w-105 opacity-30 object-contain select-none">
+        class="absolute -bottom-[80px] -right-[90px] w-[280px] md:w-[420px] opacity-30 object-contain select-none">
     </div>
 
     <!-- Gambar Kepala Sekolah -->

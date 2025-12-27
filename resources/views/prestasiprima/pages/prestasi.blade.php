@@ -1,6 +1,6 @@
 ﻿@extends('prestasiprima.index')
 
-@section('title', 'Prestasi Siswa - SMK Prestasi Prima')
+@section('title', 'Prestasi Siswa - SMA Prestasi Prima')
 
 @section('content')
 <section id="prestasi" class="pt-36 pb-20 bg-white relative overflow-hidden">
@@ -8,7 +8,7 @@
 
     {{-- ================= HEADER ================= --}}
     <div class="mb-12" data-aos="fade-down">
-      <img src="{{ asset('assets/images/logo-smk.png') }}"
+      <img src="{{ asset('assets/logo_sma.png') }}"
            alt="Logo Sekolah"
            class="mx-auto h-14 mb-4">
 
@@ -126,42 +126,65 @@ document.addEventListener("DOMContentLoaded", function () {
 
 {{-- ================= STYLE ================= --}}
 <style>
-/* === NAV BUTTON === */
+  /* ================= NAV BUTTON ================= */
 .custom-nav {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   color: #7c3aed;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .3s ease;
+
+  transition: 
+    background-color .3s ease,
+    color .3s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
 }
 
+/* Hover effect */
 .custom-nav:hover {
   background: #7c3aed;
-  color: #fff;
-  transform: scale(1.1);
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 10px 24px rgba(124, 58, 237, 0.35);
 }
 
-/* === PAGINATION === */
+/* ================= ICON SIZE (< >) ================= */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 14px; /* ukuran ikon diperkecil */
+  font-weight: 700;
+}
+
+/* ================= PAGINATION ================= */
 .swiper-pagination-bullet {
   background: #7c3aed;
-  opacity: .5;
+  opacity: 0.45;
+  transition: transform .25s ease, opacity .25s ease;
 }
+
 .swiper-pagination-bullet-active {
   opacity: 1;
   transform: scale(1.25);
 }
 
-/* === RESPONSIVE === */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .custom-nav {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 12px;
   }
 }
+
 </style>
 @endsection

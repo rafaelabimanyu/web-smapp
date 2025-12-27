@@ -79,8 +79,10 @@ Route::prefix('informasi')->group(function () {
         ->name('industri.show');
 
     Route::get('/testimoni', [TestimoniController::class, 'index'])->name('testimoni');
-    Route::get('/penerimaan-siswa', [PenerimaanSiswaController::class, 'index'])
-        ->name('penerimaan-siswa');
+    
+    Route::get('/penerimaan-siswa', function() {
+        return redirect('https://spmb.prestasiprima.sch.id/');
+    })->name('penerimaan.siswa');
 
     Route::get('/traffic', [TrafficController::class, 'index'])->name('traffic');
     Route::post('/traffic/calculate', [TrafficController::class, 'calculateDistance'])
@@ -113,6 +115,5 @@ Route::prefix('dokumentasi')->group(function () {
 | KONTAK
 |--------------------------------------------------------------------------
 */
-Route::get('/kontak', [ContactController::class, 'index'])->name('kontak');
-Route::post('/kontak/send', [ContactController::class, 'sendMessage'])
-    ->name('kontak.send');
+Route::get('/presmacontact', [ContactController::class, 'index'])->name('presmacontact');
+Route::post('/presmacontact/send', [ContactController::class, 'sendMessage'])->name('presmacontact.send');

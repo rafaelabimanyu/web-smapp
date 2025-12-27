@@ -86,7 +86,8 @@
           </a>
           <div class="dropdown-menu absolute left-0 hidden opacity-0 translate-y-3 bg-white shadow-lg border mt-2 rounded-lg w-40 text-gray-800">
             <a href="/informasi/faq" class="dropdown-item">FAQ</a>
-            <a href="/informasi/lulusan-ptn" class="dropdown-item">PTN</a>
+            <a href="#" class="dropdown-item">Testimoni</a>
+            <a href="/informasi/lulusan-ptn" class="dropdown-item">Lulusan PTN</a>
 
             <a href="/informasi/penerimaan-siswa" class="dropdown-item">Penerimaan Siswa</a>
           </div>
