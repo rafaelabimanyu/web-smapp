@@ -86,10 +86,10 @@
           </a>
           <div class="dropdown-menu absolute left-0 hidden opacity-0 translate-y-3 bg-white shadow-lg border mt-2 rounded-lg w-40 text-gray-800">
             <a href="/informasi/faq" class="dropdown-item">FAQ</a>
-            <a href="#" class="dropdown-item">Testimoni</a>
+            <a href="/informasi/testimoni" class="dropdown-item">Testimoni</a>
             <a href="/informasi/lulusan-ptn" class="dropdown-item">Lulusan PTN</a>
 
-            <a href="/informasi/penerimaan-siswa" class="dropdown-item">Penerimaan Siswa</a>
+            <a href="https://spmb.prestasiprima.sch.id/" class="dropdown-item">Penerimaan Siswa</a>
           </div>
         </div>
 
@@ -203,7 +203,7 @@
         <a href="/informasi/industri" class="mobile-subitem">Industri</a>
         <a href="/informasi/testimoni" class="mobile-subitem">Testimoni</a>
         <a href="/informasi/lulusan-ptn" class="mobile-subitem">Lulusan PTN</a>
-        <a href="/informasi/penerimaan-siswa" class="mobile-subitem">Penerimaan Siswa</a>
+        <a href="https://spmb.prestasiprima.sch.id/" class="mobile-subitem">Penerimaan Siswa</a>
 
       </div>
 

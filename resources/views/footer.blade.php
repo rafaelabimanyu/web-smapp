@@ -265,17 +265,6 @@
           ];
         }
       @endphp
-      <div class="mt-6">
-        <p class="text-gray-400 text-sm mb-3 text-center">Support by:</p>
-        @foreach ($supportLogos as $logo)
-          <div class="w-full bg-white/95 rounded-3xl shadow-lg shadow-black/20 ring-1 ring-white/60 px-6 py-4 md:px-8 md:py-5 transition-transform duration-200 hover:scale-[1.01]">
-            <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] }}"
-              width="{{ $logo['width'] }}"
-              height="{{ $logo['height'] }}"
-              class="w-full max-w-full object-contain mx-auto">
-          </div>
-        @endforeach
-      </div>
     </div>
   </div>
 

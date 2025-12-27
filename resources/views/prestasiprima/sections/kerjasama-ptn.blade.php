@@ -1,108 +1,122 @@
-<!-- =============== SECTION KERJA SAMA PTN (DYNAMIC ANIMATION) =============== -->
-<section id="ptn" class="relative py-16 md:py-20 bg-white overflow-hidden">
+<section id="ptn" class="ptn-section relative py-16 md:py-20 overflow-hidden">
 
-  <!-- ===== Dekorasi Latar ===== -->
-  <div class="absolute inset-0 pointer-events-none overflow-hidden">
-    <!-- Grid Latar Bergerak -->
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,165,0,0.08)_1px,transparent_1px)] bg-[length:40px_40px] animate-slow-pulse"></div>
-    <div class="absolute inset-0 bg-[linear-gradient(130deg,rgba(255,140,0,0.05)_25%,transparent_25%,transparent_50%,rgba(255,140,0,0.05)_50%,rgba(255,140,0,0.05)_75%,transparent_75%,transparent)] bg-[length:80px_80px] opacity-40 animate-slide"></div>
+  <!-- Grid Background -->
+  <div class="ptn-grid"></div>
+  <div class="ptn-grid-diagonal"></div>
 
-    <!-- Dekorasi Kiri -->
-    <img src="assets/images/ptn/network.svg"
-         alt="Dekorasi Kiri"
-         data-aos="zoom-in-up"
-         data-aos-delay="200"
-         data-aos-duration="1200"
-         data-aos-once="false"
-         class="absolute bottom-0 left-0 w-[320px] sm:w-[480px] md:w-[640px] opacity-0 object-contain animated-decor decor-left">
+  <!-- Dekorasi -->
+  <img src="assets/images/dekorasi/race.svg"
+       alt="Dekorasi"
+       class="decor-right"
+       data-aos="zoom-in-up"
+       data-aos-duration="1200" />
 
-    <!-- Dekorasi Kanan -->
-    <img src="assets/images/dekorasi/race.svg"
-         alt="Dekorasi Kanan"
-         data-aos="zoom-in-up"
-         data-aos-delay="400"
-         data-aos-duration="1200"
-         data-aos-once="false"
-         class="absolute -bottom-[220px] sm:-bottom-[320px] md:-bottom-[380px] right-0 w-[340px] sm:w-[520px] md:w-[660px] opacity-0 object-contain animated-decor decor-right">
-  </div>
-
-  <!-- ===== Konten ===== -->
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center z-10">
-    <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-purple-500 tracking-wide drop-shadow-sm"
-        data-aos="zoom-in" data-aos-duration="1000">
+  <!-- Konten -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-purple-600 mb-12"
+        data-aos="zoom-in">
       LULUSAN PTN
     </h3>
 
-    <div class="mt-10 sm:mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 items-center justify-center">
-      @foreach ([ 
-        ['unj.png', 'Universitas Negeri Jakarta'],
-        ['ipb.png', 'Institut Pertanian Bogor'],
-        ['unpad.png', 'Universitas Padjadjaran'],
-        ['trisakti.png', 'Universitas Trisakti'],
-        ['uin2.png', 'UIN Syarif Hidayatullah Jakarta'],
-        ['isi2.png', 'Institut Seni Indonesia Surakarta'],
-        ['politeknik.png', 'Politeknik Prestasi Prima'],
-        ['ui3.png', 'Universitas Indonesia'],
-      ] as $index => [$src, $alt])
-        <div class="flex justify-center"
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 place-items-center">
+      @foreach ([
+        ['unj.png','Universitas Negeri Jakarta'],
+        ['ipb.png','Institut Pertanian Bogor'],
+        ['unpad.png','Universitas Padjadjaran'],
+        ['trisakti.png','Universitas Trisakti'],
+        ['uin2.png','UIN Jakarta'],
+        ['isi2.png','ISI Surakarta'],
+        ['politeknik.png','Politeknik Prestasi Prima'],
+        ['ui3.png','Universitas Indonesia'],
+      ] as $i => [$img, $alt])
+        <img src="assets/images/ptn/{{ $img }}"
+             alt="{{ $alt }}"
              data-aos="fade-up"
-             data-aos-delay="{{ 100 * ($index + 1) }}"
-             data-aos-duration="800">
-          <img src="assets/images/ptn/{{ $src }}" 
-               alt="{{ $alt }}" 
-               class="max-h-16 sm:max-h-20 md:max-h-24 object-contain transition-transform duration-500 hover:scale-110 hover:shadow-2xl hover:brightness-110 mix-blend-multiply select-none rounded-lg">
-        </div>
+             data-aos-delay="{{ $i * 100 }}"
+             class="ptn-logo" />
       @endforeach
     </div>
   </div>
 </section>
 
-<!-- ===== ANIMASI TAMBAHAN ===== -->
 <style>
-  @keyframes float-slow {
-    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
-    50% { transform: translateY(-12px) rotate(-1deg) scale(1.02); }
-  }
+  /* ===== SECTION ===== */
+.ptn-section {
+  background-color: #ffffff;
+}
 
-  @keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: 80px 80px; }
-  }
-  .animate-slide {
-    animation: slide 14s linear infinite;
-  }
-  @keyframes slow-pulse {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 0.6; }
-  }
-  .animate-slow-pulse {
-    animation: slow-pulse 7s ease-in-out infinite;
-  }
+/* ===== GRID DOT ===== */
+.ptn-grid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle, rgba(124,58,237,0.15) 1px, transparent 1px);
+  background-size: 44px 44px;
+  animation: pulseGrid 6s ease-in-out infinite;
+}
 
-  /* Efek melayang lembut */
-  .animated-decor {
-    animation: float-slow 10s ease-in-out infinite;
-    transition: transform 0.5s ease-out, opacity 0.8s ease;
-    will-change: transform;
-  }
+/* ===== GRID DIAGONAL ===== */
+.ptn-grid-diagonal {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(135deg,
+      rgba(124,58,237,0.08) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(124,58,237,0.08) 50%,
+      rgba(124,58,237,0.08) 75%,
+      transparent 75%);
+  background-size: 90px 90px;
+  animation: moveGrid 16s linear infinite;
+  opacity: 0.5;
+}
+
+/* ===== LOGO ===== */
+.ptn-logo {
+  max-height: 90px;
+  object-fit: contain;
+  transition: transform .4s ease, filter .4s ease;
+  filter: grayscale(100%);
+}
+.ptn-logo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* ===== DECOR ===== */
+.decor-right {
+  position: absolute;
+  right: 0;
+  bottom: -320px;
+  width: 620px;
+  opacity: .25;
+  z-index: 0;
+  animation: float 9s ease-in-out infinite;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes moveGrid {
+  from { background-position: 0 0; }
+  to { background-position: 90px 90px; }
+}
+@keyframes pulseGrid {
+  0%,100% { opacity: .35; }
+  50% { opacity: .6; }
+}
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
 </style>
 
-<!-- ===== SCRIPT AOS & PARALLAX ===== -->
 <script>
-  // Inisialisasi AOS agar animasi aktif tiap scroll & reload
-  AOS.init({
-    duration: 1000,
-    once: false,
-    mirror: true,
-    offset: 100,
-  });
-
-  // Efek parallax agar ikut scroll
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const left = document.querySelector('.decor-left');
-    const right = document.querySelector('.decor-right');
-    if (left) left.style.transform = `translateY(${scrollY * 0.08}px) rotate(${scrollY * 0.01}deg)`;
-    if (right) right.style.transform = `translateY(${scrollY * -0.06}px) rotate(${scrollY * -0.01}deg)`;
-  });
+AOS.init({
+  duration: 900,
+  once: false,
+  offset: 120
+});
 </script>

@@ -1,170 +1,153 @@
 <!-- ================= SECTION PRESTASI ================= -->
-<section id="prestasi" class="py-20 bg-white relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
+<section id="prestasi" class="relative py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
 
     <!-- ===== Header ===== -->
-    <div class="mb-12 text-center relative">
-      <img src="assets/images/logo-smk.png" alt="Logo Sekolah" 
-           class="mx-auto h-14 mb-4" 
-           data-aos="zoom-in" data-aos-duration="1000">
-      <h3 class="text-lg font-bold text-gray-800 mb-1" 
-          data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+    <header class="mb-14 text-center">
+      <img src="{{ asset('assets/logo_sma.png') }}"
+           alt="Logo SMA"
+           class="mx-auto h-14 mb-4"
+           data-aos="zoom-in">
+
+      <h3 class="text-lg font-semibold text-gray-700 mb-1"
+          data-aos="fade-up" data-aos-delay="100">
         Prestasi Kami
       </h3>
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
-        <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-          Mengabadikan momen berharga di balik setiap 
-        </span>
-        <span class="text-purple-600 font-extrabold glow-text" 
-              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-          kemenangan
-        </span>
-      </h2>
-    </div>
 
-    <!-- ===== Swiper Container ===== -->
-    <div class="swiper prestasiSwiper relative">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform duration-500 glow-slide">
-            <img src="assets/images/prestasi/prestasi1.png" alt="Juara Dua" class="w-full object-cover">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900"
+          data-aos="fade-up" data-aos-delay="200">
+        Mengabadikan momen di balik setiap
+        <span class="text-purple-600 glow-text">kemenangan</span>
+      </h2>
+    </header>
+
+    <!-- ===== Swiper Wrapper ===== -->
+    <div class="relative">
+
+      <!-- Navigation (LUAR GAMBAR) -->
+      <button class="swiper-button-prev custom-nav"></button>
+      <button class="swiper-button-next custom-nav"></button>
+
+      <!-- Swiper -->
+      <div class="swiper prestasiSwiper">
+        <div class="swiper-wrapper">
+
+          @for ($i = 1; $i <= 6; $i++)
+          <div class="swiper-slide flex justify-center">
+            <figure class="prestasi-card">
+              <img src="{{ asset('assets/images/prestasi/prestasi' . $i . '.png') }}"
+                   alt="Prestasi {{ $i }}"
+                   loading="lazy"
+                   class="prestasi-img">
+            </figure>
           </div>
-        </div>
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform duration-500 glow-slide">
-            <img src="assets/images/prestasi/prestasi2.png alt="Juara Tiga" class="w-full object-cover">
-          </div>
-        </div>
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform duration-500 glow-slide">
-            <img src="assets/images/prestasi/prestasi3.png" alt="Juara Tiga" class="w-full object-cover">
-          </div>
-        </div>
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform duration-500 glow-slide">
-            <img src="assets/images/prestasi/prestasi4.pngp" alt="Juara Empat" class="w-full object-cover">
-          </div>
-        </div>
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform duration-500 glow-slide">
-            <img src="assets/images/prestasi/prestasi5.png" alt="Juara Lima" class="w-full object-cover">
-          </div>
-        </div>
-        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition transform duration-500 glow-slide">
-            <img src="assets/images/prestasi/prestasi6.png" alt="Juara Enam" class="w-full object-cover">
-          </div>
+          @endfor
+
         </div>
       </div>
 
-      <!-- Pagination -->
-      <div class="swiper-pagination mt-6"></div>
-
-      <!-- Navigation Buttons -->
-      <div class="swiper-button-prev custom-nav"></div>
-      <div class="swiper-button-next custom-nav"></div>
+      <!-- Pagination (LUAR GAMBAR) -->
+      <div class="swiper-pagination mt-8 text-center"></div>
     </div>
+
   </div>
-
-  <!-- Background Dekoratif -->
-  <img src="assets/images/prestasi/prestasi1.pngvg" 
-       alt="Network" 
-       class="bg-deco-left absolute -bottom-16 -left-48 w-[460px] md:w-[560px] opacity-0 select-none pointer-events-none" 
-       data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
-
-  <img src="assets/images/section/tentang/race.svg" 
-  
-       alt="Race" 
-       class="bg-deco-right absolute -bottom-80 -right-24 w-[480px] md:w-[600px] opacity-0 select-none pointer-events-none" 
-       data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">
 </section>
 
-<!-- ===== Styles & Scripts ===== -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" />
-
 <style>
-  /* Swiper Navigation */
-  .custom-nav {
-    width: 28px !important;
-    height: 28px !important;
-    background-color: rgba(255,255,255,0.9);
-    border-radius: 9999px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    color: #7c3aed;
-    transition: all 0.3s ease;
-  }
-  .custom-nav::after { font-size: 14px !important; font-weight: bold; }
-  .custom-nav:hover { background-color: #7c3aed; color: white; transform: scale(1.05); }
-  .swiper-button-prev { left: 4px !important; }
-  .swiper-button-next { right: 4px !important; }
-  @media (max-width: 640px){
-    .custom-nav { width: 24px !important; height: 24px !important; }
-    .custom-nav::after { font-size: 12px !important; }
-    .swiper-button-prev { left: 2px !important; }
-    .swiper-button-next { right: 2px !important; }
-  }
+  /* === Card mengikuti gambar === */
+.prestasi-card {
+  display: inline-block;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0,0,0,.14);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
 
-  /* Slide Glow */
-  .glow-slide:hover {
-    box-shadow: 0 0 30px rgba(124,58,237,0.6), 0 10px 20px rgba(0,0,0,0.2);
-    transform: scale(1.08);
-  }
+.prestasi-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 18px 36px rgba(124,58,237,.25);
+}
 
-  /* Glow Text Header */
-  .glow-text { text-shadow: 0 0 8px rgba(124,58,237,0.7), 0 0 15px rgba(124,58,237,0.4); }
+/* Image natural size */
+.prestasi-img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
 
-  /* Floating Background */
-  @keyframes float-left {
-    0% { transform: translateY(0) translateX(0); }
-    50% { transform: translateY(-10px) translateX(10px); }
-    100% { transform: translateY(0) translateX(0); }
-  }
-  @keyframes float-right {
-    0% { transform: translateY(0) translateX(0); }
-    50% { transform: translateY(-12px) translateX(-12px); }
-    100% { transform: translateY(0) translateX(0); }
-  }
-  .bg-deco-left.floating { animation: float-left 6s ease-in-out infinite; }
-  .bg-deco-right.floating { animation: float-right 7s ease-in-out infinite; }
+/* Glow text */
+.glow-text {
+  text-shadow: 0 0 6px rgba(124,58,237,.45);
+}
+/* === Navigation === */
+.custom-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  color: #7c3aed;
+  z-index: 20;
+  transition: all .25s ease;
+}
+
+.swiper-button-prev { left: -48px; }
+.swiper-button-next { right: -48px; }
+
+.custom-nav::after {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.custom-nav:hover {
+  background: #7c3aed;
+  color: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+  background: #7c3aed;
+  opacity: .4;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .swiper-button-prev { left: -12px; }
+  .swiper-button-next { right: -12px; }
+}
+
 </style>
 
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
-
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  // Swiper
-  new Swiper(".prestasiSwiper", {
+document.addEventListener('DOMContentLoaded', () => {
+
+  new Swiper('.prestasiSwiper', {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 24,
     loop: true,
-    autoplay: { delay: 3000, disableOnInteraction: false },
-    pagination: { el: ".swiper-pagination", clickable: true },
-    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-    breakpoints: { 640:{slidesPerView:2,spaceBetween:20}, 768:{slidesPerView:3,spaceBetween:24},1024:{slidesPerView:4,spaceBetween:28} }
+    autoplay: { delay: 3500, disableOnInteraction: false },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    preloadImages: false,
+    lazy: true,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
   });
 
-  // Initialize AOS
-  AOS.init({ once: true, mirror: false });
-
-  // Background floating + muncul dengan animasi
-  const decoLeft = document.querySelector(".bg-deco-left");
-  const decoRight = document.querySelector(".bg-deco-right");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add("floating");
-        entry.target.classList.add("aos-animate"); // trigger animasi awal AOS
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  observer.observe(decoLeft);
-  observer.observe(decoRight);
 });
 </script>
