@@ -372,7 +372,7 @@
             <div class="loading-card">
                 <span class="loading-ring"></span>
                 <span class="loading-ring secondary"></span>
-                <img src="{{ asset('assets/images/logo-smk.png') }}" alt="SMK Prestasi Prima Logo" class="loading-logo">
+                <img src="{{ asset('assets/logo_sma.png') }}" alt="SMK Prestasi Prima Logo" class="loading-logo">
             </div>
             <div class="loading-text">Loading Virtual Tour</div>
             <div class="loading-subtext">Mempersiapkan tampilan 360°</div>

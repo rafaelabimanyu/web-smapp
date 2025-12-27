@@ -74,67 +74,51 @@
   </div>
 
   {{-- === TABS STAFF === --}}
-<div class="max-w-7xl mx-auto px-6 mb-20">
-  <div class="flex justify-center mb-10">
-    <div class="inline-flex bg-gradient-to-r from-purple-500 to-yellow-400 rounded-xl p-1 shadow-lg">
-      <button class="tab-btn active-tab rounded-lg px-8 py-2 font-semibold text-white transition-all duration-300" data-target="kaprog">Kaprog</button>
-      <button class="tab-btn rounded-lg px-8 py-2 font-semibold text-white transition-all duration-300" data-target="kesiswaan">Kesiswaan</button>
+  <div class="max-w-7xl mx-auto px-6 mb-20">
+    <div class="flex justify-center mb-10">
+      <div class="inline-flex bg-gradient-to-r from-purple-500 to-yellow-400 rounded-xl p-1 shadow-lg">
+        <button class="tab-btn rounded-lg px-8 py-2 font-semibold text-white transition-all duration-300" data-target="kesiswaan">Kesiswaan</button>
+      </div>
+    </div>
+
+    {{-- Kesiswaan --}}
+    <div id="kesiswaan" class="tab-content grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12 show">
+      @foreach (\DB::table('prestasiprima_staff')->where('kategori', 'kesiswaan')->get() as $staff)
+        <div class="staff-card">
+          <img src="{{ asset('storage/staff/' . $staff->foto) }}" alt="{{ $staff->nama }}">
+        </div>
+      @endforeach
     </div>
   </div>
-
-  {{-- Kaprog --}}
-  <div id="kaprog" class="tab-content grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12 show">
-    @foreach (\DB::table('prestasiprima_staff')->where('kategori', 'kaprog')->get() as $staff)
-      <div class="staff-card">
-        <img src="{{ asset('storage/staff/' . $staff->foto) }}" alt="{{ $staff->nama }}">
-      </div>
-    @endforeach
-  </div>
-
-  {{-- Kesiswaan --}}
-  <div id="kesiswaan" class="tab-content hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
-    @foreach (\DB::table('prestasiprima_staff')->where('kategori', 'kesiswaan')->get() as $staff)
-      <div class="staff-card">
-        <img src="{{ asset('storage/staff/' . $staff->foto) }}" alt="{{ $staff->nama }}">
-      </div>
-    @endforeach
-  </div>
-</div>
 
   {{-- === GURU MAPEL === --}}
-<div class="max-w-7xl mx-auto px-6">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl font-bold text-purple-500">Guru Mapel</h2>
-  </div>
-
-  <div class="relative flex justify-center items-center">
-    <!-- === Tombol Kiri (Hanya Desktop) === -->
-    <button id="prevBtn"
-      class="hidden md:flex absolute left-[-2.5rem] lg:left-[-3rem] top-1/2 -translate-y-1/2 z-20 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full shadow-lg transition">
-      <i data-lucide="chevron-left" class="w-5 h-5"></i>
-    </button>
-
-    <!-- === Carousel === -->
-    <div id="guruMapelWrapper" class="overflow-hidden w-full max-w-6xl">
-      <div id="guruMapelCarousel" class="flex gap-6 transition-transform duration-700 ease-out">
-        @foreach (\DB::table('prestasiprima_staff')->where('kategori', 'guru_mapel')->get() as $staff)
-          <div
-            class="flex-shrink-0 w-48 h-[280px] rounded-xl overflow-hidden shadow-lg bg-white transform hover:scale-105 transition">
-            <img src="{{ asset('storage/staff/' . $staff->foto) }}" alt="{{ $staff->nama }}"
-              class="w-full h-full object-cover">
-          </div>
-        @endforeach
-      </div>
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-purple-500">Guru Mapel</h2>
     </div>
 
-    <!-- === Tombol Kanan (Hanya Desktop) === -->
-    <button id="nextBtn"
-      class="hidden md:flex absolute right-[-2.5rem] lg:right-[-3rem] top-1/2 -translate-y-1/2 z-20 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full shadow-lg transition">
-      <i data-lucide="chevron-right" class="w-5 h-5"></i>
-    </button>
-  </div>
-</div>
+    <div class="relative flex justify-center items-center">
+      <button id="prevBtn"
+        class="hidden md:flex absolute left-[-2.5rem] lg:left-[-3rem] top-1/2 -translate-y-1/2 z-20 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full shadow-lg transition">
+        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+      </button>
 
+      <div id="guruMapelWrapper" class="overflow-hidden w-full max-w-6xl">
+        <div id="guruMapelCarousel" class="flex gap-6 transition-transform duration-700 ease-out">
+          @foreach (\DB::table('prestasiprima_staff')->where('kategori', 'guru_mapel')->get() as $staff)
+            <div class="flex-shrink-0 w-48 h-[280px] rounded-xl overflow-hidden shadow-lg bg-white transform hover:scale-105 transition">
+              <img src="{{ asset('storage/staff/' . $staff->foto) }}" alt="{{ $staff->nama }}" class="w-full h-full object-cover">
+            </div>
+          @endforeach
+        </div>
+      </div>
+
+      <button id="nextBtn"
+        class="hidden md:flex absolute right-[-2.5rem] lg:right-[-3rem] top-1/2 -translate-y-1/2 z-20 bg-purple-500 hover:bg-purple-600 text-white p-3 rounded-full shadow-lg transition">
+        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </div>
 
 </section>
 
@@ -154,7 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll('.tab-btn');
   const contents = document.querySelectorAll('.tab-content');
 
-  // === TABS SWITCHING ===
   tabs.forEach(btn => {
     btn.addEventListener('click', () => {
       tabs.forEach(b => b.classList.remove('active-tab'));
@@ -166,27 +149,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // === GURU MAPEL INFINITE CAROUSEL + SWIPE ===
+  // Carousel Guru Mapel (tetap)
   const carousel = document.getElementById("guruMapelCarousel");
   const nextBtn = document.getElementById("nextBtn");
   const prevBtn = document.getElementById("prevBtn");
   const cards = Array.from(carousel.children);
-  const cardWidth = 200 + 24; // lebar kartu + jarak antar kartu
+  const cardWidth = 200 + 24;
   let currentIndex = 0;
-
-  // Clone awal dan akhir agar loop mulus
   const totalCards = cards.length;
   cards.forEach(card => carousel.appendChild(card.cloneNode(true)));
   cards.forEach(card => carousel.insertBefore(card.cloneNode(true), carousel.firstChild));
   const offset = totalCards * cardWidth;
-
   carousel.style.transform = `translateX(-${offset}px)`;
 
   function updatePosition() {
     carousel.style.transition = "transform 0.6s ease";
     carousel.style.transform = `translateX(-${offset + currentIndex * cardWidth}px)`;
   }
-
   function checkLoop() {
     if (currentIndex >= totalCards) {
       carousel.style.transition = "none";
@@ -199,67 +178,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  nextBtn.addEventListener("click", () => {
-    currentIndex++;
-    updatePosition();
-    setTimeout(checkLoop, 650);
-  });
+  nextBtn.addEventListener("click", () => { currentIndex++; updatePosition(); setTimeout(checkLoop, 650); });
+  prevBtn.addEventListener("click", () => { currentIndex--; updatePosition(); setTimeout(checkLoop, 650); });
 
-  prevBtn.addEventListener("click", () => {
-    currentIndex--;
-    updatePosition();
-    setTimeout(checkLoop, 650);
-  });
+  let autoScroll = setInterval(() => { currentIndex++; updatePosition(); setTimeout(checkLoop, 650); }, 3000);
 
-  // === AUTO SCROLL ===
-  let autoScroll = setInterval(() => {
-    currentIndex++;
-    updatePosition();
-    setTimeout(checkLoop, 650);
-  }, 3000);
-
-  // === SWIPE GESTURE (TOUCH) ===
-  let startX = 0;
-  let moveX = 0;
-  let isSwiping = false;
-
-  carousel.addEventListener("touchstart", (e) => {
-    clearInterval(autoScroll); // pause auto scroll saat disentuh
-    startX = e.touches[0].clientX;
-    isSwiping = true;
-  });
-
-  carousel.addEventListener("touchmove", (e) => {
-    if (!isSwiping) return;
-    moveX = e.touches[0].clientX - startX;
-  });
-
+  let startX = 0, moveX = 0, isSwiping = false;
+  carousel.addEventListener("touchstart", (e) => { clearInterval(autoScroll); startX = e.touches[0].clientX; isSwiping = true; });
+  carousel.addEventListener("touchmove", (e) => { if (!isSwiping) return; moveX = e.touches[0].clientX - startX; });
   carousel.addEventListener("touchend", () => {
-    if (!isSwiping) return;
-    isSwiping = false;
-
-    // Gerakan geser signifikan â†’ ubah slide
-    if (Math.abs(moveX) > 50) {
-      if (moveX < 0) {
-        currentIndex++;
-      } else {
-        currentIndex--;
-      }
-      updatePosition();
-      setTimeout(checkLoop, 650);
-    }
-
-    // Reset nilai
+    if (!isSwiping) return; isSwiping = false;
+    if (Math.abs(moveX) > 50) currentIndex += moveX < 0 ? 1 : -1;
+    updatePosition();
+    setTimeout(checkLoop, 650);
     moveX = 0;
-    // Lanjut auto scroll setelah beberapa detik
-    autoScroll = setInterval(() => {
-      currentIndex++;
-      updatePosition();
-      setTimeout(checkLoop, 650);
-    }, 3000);
+    autoScroll = setInterval(() => { currentIndex++; updatePosition(); setTimeout(checkLoop, 650); }, 3000);
   });
 });
 </script>
-
 
 @endsection

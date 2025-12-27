@@ -9,7 +9,7 @@
   <div class="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-10 md:gap-16" data-aos="fade-up">
     <div class="md:w-1/2">
       <div class="relative rounded-2xl overflow-hidden">
-        <img src="{{ asset('assets/images/program/kepsek.png') }}" alt="Kepala Sekolah SMA Prestasi Prima" class="w-full object-cover">
+        <img src="{{ asset('assets/prestasiprima/kepalasekolahsma.png') }}" alt="Kepala Sekolah SMA Prestasi Prima" class="w-full object-cover">
       </div>
     </div>
 

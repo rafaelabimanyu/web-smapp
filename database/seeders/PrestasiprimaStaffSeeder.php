@@ -69,10 +69,7 @@ class PrestasiprimaStaffSeeder extends Seeder
             $jabatan = 'Guru Mapel';
             $kutipan = null;
 
-            if (stripos($nameWithoutExt, 'kapro') !== false) {
-                $kategori = 'kaprog';
-                $jabatan = 'Kepala Program Keahlian';
-            } elseif (stripos($nameWithoutExt, 'kesiswaan') !== false) {
+            if (stripos($nameWithoutExt, 'kesiswaan') !== false) {
                 $kategori = 'kesiswaan';
                 $jabatan = 'Staff Kesiswaan';
             }
