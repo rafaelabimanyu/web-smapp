@@ -1,4 +1,7 @@
-import axios from 'axios';
-window.axios = axios;
-
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+/**
+ * Client bootstrap placeholder.
+ *
+ * We intentionally avoid eagerly loading optional dependencies here to keep
+ * the app.js bundle small. Add initialization code (e.g. for Echo/Pusher)
+ * only when you actually enable those features.
+ */
