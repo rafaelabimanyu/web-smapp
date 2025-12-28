@@ -107,7 +107,7 @@
         <div class="mt-16 text-center" data-aos="fade-up">
             <a href="https://spmb.prestasiprima.sch.id/" target="_blank"
                class="inline-block px-10 py-4 font-semibold text-white bg-gradient-to-r from-purple-600 to-purple-400 rounded-full shadow-lg hover:scale-105 transition">
-                Daftar SPMB Sekarang
+                Daftar Sekarang
             </a>
         </div>
 

@@ -278,7 +278,7 @@
         <span>Oren Solution - <span class="font-medium text-white">Version 2.0</span></span>
       </p>
       <p class="text-gray-500 text-sm text-center md:text-right">
-        Dibuat oleh: <span class="text-purple-400 font-medium">Zwingli, Gibran, Abimanyu, Ardy</span>
+        Dibuat oleh: <span class="text-purple-400 font-medium">Abimanyu XI PPLG 1</span>
       </p>
     </div>
   </div>

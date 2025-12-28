@@ -12,6 +12,7 @@
   @include('prestasiprima.sections.program')
   @include('prestasiprima.sections.beasiswa')
   @include('prestasiprima.sections.virtual-tour')
+  @include('prestasiprima.sections.penghargaan')
   @include('prestasiprima.sections.prestasi')
   @include('prestasiprima.sections.kerjasama-ptn')
   @include('prestasiprima.sections.blog')
