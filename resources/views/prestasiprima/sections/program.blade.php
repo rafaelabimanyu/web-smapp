@@ -157,7 +157,7 @@
         <div class="relative text-center mt-5 sm:mt-6">
           <a href="#galeri-video"
             class="inline-block text-purple-600 font-semibold text-sm hover:text-purple-700">
-            Lihat semua video â†’
+            Lihat semua video →
           </a>
         </div>
       </div>

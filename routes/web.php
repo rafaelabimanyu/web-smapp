@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\prestasiprima\{
+    HomepageController,
     GalleryController,
     NewsController,
     SambutanController,
@@ -28,7 +29,7 @@ use App\Http\Controllers\prestasiprima\{
 | HALAMAN UTAMA
 |--------------------------------------------------------------------------
 */
-Route::view('/', 'prestasiprima.pages.landing')->name('landing');
+Route::get('/', [HomepageController::class, 'index']);
 
 Route::view('/virtual-tour', 'Tour.VirtualTour')->name('virtual-tour');
 
