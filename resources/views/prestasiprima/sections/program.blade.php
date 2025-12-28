@@ -26,6 +26,52 @@
       </div>
     </div>
 
+    
+<!-- ================= 4 CARD JURUSAN ================= -->
+<div id="program-grid"
+  class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 mb-8 fade-in-up delay-100">
+
+  @foreach(['ipa'=>'IPA','ips'=>'IPS','bilingual_ipa'=>'Bilingual IPA','bilingual_ips'=>'Bilingual IPS'] as $key => $label)
+  <div class="relative group rounded-xl overflow-hidden shadow-lg">
+
+    <!-- Gambar utama -->
+    <img src="{{ asset('assets/images/section/program/' . $key . '.png') }}"
+         alt="{{ $label }}"
+         class="w-full h-64 sm:h-80 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition duration-700"></div>
+
+    <!-- Konten -->
+    <div class="absolute inset-0 flex flex-col justify-end text-center p-5 sm:p-6 md:p-8 z-10">
+
+      <!-- ICON (SATU FILE) -->
+      <img src="{{ asset('assets/logo_sma.png') }}"
+           alt="Logo SMA Prestasi Prima"
+           class="mx-auto w-10 sm:w-12 aspect-square mb-2 sm:mb-3 object-contain">
+
+      <!-- Judul -->
+      <h3 class="text-white font-bold text-lg sm:text-xl leading-snug">
+        {{
+          $label === 'IPA' ? 'Ilmu Pengetahuan Alam' :
+          ($label === 'IPS' ? 'Ilmu Pengetahuan Sosial' :
+          ($label === 'Bilingual IPA' ? 'Bilingual Science (IPA)' : 'Bilingual Social (IPS)'))
+        }}
+      </h3>
+
+      <!-- Tombol -->
+      <a href="{{ route('program.' . $key) }}"
+         class="mt-3 inline-block text-xs sm:text-sm text-purple-300 font-semibold hover:underline">
+        Lihat Selengkapnya
+      </a>
+
+    </div>
+  </div>
+  @endforeach
+</div>
+
+
+{{-- YANG ASLI INI DIBAWAH
     <!-- ================= 4 CARD JURUSAN ================= -->
 <div id="program-grid"
   class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 mb-8 fade-in-up delay-100">
@@ -60,7 +106,7 @@
     </div>
   </div>
   @endforeach
-</div>
+</div> --}}
 
 
     <!-- ================= WRAPPER DETAIL ================= -->
@@ -74,7 +120,7 @@
 
       <!-- Kiri: Featured -->
       <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-white group flex flex-col justify-end h-[360px] sm:h-[420px] md:h-[480px]">
-        <img src="{{ asset('assets/images/section/program/herobg.webp') }}" alt="Featured Program"
+        <img src="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}" alt="Featured Program"
           class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
         <div class="relative z-10 p-6 sm:p-8 text-white">

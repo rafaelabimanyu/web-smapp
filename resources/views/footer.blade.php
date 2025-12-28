@@ -152,7 +152,7 @@
           <li><a href="/dokumentasi/berita" class="hover:text-purple-400 transition">Berita</a></li>
           <li><a href="/dokumentasi/prestasi" class="hover:text-purple-400 transition">Prestasi</a></li>
           <li><a href="/dokumentasi/gallery" class="hover:text-purple-400 transition">Gallery</a></li>
-          <li><a href="/pendaftaran" class="hover:text-purple-400 transition">Pendaftaran</a></li>
+          <li><a href="https://spmb.prestasiprima.sch.id/" class="hover:text-purple-400 transition">Pendaftaran</a></li>
           <li><a href="/presmaboard" class="hover:text-purple-400 transition">Presmaboard</a></li>
           <li><a href="/presmalancer" class="hover:text-purple-400 transition">Presmalancer</a></li>
         </ul>
@@ -184,7 +184,7 @@
     <li>
       <span class="font-medium text-white">Bagaimana cara mendaftar?</span><br>
       Pendaftaran dapat dilakukan melalui 
-      <a href="/pendaftaran" class="text-purple-400 hover:underline">laman online</a> 
+      <a href="https://spmb.prestasiprima.sch.id/" class="text-purple-400 hover:underline">laman online</a> 
       atau langsung ke sekolah.
     </li>
 

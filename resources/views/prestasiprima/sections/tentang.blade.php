@@ -9,12 +9,13 @@
     </div>
 
     <!-- Gambar Kepala Sekolah -->
-    <div class="relative flex justify-center fade-in-right">
-      <div class="w-80 h-120 md:w-md md:h-144 bg-white rounded-xl flex items-center justify-center">
-        <img src="{{ asset('assets/prestasiprima/kepalasekolahsma.png') }}" alt="Kepala Sekolah"
-          class="w-full h-full object-contain">
-      </div>
-    </div>
+<div class="relative flex justify-center fade-in-right">
+  <div class="w-96 h-[32rem] md:w-[28rem] md:h-[36rem] bg-white rounded-xl flex items-center justify-center">
+    <img src="{{ asset('assets/prestasiprima/kepalasekolahsma.png') }}" alt="Kepala Sekolah"
+      class="w-[90%] h-[90%] object-contain">
+  </div>
+</div>
+
 
     <!-- Teks Tentang Kami -->
     <div class="text-center md:text-left max-w-xl fade-in-left">

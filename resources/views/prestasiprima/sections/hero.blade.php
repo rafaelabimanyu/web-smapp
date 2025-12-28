@@ -41,7 +41,7 @@
     
     <!-- Logo + Nama (Mobile) -->
     <div class="flex items-center space-x-2 mb-6 md:hidden hero-animate">
-  <img src="{{ asset('assets/images/logo-icon.svg') }}" alt="Logo SMA Prestasi Prima"
+  <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo SMA Prestasi Prima"
            class="w-8 h-8 object-contain" loading="lazy">
       <span class="font-semibold text-white text-lg">SMA Prestasi Prima</span>
     </div>
@@ -81,7 +81,7 @@
          class="social-panel bg-white bg-opacity-95 rounded-l-2xl shadow-lg flex flex-col items-center py-3 space-y-3 w-0 overflow-hidden">
       <a href="{{ url('/') }}" aria-label="Kembali ke halaman utama"
          class="bg-white rounded-2xl shadow-lg p-2 flex items-center justify-center w-10 h-10 md:w-12 md:h-12">
-  <img src="{{ asset('assets/images/logo-icon.svg') }}" alt="Logo kecil SMA Prestasi Prima"
+  <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo kecil SMA Prestasi Prima"
              class="w-6 h-6 md:w-8 md:h-8 object-contain" loading="lazy">
       </a>
       <a href="https://wa.me/6289599439033" target="_blank" aria-label="WhatsApp"
