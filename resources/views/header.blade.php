@@ -162,7 +162,7 @@
       <div class="mobile-submenu">
         <a href="/tentang/program" class="mobile-subitem">Program</a>
         <a href="/tentang/profile-sekolah" class="mobile-subitem">Profile Sekolah</a>
-        <a href="/tentang/fasilas" class="mobile-subitem">Fasilitas Sekolah</a>
+        <a href="/tentang/fasilitas" class="mobile-subitem">Fasilitas Sekolah</a>
         <a href="/tentang/staffmanagement" class="mobile-subitem">Staff Management</a>
         <a href="/tentang/sambutan" class="mobile-subitem">Sambutan Pembina Yayasan</a>
       </div>
@@ -175,7 +175,6 @@
       </button>
       <div class="mobile-submenu">
         <a href="/siswa/prestasi" class="mobile-subitem">Prestasi</a>
-        <a href="https://www.instagram.com/osis_smkpp" class="mobile-subitem">OSIS & MPK</a>
         <a href="/siswa/ekstrakurikuler" class="mobile-subitem">Ekstrakurikuler</a>
         <a href="/siswa/karya-proyek" class="mobile-subitem">Karya & Proyek</a>
       </div>
@@ -200,7 +199,6 @@
       </button>
       <div class="mobile-submenu">
         <a href="/informasi/faq" class="mobile-subitem">FAQ</a>
-        <a href="/informasi/industri" class="mobile-subitem">Industri</a>
         <a href="/informasi/testimoni" class="mobile-subitem">Testimoni</a>
         <a href="/informasi/lulusan-ptn" class="mobile-subitem">Lulusan PTN</a>
         <a href="https://spmb.prestasiprima.sch.id/" class="mobile-subitem">Penerimaan Siswa</a>
@@ -214,10 +212,7 @@
         </svg>
       </button>
       <div class="mobile-submenu">
-        <a href="/presmaboard" class="mobile-link">Presmaboard</a>
         <a href="/presmalance" class="mobile-link">PresmaLance</a>
-        <a href="https://absensmk.prestasiprima.sch.id/absensi/16" class="mobile-link">Presmakad</a>
-        <a href="https://spmb.prestasiprima.sch.id/" class="mobile-link" target="_blank">Presmastart</a>
         <a href="/virtual-tour" class="mobile-link">Presmatour</a>
         <a href="/presmacontact" class="mobile-link">Presmacontact</a>
       </div>

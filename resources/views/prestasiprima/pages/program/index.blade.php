@@ -27,83 +27,140 @@
     </div>
   </div>
 
+  <section id="programs" class="pt-32 pb-32 bg-gray-50 relative overflow-hidden">
   {{-- ==================== PROGRAM JURUSAN ==================== --}}
-  <div id="programs" class="mt-24 space-y-24">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 grid gap-12 sm:grid-cols-1 lg:grid-cols-2">
 
-    {{-- JURUSAN 1: IPA --}}
-    <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-10" data-aos="fade-right">
-      <div class="md:w-1/2">
-        {{-- Menggunakan gambar dari section program jika ada, atau fallback --}}
-        <img src="{{ asset('assets/images/section/program/ipa.png') }}" alt="Ilmu Pengetahuan Alam" class="rounded-2xl w-full object-cover">
+    {{-- IPA --}}
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up">
+      <div class="relative">
+        <img src="{{ asset('assets/images/section/program/ipa.png') }}" alt="Ilmu Pengetahuan Alam" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow-lg">Program Unggulan</span>
       </div>
-      <div class="md:w-1/2">
-        <h3 class="text-2xl md:text-3xl font-bold text-purple-600 mb-3">Ilmu Pengetahuan Alam (IPA)</h3>
+      <div class="p-6">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-purple-600 mb-4">Ilmu Pengetahuan Alam (IPA)</h3>
         <p class="text-gray-700 mb-6 text-justify">
-          Program ini dirancang untuk siswa yang memiliki minat kuat pada sains dan teknologi. 
-          Mendalami mata pelajaran Biologi, Fisika, Kimia, dan Matematika dengan pendekatan praktis dan analitis. 
-          Lulusan dipersiapkan untuk melanjutkan pendidikan ke jenjang universitas di bidang Kedokteran, Teknik, Sains, dan Farmasi.
+          Program IPA untuk siswa yang memiliki minat tinggi pada sains dan teknologi. Fokus pada Matematika, Fisika, Kimia, dan Biologi dengan metode praktikum modern.
         </p>
-        <a href="{{ route('program.ipa') }}" class="inline-flex items-center bg-purple-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-purple-700 transition">
-          Selengkapnya <i class="ms-2 ri-arrow-right-line"></i>
-        </a>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-gray-700">
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-book-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Fokus</span>
+            <p class="text-sm">Matematika, Fisika, Kimia, Biologi</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-rocket-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Karier</span>
+            <p class="text-sm">Kedokteran, Teknik, Farmasi</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-building-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Universitas</span>
+            <p class="text-sm">FK UI, ITB, ITS, UGM</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    {{-- JURUSAN 2: IPS --}}
-    <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col md:flex-row-reverse items-center gap-10" data-aos="fade-left">
-      <div class="md:w-1/2">
-        <img src="{{ asset('assets/images/section/program/ips.png') }}" alt="Ilmu Pengetahuan Sosial" class="rounded-2xl w-full object-cover">
+    {{-- IPS --}}
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
+      <div class="relative">
+        <img src="{{ asset('assets/images/section/program/ips.png') }}" alt="Ilmu Pengetahuan Sosial" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow-lg">Social Track</span>
       </div>
-      <div class="md:w-1/2">
-        <h3 class="text-2xl md:text-3xl font-bold text-purple-600 mb-3">Ilmu Pengetahuan Sosial (IPS)</h3>
+      <div class="p-6">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-purple-600 mb-4">Ilmu Pengetahuan Sosial (IPS)</h3>
         <p class="text-gray-700 mb-6 text-justify">
-          Program ini fokus pada pemahaman dinamika masyarakat, ekonomi, dan hubungan internasional.
-          Siswa mempelajari Sosiologi, Ekonomi, Geografi, dan Sejarah dengan wawasan luas.
-          Lulusan siap melanjutkan ke jurusan Hukum, Hubungan Internasional, Manajemen, Akuntansi, dan Psikologi.
+          Program IPS fokus pada pemahaman sosial, ekonomi, dan kebijakan publik. Mata pelajaran: Ekonomi, Sosiologi, Geografi, Sejarah dengan pendekatan interaktif dan debat.
         </p>
-        <a href="{{ route('program.ips') }}" class="inline-flex items-center bg-purple-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-purple-700 transition">
-          Selengkapnya <i class="ms-2 ri-arrow-right-line"></i>
-        </a>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-gray-700">
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-book-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Fokus</span>
+            <p class="text-sm">Ekonomi, Sosiologi, Geografi, Sejarah</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-rocket-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Karier</span>
+            <p class="text-sm">Ekonomi, Hukum, Bisnis, Politik</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-building-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Universitas</span>
+            <p class="text-sm">FEB UI, FH UGM, FISIP Unpad</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    {{-- JURUSAN 3: BILINGUAL IPA --}}
-    <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center gap-10" data-aos="fade-right">
-      <div class="md:w-1/2">
-        <img src="{{ asset('assets/images/section/program/bilingual_ipa.png') }}" alt="Bilingual Science (IPA)" class="rounded-2xl w-full object-cover">
+    {{-- IPA Bilingual --}}
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
+      <div class="relative">
+        <img src="{{ asset('assets/images/section/program/bilingual_ipa.png') }}" alt="IPA Bilingual" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-full shadow-lg">International Class</span>
       </div>
-      <div class="md:w-1/2">
-        <h3 class="text-2xl md:text-3xl font-bold text-purple-600 mb-3">Bilingual Science (IPA)</h3>
+      <div class="p-6">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-purple-600 mb-4">IPA Bilingual</h3>
         <p class="text-gray-700 mb-6 text-justify">
-          Program unggulan yang memadukan Kurikulum Nasional dengan Kurikulum Internasional (Cambridge).
-          Pembelajaran mata pelajaran sains disampaikan dalam Bahasa Inggris.
-          Mempersiapkan siswa untuk bersaing di universitas luar negeri maupun program internasional dalam negeri.
+          Pembelajaran IPA dengan Bahasa Indonesia & Inggris untuk menguatkan kompetensi akademik dan terminologi ilmiah internasional.
         </p>
-        <a href="{{ route('program.bilingual_ipa') }}" class="inline-flex items-center bg-purple-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-purple-700 transition">
-          Selengkapnya <i class="ms-2 ri-arrow-right-line"></i>
-        </a>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-gray-700">
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-book-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Keunggulan</span>
+            <p class="text-sm">Dua bahasa, Standar internasional</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-rocket-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Karier</span>
+            <p class="text-sm">Kedokteran, Teknik, Peneliti</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-building-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Universitas</span>
+            <p class="text-sm">FK UI Bilingual, ITB International, Universitas Luar Negeri</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    {{-- JURUSAN 4: BILINGUAL IPS --}}
-    <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col md:flex-row-reverse items-center gap-10" data-aos="fade-left">
-      <div class="md:w-1/2">
-        <img src="{{ asset('assets/images/section/program/bilingual_ips.png') }}" alt="Bilingual Social (IPS)" class="rounded-2xl w-full object-cover">
+    {{-- IPS Bilingual --}}
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
+      <div class="relative">
+        <img src="{{ asset('assets/images/section/program/bilingual_ips.png') }}" alt="IPS Bilingual" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-full shadow-lg">Global Perspective</span>
       </div>
-      <div class="md:w-1/2">
-        <h3 class="text-2xl md:text-3xl font-bold text-purple-600 mb-3">Bilingual Social (IPS)</h3>
+      <div class="p-6">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-purple-600 mb-4">IPS Bilingual</h3>
         <p class="text-gray-700 mb-6 text-justify">
-          Program kelas internasional untuk studi sosial dan humaniora.
-          Mata pelajaran Ekonomi, Sosiologi, dan Geografi diajarkan dengan pengantar Bahasa Inggris.
-          Fokus pada pengembangan wawasan global, kemampuan debat, dan analisis isu internasional.
+          Program IPS bilingual fokus pada ekonomi, sosial, dan kebijakan publik dengan perspektif global melalui pembelajaran bilingual dan interaktif.
         </p>
-        <a href="{{ route('program.bilingual_ips') }}" class="inline-flex items-center bg-purple-600 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-purple-700 transition">
-          Selengkapnya <i class="ms-2 ri-arrow-right-line"></i>
-        </a>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-gray-700">
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-book-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Fokus</span>
+            <p class="text-sm">Ekonomi, Isu Internasional, Public Policy</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-rocket-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Karier</span>
+            <p class="text-sm">Hubungan Internasional, Bisnis, Hukum & Diplomasi</p>
+          </div>
+          <div class="flex flex-col items-start gap-2">
+            <i class="ri-building-line text-purple-600 text-2xl"></i>
+            <span class="font-semibold">Universitas</span>
+            <p class="text-sm">FISIP UI Bilingual, FH UGM International, Universitas Luar Negeri</p>
+          </div>
+        </div>
       </div>
     </div>
 
   </div>
+</section>
 
 </section>
 @endsection
