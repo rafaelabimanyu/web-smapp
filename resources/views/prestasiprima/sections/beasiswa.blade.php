@@ -1,5 +1,6 @@
 <!-- ==================== SECTION BEASISWA PRESTASI ==================== -->
-<section id="beasiswa" class="relative py-24 bg-gradient-to-b from-purple-50 via-white to-white overflow-hidden">
+<section id="beasiswa"
+    class="relative py-24 bg-gradient-to-b from-purple-50 via-white to-white overflow-hidden">
 
     <!-- Background Decoration -->
     <div class="absolute top-0 left-0 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply opacity-20 blur-3xl animate-pulse"></div>
@@ -7,7 +8,7 @@
 
     <div class="relative max-w-7xl mx-auto px-4 md:px-8">
 
-        <!-- ===== Header ===== -->
+        <!-- Header -->
         <header class="mb-16 text-center" data-aos="fade-up">
             <p class="text-sm md:text-lg font-semibold text-purple-600 uppercase tracking-widest">
                 Beasiswa Prestasi
@@ -78,35 +79,42 @@
         ];
         @endphp
 
-        <!-- Grid -->
+        <!-- Card Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach($kategoriBeasiswa as $b)
-            <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-3 hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
+                <div
+                    class="group bg-white rounded-2xl shadow-lg overflow-hidden
+                           hover:-translate-y-3 hover:shadow-2xl transition-all duration-300"
+                    data-aos="fade-up">
 
-                <div class="h-[300px] overflow-hidden">
-                    <img src="{{ asset($b['poster']) }}" alt="{{ $b['nama'] }}"
-                         class="w-full h-full object-cover group-hover:scale-105 transition">
+                    <div class="h-[300px] overflow-hidden">
+                        <img src="{{ asset($b['poster']) }}"
+                             alt="{{ $b['nama'] }}"
+                             class="w-full h-full object-cover group-hover:scale-105 transition">
+                    </div>
+
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $b['nama'] }}</h3>
+                        <p class="text-sm text-gray-600 mb-4">{{ $b['ringkas'] }}</p>
+
+                        <button
+                            onclick='openModal(@json($b))'
+                            class="mt-auto px-5 py-2 text-sm font-semibold
+                                   text-purple-600 bg-purple-100 rounded-full
+                                   hover:bg-purple-200 transition">
+                            Lihat Detail
+                        </button>
+                    </div>
                 </div>
-
-                <div class="p-6 flex flex-col">
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $b['nama'] }}</h3>
-                    <p class="text-sm text-gray-600 mb-4">{{ $b['ringkas'] }}</p>
-
-                    <button
-                        onclick='openModal(@json($b))'
-                        class="mt-auto px-5 py-2 text-sm font-semibold text-purple-600 bg-purple-100 rounded-full hover:bg-purple-200 transition">
-                        Lihat Detail
-                    </button>
-                </div>
-
-            </div>
             @endforeach
         </div>
 
         <!-- CTA -->
         <div class="mt-16 text-center" data-aos="fade-up">
             <a href="https://spmb.prestasiprima.sch.id/" target="_blank"
-               class="inline-block px-10 py-4 font-semibold text-white bg-gradient-to-r from-purple-600 to-purple-400 rounded-full shadow-lg hover:scale-105 transition">
+               class="inline-block px-10 py-4 font-semibold text-white
+                      bg-gradient-to-r from-purple-600 to-purple-400
+                      rounded-full shadow-lg hover:scale-105 transition">
                 Daftar Sekarang
             </a>
         </div>
@@ -114,72 +122,85 @@
     </div>
 </section>
 
-<!-- ==================== MODAL BEASISWA MODERN ==================== -->
+<!-- ==================== MODAL BEASISWA ==================== -->
 <div id="modalBeasiswa"
-     class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-md">
+     class="fixed inset-0 z-50 hidden items-center justify-center
+            bg-black/60 backdrop-blur-md">
 
     <div
-        class="relative w-full max-w-5xl mx-4 bg-white rounded-3xl shadow-2xl overflow-hidden
-               animate-modalEnter grid grid-cols-1 md:grid-cols-2">
+        class="relative w-full max-w-5xl mx-3 md:mx-4
+               bg-white rounded-2xl md:rounded-3xl
+               shadow-2xl overflow-hidden
+               animate-modalEnter
+               grid grid-cols-1 md:grid-cols-2
+               max-h-[90vh] md:max-h-none">
 
         <!-- Close -->
         <button onclick="closeModal()"
-                class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/80
-                       flex items-center justify-center text-2xl text-gray-600
-                       hover:bg-purple-600 hover:text-white transition">
-            &times;
-        </button>
+    class="absolute z-20 flex items-center justify-center transition
+           
+           /* Mobile */
+           top-3 right-3
+           w-9 h-9 text-xl
+           rounded-full
+           bg-white/90 backdrop-blur
+           text-gray-700
+           
+           /* Desktop (seperti versi awal) */
+           md:top-4 md:right-4
+           md:w-10 md:h-10 md:text-2xl
+           md:bg-white/80 md:backdrop-blur-0
+           md:text-gray-600
+           
+           hover:bg-purple-600 hover:text-white">
+    &times;
+</button>
 
-        <!-- LEFT : IMAGE -->
-        <div class="relative h-64 md:h-full overflow-hidden">
-            <img id="modalImage"
-                 class="w-full h-full object-cover scale-105">
+
+        <!-- Image -->
+        <div class="relative h-52 sm:h-60 md:h-full overflow-hidden">
+            <img id="modalImage" class="w-full h-full object-cover scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         </div>
 
-        <!-- RIGHT : CONTENT -->
-        <div class="p-6 md:p-10 max-h-[80vh] overflow-y-auto">
+        <!-- Content -->
+        <div class="p-5 sm:p-6 md:p-10 overflow-y-auto
+                    max-h-[calc(90vh-13rem)] md:max-h-none">
 
-            <!-- Title -->
             <h3 id="modalTitle"
                 class="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4"></h3>
 
-            <!-- Description -->
             <p id="modalText"
                class="text-gray-700 leading-relaxed mb-6"></p>
 
-            <!-- Syarat -->
             <div class="mb-6">
                 <h4 class="font-bold text-gray-900 mb-2">Syarat Pendaftaran</h4>
-                <ul id="modalSyarat"
-                    class="grid grid-cols-1 gap-2 text-sm text-gray-700"></ul>
+                <ul id="modalSyarat" class="grid grid-cols-1 gap-2 text-sm"></ul>
             </div>
 
-            <!-- Info -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <div class="p-4 rounded-xl bg-purple-50 border border-purple-100">
                     <p class="text-xs uppercase tracking-widest text-purple-500">Periode</p>
-                    <p id="modalPeriode" class="font-semibold text-gray-900"></p>
+                    <p id="modalPeriode" class="font-semibold"></p>
                 </div>
                 <div class="p-4 rounded-xl bg-pink-50 border border-pink-100">
                     <p class="text-xs uppercase tracking-widest text-pink-500">Kontak</p>
-                    <p id="modalKontak" class="font-semibold text-gray-900"></p>
+                    <p id="modalKontak" class="font-semibold"></p>
                 </div>
             </div>
 
-            <!-- CTA -->
             <a id="modalLink"
-               href="#"
                target="_blank"
-               class="block w-full text-center py-4 font-semibold text-white
+               class="block w-full text-center py-4
+                      text-base md:text-lg font-semibold text-white
                       bg-gradient-to-r from-purple-600 to-pink-500
-                      rounded-xl shadow-lg hover:scale-[1.02] transition">
+                      rounded-xl shadow-lg
+                      active:scale-95 hover:scale-[1.02] transition">
                 Daftar Beasiswa
             </a>
         </div>
     </div>
 </div>
-
 
 @push('styles')
 <style>
@@ -196,45 +217,47 @@
 .animate-modalEnter {
     animation: modalEnter .35s ease-out;
 }
+@media (max-width: 640px) {
+    #modalBeasiswa {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
 </style>
 @endpush
-
 
 @push('scripts')
 <script>
 function openModal(data) {
-    document.getElementById('modalImage').src = "{{ asset('') }}" + data.poster;
-    document.getElementById('modalTitle').innerText = data.nama;
-    document.getElementById('modalText').innerText = data.deskripsi;
-    document.getElementById('modalPeriode').innerText = data.pendaftaran;
-    document.getElementById('modalKontak').innerText = data.kontak;
-    document.getElementById('modalLink').href = data.link;
+    document.body.classList.add('overflow-hidden');
 
-    const list = document.getElementById('modalSyarat');
-    list.innerHTML = '';
+    modalImage.src = "{{ asset('') }}" + data.poster;
+    modalTitle.innerText = data.nama;
+    modalText.innerText = data.deskripsi;
+    modalPeriode.innerText = data.pendaftaran;
+    modalKontak.innerText = data.kontak;
+    modalLink.href = data.link;
+
+    modalSyarat.innerHTML = '';
     data.syarat.forEach(item => {
-        list.innerHTML += `
+        modalSyarat.innerHTML += `
             <li class="flex items-start gap-2 bg-gray-50 p-3 rounded-lg">
                 <span class="text-purple-600 font-bold">✓</span>
                 <span>${item}</span>
-            </li>
-        `;
+            </li>`;
     });
 
-    const modal = document.getElementById('modalBeasiswa');
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
+    modalBeasiswa.classList.remove('hidden');
+    modalBeasiswa.classList.add('flex');
 }
 
 function closeModal() {
-    const modal = document.getElementById('modalBeasiswa');
-    modal.classList.add('hidden');
-    modal.classList.remove('flex');
+    document.body.classList.remove('overflow-hidden');
+    modalBeasiswa.classList.add('hidden');
+    modalBeasiswa.classList.remove('flex');
 }
 
-// close when click outside
-document.getElementById('modalBeasiswa').addEventListener('click', function(e) {
-    if (e.target === this) closeModal();
+modalBeasiswa.addEventListener('click', e => {
+    if (e.target === modalBeasiswa) closeModal();
 });
 </script>
 @endpush

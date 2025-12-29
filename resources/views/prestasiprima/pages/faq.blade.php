@@ -27,32 +27,62 @@
   {{-- List FAQ per baris --}}
   <div class="max-w-4xl mx-auto space-y-6 px-6">
     @php
-      $faqs = [
-        [
-          'question' => 'Kurikulum apa yang digunakan di SMA Prestasi Prima?',
-          'answer' => 'SMA Prestasi Prima menerapkan <strong>Kurikulum Merdeka</strong> yang menekankan penguatan karakter, kemampuan berpikir kritis, kreativitas, serta kesiapan siswa melanjutkan ke perguruan tinggi.',
-        ],
-        [
-          'question' => 'Apa saja peminatan yang tersedia?',
-          'answer' => '<strong>SMA Prestasi Prima</strong> memiliki beberapa peminatan utama:<br><br>
-            <strong>IPA</strong> – Sains, teknologi, dan riset.<br>
-            <strong>IPS</strong> – Sosial, ekonomi, dan humaniora.<br>
-            <strong>Bahasa</strong> – Bahasa, sastra, dan komunikasi global.',
-        ],
-        [
-          'question' => 'Bagaimana fasilitas pembelajaran di SMA Prestasi Prima?',
-          'answer' => 'Fasilitas meliputi ruang kelas modern, laboratorium IPA, perpustakaan digital, ruang multimedia, serta lingkungan belajar yang aman dan nyaman.',
-        ],
-        [
-          'question' => 'Apakah tersedia kegiatan ekstrakurikuler?',
-          'answer' => 'Tersedia berbagai ekstrakurikuler seperti olahraga, seni, sains club, debat, organisasi siswa, dan kegiatan pengembangan kepemimpinan.',
-        ],
-        [
-          'question' => 'Bagaimana sistem keamanan sekolah?',
-          'answer' => 'Sekolah dilengkapi dengan sistem CCTV, pengawasan guru, serta petugas keamanan untuk memastikan kenyamanan seluruh warga sekolah.',
-        ],
-      ];
-    @endphp
+$faqs = [
+    [
+        'question' => 'Kurikulum apa yang digunakan di SMA Prestasi Prima?',
+        'answer' => 'SMA Prestasi Prima menerapkan <strong>Kurikulum Merdeka</strong> yang menekankan penguatan karakter, kemampuan berpikir kritis, kreativitas, serta kesiapan siswa untuk melanjutkan ke perguruan tinggi favorit.',
+    ],
+    [
+        'question' => 'Apa saja pilihan peminatan di SMA Prestasi Prima?',
+        'answer' => 'SMA Prestasi Prima menyediakan beberapa pilihan peminatan unggulan:<br><br>
+        <strong>IPA</strong> – Fokus Matematika, Fisika, Kimia, dan Biologi.<br>
+        <strong>IPS</strong> – Fokus Ekonomi, Sosiologi, Geografi, dan Sejarah.<br>
+        <strong>IPA Bilingual</strong> – Program sains dengan pengantar Bahasa Indonesia dan Inggris.<br>
+        <strong>IPS Bilingual</strong> – Program sosial dengan perspektif global dan bilingual.',
+    ],
+    [
+        'question' => 'Apa keunggulan program IPA di SMA Prestasi Prima?',
+        'answer' => 'Program <strong>IPA</strong> dirancang untuk siswa yang memiliki minat di bidang sains dan teknologi dengan pembelajaran intensif Matematika, Fisika, Kimia, dan Biologi.<br><br>
+        <strong>Peluang Karier:</strong> Kedokteran, Teknik, Farmasi, Sains Murni.<br>
+        <strong>Universitas Tujuan:</strong> FK UI, ITB, ITS, UGM.',
+    ],
+    [
+        'question' => 'Apa perbedaan IPA reguler dan IPA Bilingual?',
+        'answer' => '<strong>IPA Bilingual</strong> menggunakan Bahasa Indonesia dan Bahasa Inggris sebagai bahasa pengantar pembelajaran sains, sehingga siswa lebih siap menghadapi program internasional.<br><br>
+        <strong>Peluang Karier:</strong> Kedokteran, Teknik, Farmasi, Peneliti Internasional.<br>
+        <strong>Universitas Tujuan:</strong> FK UI (Bilingual), ITB Program Internasional, serta universitas luar negeri.',
+    ],
+    [
+        'question' => 'Apa keunggulan program IPS di SMA Prestasi Prima?',
+        'answer' => 'Program <strong>IPS</strong> fokus pada pengembangan kemampuan analisis sosial dan ekonomi melalui Ekonomi, Sosiologi, Geografi, dan Sejarah.<br><br>
+        <strong>Peluang Karier:</strong> Ekonomi, Hukum, Bisnis, Politik.<br>
+        <strong>Universitas Tujuan:</strong> FEB UI, FH UGM, FISIP Unpad.',
+    ],
+    [
+        'question' => 'Apa kelebihan IPS Bilingual di SMA Prestasi Prima?',
+        'answer' => '<strong>IPS Bilingual</strong> mengintegrasikan kurikulum nasional dengan perspektif global menggunakan pengantar bilingual.<br><br>
+        <strong>Peluang Karier:</strong> Hubungan Internasional, Ekonomi, Hukum, Bisnis Internasional.<br>
+        <strong>Universitas Tujuan:</strong> FISIP UI (Bilingual), FH UGM Program Internasional, dan universitas luar negeri.',
+    ],
+    [
+        'question' => 'Apakah lulusan SMA Prestasi Prima memiliki peluang masuk perguruan tinggi favorit?',
+        'answer' => 'Ya. Program pembelajaran, bimbingan akademik, dan pembinaan prestasi dirancang untuk mempersiapkan siswa masuk ke perguruan tinggi favorit nasional maupun internasional.',
+    ],
+    [
+        'question' => 'Apa saja fasilitas pembelajaran yang tersedia?',
+        'answer' => 'SMA Prestasi Prima dilengkapi ruang kelas modern, laboratorium IPA, perpustakaan digital, ruang multimedia, serta lingkungan belajar yang aman dan nyaman.',
+    ],
+    [
+        'question' => 'Apakah tersedia kegiatan ekstrakurikuler untuk pengembangan diri siswa?',
+        'answer' => 'Tersedia berbagai ekstrakurikuler olahraga, seni, sains club, debat, organisasi siswa, serta program pengembangan kepemimpinan dan karakter.',
+    ],
+    [
+        'question' => 'Bagaimana sistem keamanan dan kenyamanan siswa di sekolah?',
+        'answer' => 'Sekolah dilengkapi dengan sistem CCTV, pengawasan guru, serta petugas keamanan untuk memastikan kenyamanan dan keselamatan seluruh warga sekolah.',
+    ],
+];
+@endphp
+
 
     @foreach ($faqs as $index => $faq)
     <div 

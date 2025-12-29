@@ -3,18 +3,59 @@
 @section('title', 'Ekstrakurikuler SMK Prestasi Prima')
 
 @section('content')
-<section class="min-h-screen bg-gradient-to-b from-white via-purple-50/20 to-white pt-44 pb-28 relative overflow-hidden">
-  <!-- ======== Header ======== -->
-  <div class="text-center mb-16" data-aos="fade-down">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-[#0e162e] tracking-tight">
-      Ekstrakurikuler <span class="text-purple-500">Prestasi Prima</span>
-    </h1>
-    <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-      Wadah pengembangan minat dan bakat siswa untuk membentuk karakter unggul, mandiri, dan kreatif.
-    </p>
-    <div class="w-24 h-[4px] bg-gradient-to-r from-purple-500 to-yellow-400 mx-auto mt-6 rounded-full shadow-lg shadow-purple-200/70"></div>
-  </div>
 
+<!-- ====================== HERO SECTION ====================== -->
+<section
+    class="relative min-h-[75vh]
+           bg-gradient-to-br from-purple-500 via-purple-400 to-purple-300
+           text-white
+           pt-44 md:pt-52 pb-28
+           overflow-hidden">
+
+    <!-- CAROUSEL BACKGROUND -->
+    <div class="absolute inset-0 overflow-hidden">
+
+        <img src="{{ asset('assets/prestasiprima/basket1.jpg') }}"
+             class="hero-slide"
+             loading="lazy">
+
+        <img src="{{ asset('assets/prestasiprima/dance.jpg') }}"
+             class="hero-slide"
+             loading="lazy">
+
+        <img src="{{ asset('assets/prestasiprima/basket2.jpg') }}"
+             class="hero-slide"
+             loading="lazy">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-purple-500/30 mix-blend-multiply z-10"></div>
+    </div>
+
+    <!-- CONTENT -->
+<div class="relative z-20 text-center max-w-2xl mx-auto px-4" data-aos="fade-down">
+    
+    <!-- Logo -->
+    <img src="{{ asset('assets/logo_sma.png') }}"
+         alt="Logo SMA Prestasi Prima"
+         class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4">
+
+    <!-- Title -->
+    <h1 class="text-2xl md:text-3xl font-extrabold mb-3 leading-tight">
+        Ekstrakurikuler SMA <span class="text-white">Prestasi Prima</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-white/90 text-sm md:text-base italic leading-relaxed">
+        "Wadah pengembangan minat dan bakat siswa untuk membentuk karakter unggul,
+        mandiri, dan kreatif."
+    </p>
+
+</div>
+
+</section>
+
+
+<section class="min-h-screen bg-gradient-to-b from-white via-purple-50/20 to-white pt-44 pb-28 relative overflow-hidden">
   <!-- ======== Grid Ekstrakurikuler ======== -->
   <div class="max-w-7xl mx-auto px-6 relative">
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8" data-aos="fade-up" data-aos-delay="200">
@@ -52,7 +93,7 @@
       >
         <div 
   class="absolute inset-0 bg-center bg-cover"
-  style="background-image: url('{{ asset('assets/prestasiprima/gedungsiswa.avif') }}'); filter: blur(2px) brightness(1); transform: scale(1.02);"
+  style="background-image: url('{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}'); filter: blur(2px) brightness(1); transform: scale(1.02);"
 ></div>
 
 
@@ -77,11 +118,55 @@
   </div>
 </section>
 
-<!-- FOTO GEDUNG (tidak bisa diklik) -->
-  <section class="relative w-full bg-white overflow-hidden select-none pointer-events-none">
-    <img alt="Gedung SMK Prestasi Prima" 
-         class="w-full h-[40vh] sm:h-[55vh] lg:h-screen object-cover object-center hover:scale-[1.02] transition-transform duration-700" 
-         src="{{ asset('assets/prestasiprima/gedungprestasiprima.avif') }}">
-  </section>
+<style>
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 1.2s ease, opacity 1.2s ease;
+}
+
+.hero-slide.active {
+    opacity: 0.35;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.hero-slide.exit {
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.hero-slide');
+    let current = 0;
+    const total = slides.length;
+    const duration = 1200;
+
+    slides[current].classList.add('active');
+
+    setInterval(() => {
+        const prev = current;
+        current = (current + 1) % total;
+
+        slides.forEach(slide => slide.classList.remove('exit'));
+
+        slides[prev].classList.remove('active');
+        slides[prev].classList.add('exit');
+
+        slides[current].classList.add('active');
+
+    }, duration + 800);
+});
+</script>
+
 @endsection
 
