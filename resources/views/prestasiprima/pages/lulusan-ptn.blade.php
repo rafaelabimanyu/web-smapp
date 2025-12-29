@@ -7,7 +7,7 @@
 <!-- ========== HEADER SECTION ========== -->
 <section class="relative mt-[100px] min-h-[70vh] md:min-h-[80vh]
        flex items-center justify-center text-center overflow-hidden"
-  style="background: url('{{ asset('assets/images/lulusanptn/herobg.png') }}') center/cover no-repeat;">
+  style="background: url('{{ asset('assets/prestasiprima/gedungzoom.jpg') }}') center/cover no-repeat;">
 
   <div class="absolute inset-0 bg-purple-700/60"></div>
 

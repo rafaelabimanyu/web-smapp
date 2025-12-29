@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.hero-slide');
     let current = 0;
     const total = slides.length;
-    const duration = 1200;
+    const duration = 2000;
 
     slides[current].classList.add('active');
 
