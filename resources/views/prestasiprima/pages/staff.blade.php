@@ -77,7 +77,7 @@
   <div class="max-w-7xl mx-auto px-6 mb-20">
     <div class="flex justify-center mb-10">
       <div class="inline-flex bg-gradient-to-r from-purple-500 to-yellow-400 rounded-xl p-1 shadow-lg">
-        <button class="tab-btn rounded-lg px-8 py-2 font-semibold text-white transition-all duration-300" data-target="kesiswaan">Kesiswaan</button>
+        <button class="tab-btn rounded-lg px-8 py-2 font-semibold text-white transition-all duration-300" data-target="kesiswaan">Management</button>
       </div>
     </div>
 

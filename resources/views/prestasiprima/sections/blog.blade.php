@@ -39,7 +39,10 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10m-12 8h14a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
-                                    {{ $blog->published_at ? $blog->published_at->format('d M Y') : 'Belum dipublikasikan' }}
+                                    {{ $blog->published_at 
+                                        ? \Carbon\Carbon::parse($blog->published_at)->format('d M Y') 
+                                        : 'Belum dipublikasikan' 
+                                    }}
                                 </div>
 
                                 <h3 class="font-extrabold text-lg md:text-xl text-gray-900 leading-snug mb-3 group-hover:text-purple-600 transition-colors duration-300">

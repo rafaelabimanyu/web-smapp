@@ -101,121 +101,122 @@
   </section>
 
   @push('styles')
-    <style>
-      .prose p {
-        margin-bottom: 1.6em;
-        line-height: 1.9;
-        text-align: justify;
-        font-size: 1.05rem;
-        color: #333;
-      }
+<style>
+  .prose p {
+    margin-bottom: 1.6em;
+    line-height: 1.9;
+    text-align: justify;
+    font-size: 1.05rem;
+    color: #374151; /* gray-700 */
+  }
 
-      /* Paragraf pertama dengan drop cap */
-      .prose p:first-of-type::first-letter {
-        float: left;
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1;
-        margin-right: 0.15em;
-        color: #ff6600;
-        font-family: "Georgia", serif;
-      }
+  /* Drop cap paragraf pertama */
+  .prose p:first-of-type::first-letter {
+    float: left;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 0.15em;
+    color: #7c3aed; /* purple-600 */
+    font-family: "Georgia", serif;
+  }
 
-      /* Judul-judul dalam konten */
-      .prose h2,
-      .prose h3 {
-        color: #0e162e;
-        font-weight: 700;
-        margin-top: 2em;
-        margin-bottom: 0.8em;
-        line-height: 1.3;
-      }
+  /* Heading */
+  .prose h2,
+  .prose h3 {
+    color: #5b21b6; /* purple-800 */
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    line-height: 1.3;
+  }
 
-      /* Teks tebal dan miring */
-      .prose strong {
-        color: #ff6600;
-        font-weight: 600;
-      }
+  /* Bold & italic */
+  .prose strong {
+    color: #6d28d9; /* purple-700 */
+    font-weight: 600;
+  }
 
-      .prose em {
-        color: #555;
-        font-style: italic;
-      }
+  .prose em {
+    color: #4b5563;
+    font-style: italic;
+  }
 
-      /* Link dalam teks */
-      .prose a {
-        color: #ff6600;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.2s;
-      }
+  /* Link */
+  .prose a {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
 
-      .prose a:hover {
-        text-decoration: underline;
-        color: #e55b00;
-      }
+  .prose a:hover {
+    text-decoration: underline;
+    color: #5b21b6;
+  }
 
-      /* Kutipan / blockquote */
-      .prose blockquote {
-        border-left: 4px solid #ff6600;
-        background: #fff8f0;
-        padding: 1.2rem 1.5rem;
-        border-radius: 0.75rem;
-        font-style: italic;
-        color: #555;
-        margin: 2em 0;
-        position: relative;
-      }
+  /* Blockquote */
+  .prose blockquote {
+    border-left: 4px solid #8b5cf6;
+    background: #faf5ff;
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.75rem;
+    font-style: italic;
+    color: #4b5563;
+    margin: 2em 0;
+    position: relative;
+  }
 
-      .prose blockquote::before {
-        content: "â";
-        position: absolute;
-        top: -15px;
-        left: 15px;
-        font-size: 2.5rem;
-        color: #ff6600;
-        opacity: 0.2;
-      }
+  .prose blockquote::before {
+    content: "❝";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    font-size: 2.5rem;
+    color: #8b5cf6;
+    opacity: 0.2;
+  }
 
-      /* List */
-      .prose ul,
-      .prose ol {
-        padding-left: 1.6rem;
-        margin-bottom: 1.5em;
-      }
+  /* List */
+  .prose ul,
+  .prose ol {
+    padding-left: 1.6rem;
+    margin-bottom: 1.5em;
+  }
 
-      .prose li {
-        margin-bottom: 0.5em;
-        line-height: 1.8;
-      }
+  .prose li {
+    margin-bottom: 0.5em;
+    line-height: 1.8;
+  }
 
-      /* Gambar di dalam konten */
-      .prose img {
-        border-radius: 1rem;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        margin: 2em 0;
-      }
+  /* Image */
+  .prose img {
+    border-radius: 1rem;
+    box-shadow: 0 10px 28px rgba(109, 40, 217, 0.15);
+    margin: 2em 0;
+  }
 
-      /* Caption gambar */
-      .prose figcaption {
-        text-align: center;
-        font-size: 0.9rem;
-        color: #888;
-        margin-top: -0.5em;
-        font-style: italic;
-      }
+  /* Figcaption */
+  .prose figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: -0.5em;
+    font-style: italic;
+  }
 
-      /* Paragraf dengan kutipan khusus */
-      .prose .highlight {
-        background: linear-gradient(to right, #fff7f0, #fff);
-        border-left: 4px solid #ff6600;
-        padding: 1rem 1.2rem;
-        border-radius: 0.6rem;
-        margin: 1.5em 0;
-        color: #444;
-      }
-    </style>
-  @endpush
+  /* Highlight box */
+  .prose .highlight {
+    background: linear-gradient(to right, #faf5ff, #ffffff);
+    border-left: 4px solid #8b5cf6;
+    padding: 1rem 1.2rem;
+    border-radius: 0.6rem;
+    margin: 1.5em 0;
+    color: #4b5563;
+  }
+</style>
+@endpush
+
 
   @push('scripts')
     <script>

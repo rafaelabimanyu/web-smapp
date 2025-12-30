@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
         speed: 800,
 
         autoplay: {
-            delay: 5000, // ⏱️ 5 detik
+            delay: 2000, // ⏱️ 5 detik
             disableOnInteraction: false,
         },
 
