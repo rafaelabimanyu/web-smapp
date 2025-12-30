@@ -118,3 +118,7 @@ Route::prefix('dokumentasi')->group(function () {
 */
 Route::get('/presmacontact', [ContactController::class, 'index'])->name('presmacontact');
 Route::post('/presmacontact/send', [ContactController::class, 'sendMessage'])->name('presmacontact.send');
+
+Route::fallback(function () {
+    return response()->view('errors.404', [], 404);
+});
