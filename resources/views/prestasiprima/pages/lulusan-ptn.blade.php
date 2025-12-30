@@ -4,23 +4,59 @@
 
 @section('content')
 
-<!-- ========== HEADER SECTION ========== -->
-<section class="relative mt-[100px] min-h-[70vh] md:min-h-[80vh]
-       flex items-center justify-center text-center overflow-hidden"
-  style="background: url('{{ asset('assets/prestasiprima/gedungzoom.jpg') }}') center/cover no-repeat;">
+<!-- ========== HEADER SECTION (ALUMNI PTN) ========== -->
+<section class="relative bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400
+               text-white pt-36 pb-28 overflow-hidden">
 
-  <div class="absolute inset-0 bg-purple-700/60"></div>
+    <!-- Background Image + Overlay -->
+    <div class="absolute inset-0">
+        <img src="{{ asset('assets/prestasiprima/fotbarguru2.jpg') }}"
+             alt="SMA Prestasi Prima"
+             class="w-full h-full object-cover opacity-30"
+             loading="lazy">
+        <div class="absolute inset-0 bg-purple-700/40 mix-blend-multiply"></div>
+    </div>
 
-  <div class="relative z-10 bg-white py-8 px-10 md:px-16 rounded-2xl shadow-xl">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold
-               text-purple-600 tracking-tight whitespace-nowrap">
-      SELAMAT & SUKSES
-    </h1>
-    <p class="text-purple-500 text-base sm:text-lg mt-2 font-medium">
-      Untuk Siswa SMA Prestasi Prima yang Lulus SNBP
-    </p>
-  </div>
+    <!-- Content -->
+    <div class="relative z-10 text-center max-w-4xl mx-auto px-6" data-aos="fade-down">
+
+        <!-- Logo -->
+        <img src="{{ asset('assets/logo_sma.png') }}"
+             alt="Logo SMA Prestasi Prima"
+             class="w-24 h-24 mx-auto mb-6">
+
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight">
+            Alumni SMA Prestasi Prima<br class="hidden sm:block">
+            <span class="text-white">Diterima di Perguruan Tinggi Negeri</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="text-white/90 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+            SMA Prestasi Prima secara konsisten mencetak lulusan berkualitas yang berhasil
+            melanjutkan pendidikan ke berbagai <strong>Perguruan Tinggi Negeri (PTN)</strong>
+            ternama di Indonesia melalui jalur seleksi nasional seperti
+            <strong>SNBP, SNBT, dan jalur prestasi</strong>.
+        </p>
+
+        <!-- Highlight Info -->
+        <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm md:text-base">
+            <span class="px-5 py-2 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
+                <i data-lucide="graduation-cap" class="w-5 h-5 mr-2"></i>
+                Alumni Berprestasi
+            </span>
+            <span class="px-5 py-2 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
+                <i data-lucide="landmark" class="w-5 h-5 mr-2"></i>
+                PTN Favorit Nasional
+            </span>
+            <span class="px-5 py-2 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
+                <i data-lucide="trending-up" class="w-5 h-5 mr-2"></i>
+                Seleksi Nasional & Prestasi
+            </span>
+        </div>
+    </div>
 </section>
+
 
 <!-- ========== LULUSAN PTN (GALLERY) ========== -->
 <section class="relative py-24 bg-gradient-to-b from-purple-50 to-white">
@@ -68,6 +104,11 @@
 </div>
 
 <!-- ========== SCRIPT ========== -->
+
+<script>
+  lucide.createIcons();
+</script>
+
 <script>
   function openImageModal(src) {
     const modal = document.getElementById('imageModal');

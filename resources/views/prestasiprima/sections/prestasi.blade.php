@@ -48,6 +48,22 @@
 
       <!-- Pagination (LUAR GAMBAR) -->
       <div class="swiper-pagination mt-8 text-center"></div>
+      
+      <!-- Button Lihat Semua -->
+<div class="mt-12 flex justify-center">
+  <a href="{{ url('/siswa/prestasi') }}"
+     class="prestasi-btn group">
+    <span>Lihat Semua Prestasi</span>
+    <svg xmlns="http://www.w3.org/2000/svg"
+         class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"
+         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 5l7 7-7 7" />
+    </svg>
+  </a>
+</div>
+
+
     </div>
 
   </div>
@@ -119,6 +135,28 @@
   opacity: 1;
   transform: scale(1.3);
 }
+
+/* === Button Prestasi === */
+.prestasi-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.85rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #7c3aed;
+  background: linear-gradient(135deg, rgba(124,58,237,.08), rgba(124,58,237,.15));
+  border: 1px solid rgba(124,58,237,.3);
+  transition: all .3s ease;
+  backdrop-filter: blur(6px);
+}
+
+.prestasi-btn:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  box-shadow: 0 12px 30px rgba(124,58,237,.35);
+  transform: translateY(-2px);
+}
+
 
 /* Mobile */
 @media (max-width: 768px) {

@@ -15,7 +15,7 @@ class PrestasiprimaKegiatanSeeder extends Seeder
         DB::table('prestasiprima_kegiatan')->insert([
     [
         'judul' => 'EXPONER 2025',
-        'tanggal' => '2025-10-19', // ✅ format benar
+        'tanggal' => '2025-10-19',
         'jam' => '07:00:00',
         'deskripsi' => '"Exponer Prestasi Prima" adalah acara tahunan yang diadakan oleh Sekolah Prestasi Prima.',
         'tempat' => 'Sekolah Prestasi Prima',
