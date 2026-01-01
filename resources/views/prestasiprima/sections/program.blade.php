@@ -35,7 +35,7 @@
   <div class="relative group rounded-xl overflow-hidden shadow-lg">
 
     <!-- Gambar utama -->
-    <img src="{{ asset('assets/images/section/program/' . $key . '.png') }}"
+    <img src="{{ asset('assets/program/' . $key . '.png') }}"
          alt="{{ $label }}"
          class="w-full h-64 sm:h-80 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105">
 
@@ -120,7 +120,7 @@
 
       <!-- Kiri: Featured -->
       <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-white group flex flex-col justify-end h-[360px] sm:h-[420px] md:h-[480px]">
-        <img src="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}" alt="Featured Program"
+        <img src="{{ asset('assets/program/DSC01650.png') }}" alt="Featured Program"
           class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
         <div class="relative z-10 p-6 sm:p-8 text-white">

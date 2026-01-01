@@ -158,7 +158,7 @@
     <h2 class="text-4xl font-extrabold mb-6">
         Suara dari <span class="text-purple-500">Alumni & Orang Tua</span>
     </h2>
-    <a href="{{ url('/testimoni') }}"
+    <a href="{{ url('/informasi/testimoni') }}"
        class="px-8 py-3 bg-purple-500 hover:bg-purple-600 text-white rounded-xl shadow-md transition">
         Lihat Semua Testimoni →
     </a>

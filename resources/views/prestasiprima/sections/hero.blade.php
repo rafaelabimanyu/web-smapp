@@ -12,7 +12,7 @@
     class="absolute inset-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-700 will-change-transform">
     <source src="{{ asset('assets/videos/videos.mp4') }}" type="video/mp4">
     Browsermu tidak mendukung video.
-  </video>
+  </video>  
 
   <!-- Tombol Lewati -->
   <div id="skipBtnContainer" 

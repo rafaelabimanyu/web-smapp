@@ -34,7 +34,7 @@
     {{-- IPA --}}
     <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up">
       <div class="relative">
-        <img src="{{ asset('assets/images/section/program/ipa.png') }}" alt="Ilmu Pengetahuan Alam" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <img src="{{ asset('assets/program/ipa.png') }}" alt="Ilmu Pengetahuan Alam" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
         <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow-lg">Program Unggulan</span>
       </div>
       <div class="p-6">
@@ -66,7 +66,7 @@
     {{-- IPS --}}
     <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
       <div class="relative">
-        <img src="{{ asset('assets/images/section/program/ips.png') }}" alt="Ilmu Pengetahuan Sosial" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <img src="{{ asset('assets/program/ips.png') }}" alt="Ilmu Pengetahuan Sosial" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
         <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow-lg">Social Track</span>
       </div>
       <div class="p-6">
