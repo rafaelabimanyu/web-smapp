@@ -75,9 +75,9 @@ Route::prefix('siswa')->group(function () {
 Route::prefix('informasi')->group(function () {
     Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 
-    Route::get('/industri', [IndustriController::class, 'index'])->name('industri');
-    Route::get('/industri/{slug}', [IndustriController::class, 'show'])
-        ->name('industri.show');
+    // Route::get('/industri', [IndustriController::class, 'index'])->name('industri');
+    // Route::get('/industri/{slug}', [IndustriController::class, 'show'])
+    //     ->name('industri.show');
 
     Route::get('/testimoni', [TestimoniController::class, 'index'])->name('testimoni');
     
@@ -85,9 +85,9 @@ Route::prefix('informasi')->group(function () {
         return redirect('https://spmb.prestasiprima.sch.id/');
     })->name('penerimaan.siswa');
 
-    Route::get('/traffic', [TrafficController::class, 'index'])->name('traffic');
-    Route::post('/traffic/calculate', [TrafficController::class, 'calculateDistance'])
-        ->name('traffic.calculate');
+    // Route::get('/traffic', [TrafficController::class, 'index'])->name('traffic');
+    // Route::post('/traffic/calculate', [TrafficController::class, 'calculateDistance'])
+    //     ->name('traffic.calculate');
 
     Route::get('/lulusan-ptn', [LulusanPtnController::class, 'index'])
         ->name('lulusan-ptn');

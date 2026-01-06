@@ -98,7 +98,7 @@
     {{-- IPA Bilingual --}}
     <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
       <div class="relative">
-        <img src="{{ asset('assets/images/section/program/bilingual_ipa.png') }}" alt="IPA Bilingual" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <img src="{{ asset('assets/program/bilingual_ipa.png') }}" alt="IPA Bilingual" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
         <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-full shadow-lg">International Class</span>
       </div>
       <div class="p-6">
@@ -130,7 +130,7 @@
     {{-- IPS Bilingual --}}
     <div class="bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transform hover:-translate-y-3 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
       <div class="relative">
-        <img src="{{ asset('assets/images/section/program/bilingual_ips.png') }}" alt="IPS Bilingual" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
+        <img src="{{ asset('assets/program/bilingual_ips.png') }}" alt="IPS Bilingual" class="w-full h-64 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
         <span class="absolute top-4 left-4 px-4 py-1 text-xs font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 text-white rounded-full shadow-lg">Global Perspective</span>
       </div>
       <div class="p-6">
