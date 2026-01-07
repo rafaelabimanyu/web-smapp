@@ -67,10 +67,10 @@
         <div class="fade-in-up delay-300 text-left">
           <div class="flex items-center">
             <div class="border-l-4 border-purple-500 pl-3">
-              <p class="stat-number text-3xl font-bold text-black" data-target="6">0</p>
+              <p class="stat-number text-3xl font-bold text-black" data-target="10">0</p>
             </div>
           </div>
-          <span class="text-sm text-purple-600 block mt-1">Lab Komputer</span>
+          <span class="text-sm text-purple-600 block mt-1">Laboratium</span>
         </div>
       </div>
 

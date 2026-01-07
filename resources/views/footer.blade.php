@@ -167,9 +167,8 @@
         </h3>
         <ul class="text-sm text-gray-400 space-y-3 mt-4">
           <li><a href="/dokumentasi/kegiatan" class="hover:text-purple-400 transition">Kegiatan Sekolah</a></li>
-          <li><a href="/informasi/industri" class="hover:text-purple-400 transition">Kerja Sama Industri</a></li>
-          <li><a href="#" class="hover:text-purple-400 transition">Beasiswa & Prestasi</a></li>
-          <li><a href="#" class="hover:text-purple-400 transition">Layanan Alumni</a></li>
+          <li><a href="{{ url('/#beasiswa') }}" class="hover:text-purple-400 transition">Beasiswa & Prestasi</a></li>
+          <li><a href="/informasi/lulusan-ptn" class="hover:text-purple-400 transition">Lulusan PTN</a></li>
           <li><a href="{{ asset('assets/files/brosur.pdf') }}" download  class="hover:text-purple-400 transition">Download Brosur</a></li>
         </ul>
       </div>

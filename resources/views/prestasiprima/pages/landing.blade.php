@@ -10,6 +10,7 @@
   @include('prestasiprima.sections.hero')
   @include('prestasiprima.sections.tentang')
   @include('prestasiprima.sections.program')
+  @include('prestasiprima.sections.profil-siswa')
   @include('prestasiprima.sections.beasiswa')
   @include('prestasiprima.sections.virtual-tour')
   @include('prestasiprima.sections.penghargaan')
