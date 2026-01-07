@@ -9,7 +9,7 @@
 
     {{-- Background --}}
     <div class="absolute inset-0">
-        <img src="{{ asset('assets/prestasiprima/gedungzoom.jpg') }}"
+        <img src="{{ asset('assets/images/DSC00015.JPG') }}"
             alt="FAQ SMA Prestasi Prima"
             class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-r
@@ -73,98 +73,120 @@
  
     {{-- FAQ List --}}
     <div class="max-w-4xl mx-auto space-y-6 px-6">
-        @php
+                    @php
             $faqs = [
-                [
-                    'question' => 'Kurikulum apa yang digunakan di SMA Prestasi Prima?',
-                    'answer' => 'SMA Prestasi Prima menerapkan <strong>Kurikulum Merdeka</strong> yang menekankan penguatan karakter, kemampuan berpikir kritis, kreativitas, serta kesiapan siswa untuk melanjutkan ke perguruan tinggi favorit.',
+                'Jurusan & Program' => [
+                    [
+                        'question' => 'Kurikulum apa yang digunakan di SMA Prestasi Prima?',
+                        'answer' => 'SMA Prestasi Prima menerapkan <strong>Kurikulum Merdeka</strong> yang menekankan penguatan karakter, berpikir kritis, kreativitas, serta kesiapan masuk perguruan tinggi favorit.',
+                    ],
+                    [
+                        'question' => 'Apa saja pilihan jurusan di SMA Prestasi Prima?',
+                        'answer' => '
+                        <strong>IPA</strong> – Fokus Matematika, Fisika, Kimia, Biologi.<br>
+                        <strong>IPS</strong> – Fokus Ekonomi, Sosiologi, Geografi, Sejarah.<br>
+                        <strong>IPA Bilingual</strong> – Program sains bilingual.<br>
+                        <strong>IPS Bilingual</strong> – Program sosial dengan perspektif global.',
+                    ],
+                    [
+                        'question' => 'Apa perbedaan IPA Reguler dan IPA Bilingual?',
+                        'answer' => 'IPA Bilingual menggunakan Bahasa Indonesia dan Inggris dalam pembelajaran sains serta dipersiapkan untuk program internasional dan luar negeri.',
+                    ],
                 ],
-                [
-                    'question' => 'Apa saja pilihan peminatan di SMA Prestasi Prima?',
-                    'answer' => 'SMA Prestasi Prima menyediakan beberapa pilihan peminatan unggulan:<br><br>
-                    <strong>IPA</strong> – Fokus Matematika, Fisika, Kimia, dan Biologi.<br>
-                    <strong>IPS</strong> – Fokus Ekonomi, Sosiologi, Geografi, dan Sejarah.<br>
-                    <strong>IPA Bilingual</strong> – Program sains dengan pengantar Bahasa Indonesia dan Inggris.<br>
-                    <strong>IPS Bilingual</strong> – Program sosial dengan perspektif global dan bilingual.',
+
+                'Fasilitas Sekolah' => [
+                    [
+                        'question' => 'Apa saja fasilitas pembelajaran yang tersedia?',
+                        'answer' => 'Ruang kelas modern, laboratorium IPA lengkap, perpustakaan digital, ruang multimedia, serta lingkungan belajar yang nyaman dan aman.',
+                    ],
+                    [
+                        'question' => 'Apakah tersedia fasilitas penunjang non-akademik?',
+                        'answer' => 'Tersedia fasilitas olahraga, ruang seni, area diskusi siswa, serta ruang organisasi.',
+                    ],
                 ],
-                [
-                    'question' => 'Apa keunggulan program IPA di SMA Prestasi Prima?',
-                    'answer' => 'Program <strong>IPA</strong> dirancang untuk siswa yang memiliki minat di bidang sains dan teknologi.<br><br>
-                    <strong>Peluang Karier:</strong> Kedokteran, Teknik, Farmasi, Sains Murni.<br>
-                    <strong>Universitas Tujuan:</strong> FK UI, ITB, ITS, UGM.',
+
+                'Keamanan & Kenyamanan' => [
+                    [
+                        'question' => 'Bagaimana sistem keamanan di SMA Prestasi Prima?',
+                        'answer' => 'Sekolah dilengkapi CCTV, petugas keamanan, serta pengawasan guru untuk menjamin keselamatan siswa.',
+                    ],
+                    [
+                        'question' => 'Bagaimana sekolah menjaga kenyamanan siswa?',
+                        'answer' => 'Lingkungan sekolah tertata rapi, bersih, serta memiliki sistem pengawasan yang mendukung kenyamanan belajar.',
+                    ],
                 ],
-                [
-                    'question' => 'Apa perbedaan IPA reguler dan IPA Bilingual?',
-                    'answer' => '<strong>IPA Bilingual</strong> menggunakan Bahasa Indonesia dan Bahasa Inggris sebagai bahasa pengantar pembelajaran sains.<br><br>
-                    <strong>Universitas Tujuan:</strong> ITB Program Internasional, FK UI (Bilingual), dan universitas luar negeri.',
+
+                'Guru & Tenaga Kependidikan' => [
+                    [
+                        'question' => 'Bagaimana kualitas guru di SMA Prestasi Prima?',
+                        'answer' => 'Guru berpengalaman, profesional, serta aktif mengikuti pelatihan dan pengembangan kompetensi.',
+                    ],
+                    [
+                        'question' => 'Apakah tersedia tenaga kependidikan pendukung?',
+                        'answer' => 'Tersedia tenaga administrasi, laboran, pustakawan, serta staf pendukung kegiatan sekolah.',
+                    ],
                 ],
-                [
-                    'question' => 'Apa keunggulan program IPS di SMA Prestasi Prima?',
-                    'answer' => 'Program <strong>IPS</strong> fokus pada analisis sosial dan ekonomi.<br><br>
-                    <strong>Peluang Karier:</strong> Ekonomi, Hukum, Bisnis, Politik.<br>
-                    <strong>Universitas Tujuan:</strong> FEB UI, FH UGM, FISIP Unpad.',
-                ],
-                [
-                    'question' => 'Apa kelebihan IPS Bilingual di SMA Prestasi Prima?',
-                    'answer' => '<strong>IPS Bilingual</strong> mengintegrasikan kurikulum nasional dengan perspektif global.<br><br>
-                    <strong>Universitas Tujuan:</strong> FISIP UI (Bilingual), FH UGM Program Internasional, dan universitas luar negeri.',
-                ],
-                [
-                    'question' => 'Apakah lulusan SMA Prestasi Prima memiliki peluang masuk perguruan tinggi favorit?',
-                    'answer' => 'Ya. Program akademik dan pembinaan prestasi dirancang khusus untuk mempersiapkan siswa masuk perguruan tinggi favorit nasional maupun internasional.',
-                ],
-                [
-                    'question' => 'Apa saja fasilitas pembelajaran yang tersedia?',
-                    'answer' => 'Ruang kelas modern, laboratorium IPA, perpustakaan digital, ruang multimedia, serta lingkungan belajar yang aman dan nyaman.',
-                ],
-                [
-                    'question' => 'Apakah tersedia kegiatan ekstrakurikuler?',
-                    'answer' => 'Tersedia ekstrakurikuler olahraga, seni, sains club, debat, organisasi siswa, serta program pengembangan kepemimpinan.',
-                ],
-                [
-                    'question' => 'Bagaimana sistem keamanan dan kenyamanan siswa?',
-                    'answer' => 'Sekolah dilengkapi CCTV, pengawasan guru, serta petugas keamanan untuk menjamin keselamatan dan kenyamanan siswa.',
+
+                'Akademik & Prestasi' => [
+                    [
+                        'question' => 'Apakah lulusan SMA Prestasi Prima berpeluang masuk PTN favorit?',
+                        'answer' => 'Ya. Program akademik dan pembinaan prestasi disiapkan untuk masuk PTN favorit nasional maupun internasional.',
+                    ],
+                    [
+                        'question' => 'Apakah tersedia kegiatan ekstrakurikuler?',
+                        'answer' => 'Tersedia ekstrakurikuler olahraga, seni, sains club, debat, serta organisasi siswa.',
+                    ],
                 ],
             ];
-        @endphp
+            @endphp
 
-        @foreach ($faqs as $index => $faq)
-            <div
-                class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer group"
-                @click="open === {{ $index }} ? open = null : open = {{ $index }}"
-                :class="{ 'ring-2 ring-purple-400/70 scale-[1.01]': open === {{ $index }} }">
 
-                {{-- Question --}}
-                <div class="flex items-center gap-4 px-6 py-6">
-                    <div class="p-3 rounded-xl bg-purple-100 text-purple-500 shadow-md
-                        group-hover:bg-purple-500 group-hover:text-white transition">
-                        <i data-lucide="help-circle" class="w-6 h-6"></i>
-                    </div>
+        @php $i = 0; @endphp
 
-                    <h3 class="text-lg md:text-xl font-semibold text-gray-800 flex-1">
-                        {{ $faq['question'] }}
-                    </h3>
+@foreach ($faqs as $category => $items)
 
-                    <i data-lucide="chevron-down"
-                        class="w-5 h-5 text-purple-400 transition-transform duration-500"
-                        :class="{ 'rotate-180 text-purple-600': open === {{ $index }} }">
-                    </i>
+    {{-- Category Title --}}
+    <h2 class="text-2xl font-bold text-gray-800 mt-16 mb-6 border-l-4 border-purple-500 pl-4">
+        {{ $category }}
+    </h2>
+
+    @foreach ($items as $faq)
+        <div
+            class="bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden cursor-pointer group"
+            @click="open === {{ $i }} ? open = null : open = {{ $i }}"
+            :class="{ 'ring-2 ring-purple-400/70 scale-[1.01]': open === {{ $i }} }">
+
+            {{-- Question --}}
+            <div class="flex items-center gap-4 px-6 py-6">
+                <div class="p-3 rounded-xl bg-purple-100 text-purple-500 shadow-md
+                    group-hover:bg-purple-500 group-hover:text-white transition">
+                    <i data-lucide="help-circle" class="w-6 h-6"></i>
                 </div>
 
-                {{-- Answer --}}
-                <div
-                    x-show="open === {{ $index }}"
-                    x-transition:enter="transition-all ease-in-out duration-700"
-                    x-transition:enter-start="max-h-0 opacity-0"
-                    x-transition:enter-end="max-h-[1000px] opacity-100"
-                    x-transition:leave="transition-all ease-in-out duration-500"
-                    x-transition:leave-start="max-h-[1000px] opacity-100"
-                    x-transition:leave-end="max-h-0 opacity-0"
-                    class="px-6 pb-6 text-gray-600 text-sm md:text-base leading-relaxed border-t border-gray-100 overflow-hidden">
-                    {!! $faq['answer'] !!}
-                </div>
+                <h3 class="text-lg md:text-xl font-semibold text-gray-800 flex-1">
+                    {{ $faq['question'] }}
+                </h3>
+
+                <i data-lucide="chevron-down"
+                    class="w-5 h-5 text-purple-400 transition-transform duration-500"
+                    :class="{ 'rotate-180 text-purple-600': open === {{ $i }} }">
+                </i>
             </div>
-        @endforeach
+
+            {{-- Answer --}}
+            <div
+                x-show="open === {{ $i }}"
+                x-transition
+                class="px-6 pb-6 text-gray-600 text-sm md:text-base leading-relaxed border-t border-gray-100">
+                {!! $faq['answer'] !!}
+            </div>
+        </div>
+
+        @php $i++; @endphp
+    @endforeach
+
+@endforeach
+
     </div>
 
     {{-- CTA --}}

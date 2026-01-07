@@ -32,7 +32,7 @@
             {{-- Image --}}
             <div class="relative">
                 <img
-                    src="{{ asset('assets/images/DSC00015.JPG') }}"
+                    src="{{ asset('assets/images/DSC00024.JPG') }}"
                     alt="Siswa SMA Prestasi Prima"
                     class="w-full h-[280px] sm:h-[360px] md:h-[480px]
                            object-cover rounded-2xl shadow-xl"

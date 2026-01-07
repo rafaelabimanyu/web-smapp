@@ -105,7 +105,7 @@
       {{-- Informasi Kontak --}}
       <div class="space-y-4 text-white/90 text-sm sm:text-base">
         <p class="flex items-start"><i class="ri-map-pin-line text-white mr-3 text-lg"></i> Jl. Hankam Raya No. 89, Cilangkap, Cipayung, Jakarta Timur, DKI Jakarta</p>
-        <p class="flex items-center"><i class="ri-mail-line text-white mr-3 text-lg"></i> smk.prestasiprima.sch.id</p>
+        <p class="flex items-center"><i class="ri-mail-line text-white mr-3 text-lg"></i> sma.prestasiprima.sch.id</p>
         <p class="flex items-center"><i class="ri-phone-line text-white mr-3 text-lg"></i> +62 851-9592-8886</p>
       </div>
 

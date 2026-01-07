@@ -6,10 +6,11 @@
 <!-- ====================== HERO SECTION ====================== -->
 <section class="relative bg-gradient-to-br from-purple-500 via-purple-400 to-purple-300 text-white pt-36 pb-28 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}" alt="SMA Prestasi Prima"
-             class="w-full h-full object-cover opacity-30" loading="lazy">
-        <div class="absolute inset-0 bg-purple-500/30 mix-blend-multiply"></div>
+        <img src="{{ asset('assets/prestasiprima/DSC00052.JPG') }}" alt="SMA Prestasi Prima"
+            class="w-full h-full object-cover opacity-35" loading="lazy">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-600/15 via-purple-400/10 to-purple-300/10"></div>
     </div>
+
 
     <div class="relative z-10 text-center max-w-3xl mx-auto px-4" data-aos="fade-down">
         <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo SMA Prestasi Prima"
