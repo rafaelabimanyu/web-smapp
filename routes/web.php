@@ -21,7 +21,8 @@ use App\Http\Controllers\prestasiprima\{
     PrestasiController,
     TrafficController,
     FasilitasController,
-    LulusanPtnController
+    LulusanPtnController,
+    KurikulumController
 };
 
 /*
@@ -44,6 +45,8 @@ Route::prefix('tentang')->group(function () {
         Route::get('/program/ips', [ProgramController::class, 'ips'])->name('program.ips');
         Route::get('/program/bilingual-ipa', [ProgramController::class, 'bilingual_ipa'])->name('program.bilingual_ipa');
         Route::get('/program/bilingual-ips', [ProgramController::class, 'bilingual_ips'])->name('program.bilingual_ips');
+    Route::get('/kurikulum', [KurikulumController::class, 'index'])
+    ->name('prestasiprima.kurikulum');
     Route::get('/profile-sekolah', [ProfileSekolahController::class, 'index'])->name('prestasiprima.profile-sekolah');
     Route::get('/staffmanagement', [StaffController::class, 'index'])->name('staff');
     Route::get('/sambutan', [SambutanController::class, 'index'])->name('sambutan');

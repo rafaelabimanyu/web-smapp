@@ -12,8 +12,7 @@
                 Profil Siswa
             </span>
 
-            <h2 class="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-5xl
-                       font-extrabold text-gray-900 leading-tight">
+            <h2 class="mt-3 sm:mt-4 text-2xl sm:text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
                 Generasi Masa Depan
                 <span class="block text-purple-600">
                     SMA Prestasi Prima
@@ -34,88 +33,84 @@
                 <img
                     src="{{ asset('assets/images/DSC00024.JPG') }}"
                     alt="Siswa SMA Prestasi Prima"
-                    class="w-full h-[280px] sm:h-[360px] md:h-[480px]
-                           object-cover rounded-2xl shadow-xl"
+                    class="w-full h-[280px] sm:h-[360px] md:h-[480px] object-cover rounded-2xl shadow-xl"
                 >
-
                 <div class="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow">
-                    <p class="text-xs font-semibold text-gray-900">
-                        SMA Prestasi Prima
-                    </p>
-                    <p class="text-[11px] text-purple-600">
-                        Unggul • Berkarakter • Berprestasi
-                    </p>
+                    <p class="text-xs font-semibold text-gray-900">SMA Prestasi Prima</p>
+                    <p class="text-[11px] text-purple-600">Unggul • Berkarakter • Berprestasi</p>
                 </div>
             </div>
 
             {{-- Text --}}
-            <div>
-                <h3 class="text-lg sm:text-xl md:text-3xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                    Membentuk Siswa Siap Masa Depan
+            <div class="font-sans">
+
+                {{-- Subheading --}}
+                <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3 leading-snug">
+                    Membentuk <span class="text-purple-600">Siswa Siap Masa Depan</span>
                 </h3>
 
-                <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-8">
-                    SMA Prestasi Prima membina siswa melalui pembelajaran terarah,
-                    penguatan karakter, dan pendampingan akademik berkelanjutan
-                    agar setiap siswa berkembang optimal dan melangkah percaya diri
-                    menuju masa depan.
+                {{-- Paragraph --}}
+                <p class="text-gray-700 text-sm sm:text-base md:text-base leading-relaxed mb-6">
+                    SMA Prestasi Prima membina siswa melalui 
+                    <span class="font-medium text-purple-600">pembelajaran terarah</span>, 
+                    <span class="font-medium text-purple-600">penguatan karakter</span>, dan 
+                    <span class="font-medium text-purple-600">pendampingan akademik berkelanjutan</span> 
+                    agar setiap siswa berkembang optimal dan percaya diri menatap masa depan.
                 </p>
 
                 {{-- Points --}}
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-10 text-sm text-gray-700">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                     @foreach ([
                         'Pembinaan karakter, disiplin, dan tanggung jawab',
                         'Pendampingan akademik yang terarah dan konsisten',
                         'Pengembangan potensi dan prestasi siswa',
                         'Persiapan melanjutkan ke perguruan tinggi'
                     ] as $point)
-                        <div class="flex gap-3">
-                            <span class="text-purple-600 font-bold">✓</span>
-                            <p>{{ $point }}</p>
+                        <div class="flex items-start gap-2">
+                            <span class="flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-tr from-purple-500 to-indigo-500 flex items-center justify-center text-white text-xs font-bold">
+                                ✓
+                            </span>
+                            <p class="text-gray-700 text-sm sm:text-sm leading-relaxed">{{ $point }}</p>
                         </div>
                     @endforeach
                 </div>
 
                 {{-- Stats --}}
-                <div class="grid grid-cols-2 gap-6 sm:flex sm:flex-wrap sm:gap-10
-                            mb-10 text-center sm:text-left">
-
+                <div class="grid grid-cols-2 sm:grid-cols-2 gap-6 sm:gap-10 mb-8">
                     @foreach ([
                         ['target' => 80,  'suffix' => '%', 'label' => 'Lulusan Melanjutkan Pendidikan'],
                         ['target' => 500, 'suffix' => '+', 'label' => 'Prestasi Akademik & Non-Akademik'],
                         ['target' => 100, 'suffix' => '%', 'label' => 'Pembinaan Karakter Siswa'],
                         ['target' => 95,  'suffix' => '%', 'label' => 'Kepuasan Orang Tua']
                     ] as $stat)
-                        <div>
-                            <p class="stat-number text-2xl sm:text-4xl font-bold text-purple-600"
-                               data-target="{{ $stat['target'] }}"
-                               data-suffix="{{ $stat['suffix'] }}">
+                        <div class="flex flex-col items-center sm:items-start w-full">
+                            <p class="stat-number text-2xl sm:text-3xl font-semibold text-purple-600"
+                            data-target="{{ $stat['target'] }}"
+                            data-suffix="{{ $stat['suffix'] }}">
                                 0
                             </p>
-                            <p class="text-xs text-gray-500 mt-1">
-                                {{ $stat['label'] }}
-                            </p>
+                            <p class="text-xs sm:text-sm text-gray-500 mt-1 text-center sm:text-left">{{ $stat['label'] }}</p>
                         </div>
                     @endforeach
-
                 </div>
 
                 {{-- CTA --}}
-                <div class="flex flex-col sm:flex-row gap-4">
+                <div class="flex flex-col sm:flex-row gap-3">
                     <a href="#prestasi"
-                       class="w-full sm:w-auto text-center px-6 py-3 rounded-lg
-                              bg-purple-600 text-white font-semibold
-                              hover:bg-purple-700 transition">
+                       class="w-full sm:w-auto text-center px-5 py-2.5 rounded-lg
+                              bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold
+                              shadow hover:scale-105 transition transform text-sm">
                         Prestasi Siswa
                     </a>
 
                     <a href="#ppdb"
-                       class="w-full sm:w-auto text-center px-6 py-3 rounded-lg
+                       class="w-full sm:w-auto text-center px-5 py-2.5 rounded-lg
                               border border-purple-600 text-purple-600 font-semibold
-                              hover:bg-purple-50 transition">
+                              hover:bg-purple-50 transition text-sm">
                         Informasi Pendaftaran
                     </a>
                 </div>
+
             </div>
         </div>
     </div>
@@ -126,29 +121,34 @@
 document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.stat-number');
 
-    const animateCounter = el => {
-        const target = Number(el.dataset.target);
+    const animateCounter = (el) => {
+        const target = parseFloat(el.dataset.target);
         const suffix = el.dataset.suffix || '';
         let current = 0;
-        const duration = 1500;
-        const increment = Math.max(1, Math.ceil(target / (duration / 16)));
+        const duration = 1500; // durasi animasi (ms)
+        const frameRate = 60; // frame per detik
+        const totalFrames = Math.round((duration / 1000) * frameRate);
+        const increment = target / totalFrames;
+
+        let frame = 0;
 
         const update = () => {
+            frame++;
             current += increment;
-            if (current >= target) {
-                el.textContent = target + suffix;
-                return;
+            if(frame >= totalFrames){
+                el.textContent = Math.round(target) + suffix;
+            } else {
+                el.textContent = Math.round(current) + suffix;
+                requestAnimationFrame(update);
             }
-            el.textContent = current + suffix;
-            requestAnimationFrame(update);
-        };
+        }
 
         update();
     };
 
-    const observer = new IntersectionObserver(entries => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if(entry.isIntersecting){
                 animateCounter(entry.target);
                 observer.unobserve(entry.target);
             }

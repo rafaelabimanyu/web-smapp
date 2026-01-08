@@ -2,7 +2,7 @@
 <section id="program" class="bg-gray-50 py-16 md:py-20 overflow-hidden">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
 
-    <!-- ================= HEADER ================= -->
+    <!-- ================= HEADER =================  -->
     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10 md:mb-14 fade-in-up text-center md:text-left">
       <div>
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900">

@@ -120,7 +120,7 @@
              class="w-full h-full object-cover opacity-20"> <!-- opacity dikurangi untuk membuat warna lebih soft -->
                 <div class="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 mix-blend-multiply"></div>    </div>
     <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 z-10 items-center">
-        <img src="{{ asset('assets/prestasiprima/kepalasekolahsma.png') }}"
+        <img src="{{ asset('assets/prestasiprima/kepsek.png') }}"
              class="mx-auto w-80 rounded-none shadow-none"> <!-- hilangkan border/shadow -->
 
         <div>
