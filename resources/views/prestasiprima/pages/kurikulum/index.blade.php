@@ -10,6 +10,7 @@
 @include('prestasiprima.pages.kurikulum.it-learning')
 @include('prestasiprima.pages.kurikulum.project-based')
 @include('prestasiprima.pages.kurikulum.program')
+@include('prestasiprima.pages.kurikulum.learning-gallery')
 @include('prestasiprima.pages.kurikulum.cta')
 
 @endsection

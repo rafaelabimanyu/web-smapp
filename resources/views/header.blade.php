@@ -89,7 +89,6 @@
             <a href="/informasi/faq" class="dropdown-item">FAQ</a>
             <a href="/informasi/testimoni" class="dropdown-item">Testimoni</a>
             <a href="/informasi/lulusan-ptn" class="dropdown-item">Lulusan PTN</a>
-
             <a href="https://spmb.prestasiprima.sch.id/" class="dropdown-item">Penerimaan Siswa</a>
           </div>
         </div>

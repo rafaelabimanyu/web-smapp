@@ -10,7 +10,7 @@
 
     <!-- Background -->
     <div class="absolute inset-0">
-        <img src="{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}"
+        <img src="{{ asset('assets/prestasiprima/nobar.webp') }}"
              alt="Kegiatan SMA Prestasi Prima"
              class="w-full h-full object-cover opacity-25"
              loading="lazy">

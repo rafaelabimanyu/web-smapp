@@ -14,7 +14,7 @@
     preload="auto"
     poster="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}"
     class="absolute inset-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-700">
-    <source src="{{ asset('assets/videos/videos2.mp4') }}" type="video/mp4">
+    <source src="{{ asset('assets/videos/videos.mp4') }}" type="video/mp4">
   </video>
 
   <!-- Controls: Sound & Play -->
@@ -53,6 +53,9 @@
       <img src="{{ asset('assets/images/kurikulum/image1.png') }}" class="hero-bg" alt="">
       <img src="{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}" class="hero-bg" alt="">
       <img src="{{ asset('assets/prestasiprima/basket1.jpg') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/paskibra.jpeg') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/paskibra2.jpeg') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/google/ipb.jpg') }}" class="hero-bg" alt="">
     </div>
 
     <div class="absolute inset-0 bg-black/50 z-10"></div>

@@ -27,6 +27,10 @@
              class="hero-slide"
              loading="lazy">
 
+        <img src="{{ asset('assets/prestasiprima/paskibra.jpeg') }}"
+             class="hero-slide"
+              loading="lazy">
+
         <!-- Overlay -->
         <div class="absolute inset-0 bg-purple-500/30 mix-blend-multiply z-10"></div>
     </div>
@@ -93,7 +97,7 @@
       >
         <div 
   class="absolute inset-0 bg-center bg-cover"
-  style="background-image: url('{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}'); filter: blur(2px) brightness(1); transform: scale(1.02);"
+  style="background-image: url('{{ asset('assets/prestasiprima/hero_eskul.jpg') }}'); filter: blur(2px) brightness(1); transform: scale(1.02);"
 ></div>
 
 

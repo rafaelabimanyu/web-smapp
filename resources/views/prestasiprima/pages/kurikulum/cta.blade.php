@@ -1,15 +1,26 @@
-<section class="relative py-28 text-center text-white overflow-hidden">
-    <img src="{{ asset('assets/prestasiprima/pembelajaran/cta-bg.jpg') }}"
-         class="absolute inset-0 w-full h-full object-cover">
-    <div class="absolute inset-0 bg-purple-900/80"></div>
+<section class="py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
 
-    <div class="relative z-10">
-        <h2 class="text-4xl font-extrabold mb-6">
-            Siap Bergabung dengan SMA Prestasi Prima?
+        <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-6">
+            Siap Bergabung dengan
+            <span class="text-purple-600">SMA Prestasi Prima?</span>
         </h2>
-        <a href="{{ url('/penerimaan-siswa') }}"
-           class="bg-white text-purple-600 px-12 py-4 rounded-full font-semibold">
+
+        <p class="text-gray-600 max-w-xl mx-auto mb-10">
+            Wujudkan masa depan cerah melalui pendidikan berkualitas,
+            lingkungan inspiratif, dan pembelajaran berorientasi prestasi.
+        </p>
+
+        <a href="https://spmb.prestasiprima.sch.id/"
+           class="inline-flex items-center justify-center
+                  px-10 py-4 rounded-full
+                  bg-purple-600 text-white font-semibold
+                  shadow-lg shadow-purple-600/30
+                  transition-all duration-300
+                  hover:bg-purple-700 hover:scale-105">
+
             Daftar Sekarang
         </a>
+
     </div>
 </section>
