@@ -1,104 +1,141 @@
-<!-- ================= HERO SECTION (VIDEO) ================= -->
-<section id="heroVideoSection" 
-         class="relative h-screen w-full overflow-hidden bg-cover bg-center"
-         style="background-image: url('{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}');">
+<!-- ================= HERO VIDEO ================= -->
+<section id="heroVideoSection"
+  class="relative h-screen w-full overflow-hidden bg-cover bg-center"
+  style="background-image:url('{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}');">
 
   <!-- Overlay -->
   <div class="absolute inset-0 bg-black/40 z-10"></div>
 
-  <!-- Hero Video -->
-  <video id="heroVideo" preload="auto" autoplay muted playsinline 
+  <!-- Video -->
+  <video id="heroVideo"
+    autoplay
+    muted
+    playsinline
+    preload="auto"
     poster="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}"
-    class="absolute inset-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-700 will-change-transform">
-    <source src="{{ asset('assets/videos/videos.mp4') }}" type="video/mp4">
-    Browsermu tidak mendukung video.
-  </video>  
+    class="absolute inset-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-700">
+    <source src="{{ asset('assets/videos/videos2.mp4') }}" type="video/mp4">
+  </video>
 
-  <!-- Tombol Lewati -->
-  <div id="skipBtnContainer" 
-       class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 w-full flex justify-center">
-    <button id="skipBtn"
-            class="bg-purple-500 hover:bg-purple-700 text-white px-4 py-2 rounded-md shadow-md text-sm font-medium transition w-full max-w-[120px] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-purple-200 focus-visible:ring-offset-purple-500">
-      <span class="sr-only">Lewati video intro</span>
-      <span aria-hidden="true">Lewati</span>
+  <!-- Controls: Sound & Play -->
+  <div class="absolute bottom-6 left-6 z-30 flex gap-3">
+    <button id="soundBtn" class="control-btn" aria-label="Toggle sound">
+      <i class="ri-volume-mute-line"></i>
+    </button>
+
+    <button id="playPauseBtn" class="control-btn" aria-label="Play / Pause">
+      <i class="ri-pause-line"></i>
     </button>
   </div>
+
+  <!-- Skip Button -->
+  <button id="skipBtn"
+    class="absolute bottom-6 right-6 z-30
+           bg-purple-600 hover:bg-purple-700
+           text-white font-semibold
+           px-5 py-2 rounded-full
+           shadow-lg transition">
+    Lewati Video
+  </button>
 </section>
 
 <!-- ================= HERO CONTENT ================= -->
 <section id="heroContentSection"
-         class="relative w-full min-h-screen md:h-[90vh] items-center text-white pt-8 overflow-hidden hidden">
+  class="relative hidden min-h-screen text-white overflow-hidden">
 
-  <!-- Background -->
-  <div class="absolute inset-0">
-    <img src="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}" alt="Hero Background"
-         class="w-full h-full object-cover" loading="lazy">
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-  </div>
-
-  <!-- Content Wrapper -->
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col items-center md:items-start text-center md:text-left">
-    
-    <!-- Logo + Nama (Mobile) -->
-    <div class="flex items-center space-x-2 mb-6 md:hidden hero-animate">
-  <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo SMA Prestasi Prima"
-           class="w-8 h-8 object-contain" loading="lazy">
-      <span class="font-semibold text-white text-lg">SMA Prestasi Prima</span>
+  <!-- Background Carousel -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div id="heroBgSlider" class="relative w-full h-full">
+      <img src="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}" class="hero-bg active" alt="">
+      <img src="{{ asset('assets/prestasiprima/fotbarguru2.jpg') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/images/kurikulum/hero.png') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/DSC00052.JPG') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/images/kurikulum/image1.png') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/basket1.jpg') }}" class="hero-bg" alt="">
     </div>
 
-    <!-- Hero Text -->
-    <p class="italic text-sm md:text-base mb-3 hero-animate">
-      "If better is possible, good is not enough"
-    </p>
-
-    <h1 class="text-3xl md:text-6xl font-extrabold leading-tight mb-4 hero-animate">
-      PRESTASI PRIMA
-    </h1>
-
-    <p class="text-sm md:text-lg mb-6 max-w-xl hero-animate">
-  Kami berkomitmen menyelenggarakan pendidikan berkualitas tinggi yang membentuk generasi unggul, berkarakter,
-      dan siap menghadapi tantangan masa depan.
-    </p>
-
-    <!-- Button -->
-    <a href="https://spmb.prestasiprima.sch.id/"
-       class="inline-block bg-purple-500 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 focus-visible:ring-offset-2 focus-visible:ring-offset-black/40 hero-animate" target="_blank">
-      <span class="sr-only">Buka halaman pendaftaran</span>
-      <span aria-hidden="true">Daftar Sekarang</span>
-    </a>
+    <div class="absolute inset-0 bg-black/50 z-10"></div>
   </div>
 
-  <!-- Floating Social -->
-  <div class="absolute top-28 right-0 md:top-32 flex flex-col items-end z-20 space-y-3">
-    <!-- Toggle Button -->
-    <button id="toggleSocial" aria-label="Buka panel sosial"
-    class="bg-purple-500 hover:bg-purple-700 text-white w-12 h-12 md:w-14 md:h-14 rounded-l-2xl shadow-lg flex items-center justify-center transition opacity-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 focus-visible:ring-offset-2 focus-visible:ring-offset-purple-500">
-  <i class="ri-share-forward-line text-xl"></i>
-    </button>
+  <!-- ================= FLOATING SOCIAL ================= -->
+<div id="floatingSocial"
+  class="absolute top-28 right-0 md:top-32 z-30 flex flex-col items-end space-y-3 pointer-events-none">
 
-    <!-- Panel -->
-    <div id="socialPanel"
-         class="social-panel bg-white bg-opacity-95 rounded-l-2xl shadow-lg flex flex-col items-center py-3 space-y-3 w-0 overflow-hidden">
-      <a href="{{ url('/') }}" aria-label="Kembali ke halaman utama"
-         class="bg-white rounded-2xl shadow-lg p-2 flex items-center justify-center w-10 h-10 md:w-12 md:h-12">
-  <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo kecil SMA Prestasi Prima"
-             class="w-6 h-6 md:w-8 md:h-8 object-contain" loading="lazy">
-      </a>
-      <a href="https://wa.me/6289599439033" target="_blank" aria-label="WhatsApp"
-         class="text-purple-500 hover:text-purple-600">
-        <i class="ri-whatsapp-line text-lg md:text-xl"></i>
-      </a>
-      <a href="https://instagram.com" target="_blank" aria-label="Instagram"
-         class="text-purple-500 hover:text-purple-600">
-        <i class="ri-instagram-line text-lg md:text-xl"></i>
-      </a>
-      <a href="https://youtube.com" target="_blank" aria-label="YouTube"
-         class="text-purple-500 hover:text-purple-600">
-        <i class="ri-youtube-line text-lg md:text-xl"></i>
-      </a>
-      <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
-         class="text-purple-500 hover:text-purple-600">
-        <i class="ri-tiktok-fill text-lg md:text-xl"></i>
+  <!-- Toggle Button -->
+  <button id="toggleSocial"
+    aria-label="Buka panel sosial"
+    class="bg-purple-600 hover:bg-purple-700 text-white
+           w-12 h-12 md:w-14 md:h-14
+           rounded-l-2xl shadow-lg
+           flex items-center justify-center
+           transition opacity-0
+           pointer-events-auto">
+    <i class="ri-share-forward-line text-xl"></i>
+  </button>
+
+  <!-- Panel -->
+  <div id="socialPanel"
+    class="social-panel bg-white bg-opacity-95
+           rounded-l-2xl shadow-lg
+           flex flex-col items-center
+           py-3 space-y-4
+           w-0 overflow-hidden
+           pointer-events-auto">
+
+    <a href="{{ url('/') }}" aria-label="Home"
+      class="bg-white rounded-xl shadow p-2
+             flex items-center justify-center
+             w-10 h-10 md:w-12 md:h-12">
+      <img src="{{ asset('assets/logo_sma.png') }}"
+        alt="Logo SMA Prestasi Prima"
+        class="w-6 h-6 md:w-8 md:h-8 object-contain" loading="lazy">
+    </a>
+
+    <a href="https://wa.me/6289599439033" target="_blank" aria-label="WhatsApp"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-whatsapp-line text-lg md:text-xl"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-instagram-line text-lg md:text-xl"></i>
+    </a>
+
+    <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-youtube-line text-lg md:text-xl"></i>
+    </a>
+
+    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-tiktok-fill text-lg md:text-xl"></i>
+    </a>
+  </div>
+</div>
+
+
+  <!-- Content -->
+  <div class="relative z-20 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
+    <div>
+      <p class="italic mb-2 hero-animate">
+        "If better is possible, good is not enough"
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 hero-animate">
+        PRESTASI PRIMA
+      </h1>
+
+      <p class="max-w-xl mb-6 hero-animate">
+        Kami berkomitmen menyelenggarakan pendidikan berkualitas tinggi
+        yang membentuk generasi unggul dan berkarakter.
+      </p>
+
+      <a href="https://spmb.prestasiprima.sch.id/"
+        target="_blank"
+        class="inline-block bg-purple-500 hover:bg-purple-700
+               px-6 py-3 rounded-lg shadow-lg hero-animate">
+        Daftar Sekarang
       </a>
     </div>
   </div>
@@ -107,206 +144,187 @@
 <!-- ================= SCRIPT ================= -->
 <script>
 (() => {
-  const initHeroVideo = () => {
-    const videoSection = document.getElementById("heroVideoSection");
-    const video = document.getElementById("heroVideo");
-    const skipBtn = document.getElementById("skipBtn");
-    const skipBtnContainer = document.getElementById("skipBtnContainer");
-    const contentSection = document.getElementById("heroContentSection");
-    const toggleBtn = document.getElementById("toggleSocial");
-    const panel = document.getElementById("socialPanel");
+  const $ = id => document.getElementById(id);
 
-    if (!videoSection || !video || !skipBtn || !skipBtnContainer || !contentSection || !toggleBtn || !panel) {
-      return;
-    }
+  /* ================= VIDEO INTRO ================= */
+  const video     = $("heroVideo");
+  const wrapper   = $("heroVideoSection");
+  const content   = $("heroContentSection");
+  const skipBtn   = $("skipBtn");
+  const soundBtn  = $("soundBtn");
+  const playBtn   = $("playPauseBtn");
 
-    const resetState = () => {
-      videoSection.style.display = "";
-      videoSection.style.opacity = "";
-      skipBtnContainer.style.display = "";
-      contentSection.classList.add("hidden");
-      contentSection.classList.remove("flex");
-      contentSection.style.opacity = 0;
-      toggleBtn.classList.remove("animate-floating");
-      panel.classList.remove("open", "close");
-      toggleBtn.innerHTML = '<i class="ri-share-forward-line text-xl"></i>';
-      delete video.dataset.heroContentShown;
-    };
+  const floatingBox = $("floatingSocial");
+  const toggleBtn   = $("toggleSocial");
+  const socialPanel = $("socialPanel");
 
-    resetState();
+  /* ===== Helper: Show Hero Content ===== */
+  const showContent = () => {
+    if (!wrapper || !content) return;
 
-    const ensureVideoVisible = () => {
-      video.classList.add("opacity-100");
-      video.classList.remove("opacity-0");
-      videoSection.style.opacity = 1;
-    };
+    wrapper.style.opacity = 0;
 
-    const showContent = () => {
-      if (video.dataset.heroContentShown === "1") {
-        return;
-      }
+    setTimeout(() => {
+      video?.pause();
+      wrapper.remove();
 
-      video.dataset.heroContentShown = "1";
-      window.clearTimeout(video._heroFallbackTimer);
-      videoSection.style.transition = "opacity 0.5s";
-      videoSection.style.opacity = 0;
+      content.classList.remove("hidden");
+      content.classList.add("block");
 
-      setTimeout(() => {
-        video.pause();
-        video.currentTime = 0;
-        videoSection.style.display = "none";
-        skipBtnContainer.style.display = "none";
-        contentSection.classList.remove("hidden");
-        contentSection.classList.add("flex");
-        contentSection.style.opacity = 1;
-
-        document.querySelectorAll(".hero-animate").forEach((el, idx) => {
-          el.style.animationDelay = `${idx * 0.12}s`;
-          el.classList.add("animate-hero-fast");
-        });
-
-        toggleBtn.classList.add("animate-floating");
-      }, 500);
-    };
-
-    const handleToggle = () => {
-      const isOpen = panel.classList.contains("open");
-      if (isOpen) {
-        panel.classList.remove("open");
-        panel.classList.add("close");
-        toggleBtn.innerHTML = '<i class="ri-share-forward-line text-xl"></i>';
-      } else {
-        panel.classList.remove("close");
-        panel.classList.add("open");
-        toggleBtn.innerHTML = '<i class="ri-close-line text-xl"></i>';
-      }
-    };
-
-    const bindUnique = (element, event, handler, key) => {
-      if (!element) return;
-      const storeKey = `_hero_${key}`;
-      if (element[storeKey]) {
-        element.removeEventListener(event, element[storeKey]);
-      }
-      element.addEventListener(event, handler);
-      element[storeKey] = handler;
-    };
-
-    const visibilityEvents = ["loadeddata", "canplay", "canplaythrough", "playing"];
-    visibilityEvents.forEach(event => {
-      bindUnique(video, event, ensureVideoVisible, `visible_${event}`);
-    });
-    bindUnique(video, "error", ensureVideoVisible, "visible_error");
-
-    bindUnique(video, "ended", showContent, "ended");
-    bindUnique(skipBtn, "click", showContent, "skip");
-    bindUnique(toggleBtn, "click", handleToggle, "toggle");
-
-    if (video.readyState >= 2) {
-      ensureVideoVisible();
-    }
-
-    video.muted = true;
-    video.autoplay = true;
-    video.playsInline = true;
-    video.preload = "auto";
-    video.load();
-
-    const playPromise = video.play();
-    if (playPromise && typeof playPromise.catch === "function") {
-      playPromise.catch(() => {
-        ensureVideoVisible();
+      /* Animate Hero Text */
+      document.querySelectorAll(".hero-animate").forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.12}s`;
+        el.classList.add("animate-hero-fast");
       });
-    }
 
-    window.clearTimeout(video._heroFallbackTimer);
-    video._heroFallbackTimer = window.setTimeout(() => {
-      ensureVideoVisible();
-    }, 1800);
+      /* Show Floating Social */
+      if (toggleBtn && floatingBox) {
+        toggleBtn.classList.remove("opacity-0");
+        toggleBtn.classList.add("animate-floating");
+        floatingBox.classList.remove("pointer-events-none");
+      }
+    }, 500);
   };
 
-  const cleanupHeroVideo = () => {
-    const video = document.getElementById("heroVideo");
-    const videoSection = document.getElementById("heroVideoSection");
-    const skipBtnContainer = document.getElementById("skipBtnContainer");
-    const contentSection = document.getElementById("heroContentSection");
-    const toggleBtn = document.getElementById("toggleSocial");
-    const panel = document.getElementById("socialPanel");
+  /* ===== Video Logic ===== */
+  if (video) {
+    const showVideo = () =>
+      video.classList.replace("opacity-0", "opacity-100");
 
-    if (video) {
-      video.pause();
-      video.currentTime = 0;
-      video.classList.remove("opacity-100");
-      video.classList.add("opacity-0");
-      delete video.dataset.heroContentShown;
-      window.clearTimeout(video._heroFallbackTimer);
-    }
+    ["canplay", "playing", "loadeddata"].forEach(e =>
+      video.addEventListener(e, showVideo)
+    );
 
-    if (videoSection) {
-      videoSection.removeAttribute("style");
-    }
+    video.addEventListener("ended", showContent);
+    skipBtn?.addEventListener("click", showContent);
 
-    if (skipBtnContainer) {
-      skipBtnContainer.removeAttribute("style");
-    }
+    soundBtn?.addEventListener("click", () => {
+      video.muted = !video.muted;
+      soundBtn.innerHTML = video.muted
+        ? '<i class="ri-volume-mute-line"></i>'
+        : '<i class="ri-volume-up-line"></i>';
+    });
 
-    if (contentSection) {
-      contentSection.classList.add("hidden");
-      contentSection.classList.remove("flex");
-      contentSection.style.opacity = 0;
-    }
+    playBtn?.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+        playBtn.innerHTML = '<i class="ri-pause-line"></i>';
+      } else {
+        video.pause();
+        playBtn.innerHTML = '<i class="ri-play-line"></i>';
+      }
+    });
 
-    if (toggleBtn) {
-      toggleBtn.classList.remove("animate-floating");
-      toggleBtn.innerHTML = '<i class="ri-share-forward-line text-xl"></i>';
-    }
-
-    if (panel) {
-      panel.classList.remove("open", "close");
-    }
-  };
-
-  if (document.readyState !== "loading") {
-    initHeroVideo();
-  } else {
-    document.addEventListener("DOMContentLoaded", initHeroVideo, { once: true });
+    video.play().catch(showVideo);
   }
-  document.addEventListener("turbo:load", initHeroVideo);
-  document.addEventListener("turbo:before-cache", cleanupHeroVideo);
+
+  /* ================= HERO BACKGROUND SLIDER ================= */
+  const slides = document.querySelectorAll("#heroBgSlider .hero-bg");
+  let slideIndex = 0;
+
+  if (slides.length > 1) {
+    setInterval(() => {
+      slides[slideIndex].classList.remove("active");
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
+    }, 4000);
+  }
+
+  /* ================= FLOATING SOCIAL ================= */
+  if (toggleBtn && socialPanel) {
+    let isOpen = false;
+
+    toggleBtn.addEventListener("click", () => {
+      isOpen = !isOpen;
+      socialPanel.classList.toggle("open", isOpen);
+      toggleBtn.innerHTML = isOpen
+        ? '<i class="ri-close-line text-xl"></i>'
+        : '<i class="ri-share-forward-line text-xl"></i>';
+    });
+  }
 })();
 </script>
 
+
 <!-- ================= STYLE ================= -->
 <style>
-/* Hero Smooth Animation - versi cepat */
-@keyframes heroSlideInFast {
-  0% { opacity: 0; transform: translateX(-80px) scale(0.95); filter: blur(4px); }
-  60% { opacity: 1; transform: translateX(10px) scale(1.02); filter: blur(0); }
-  80% { transform: translateX(-4px) scale(0.98); }
-  100% { opacity: 1; transform: translateX(0) scale(1); }
-}
-.animate-hero-fast { animation: heroSlideInFast 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
-.hero-animate { opacity: 0; }
-
-/* Floating Social Panel */
-.social-panel {
-  transition: width 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+/* Background Slider */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   opacity: 0;
-  transform: translateX(50%) scale(0.8);
+  transform: translateX(60px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
 }
-.social-panel.open { width: 56px; opacity: 1; transform: translateX(0) scale(1); }
-.social-panel.close { width: 0; opacity: 0; transform: translateX(50%) scale(0.8); }
+
+.hero-bg.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
+
+/* Video Controls */
+.control-btn {
+  background: rgba(0,0,0,.6);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .25s ease, transform .2s ease;
+}
+
+.control-btn:hover {
+  background: rgba(0,0,0,.85);
+  transform: translateY(-2px);
+}
+
+.control-btn i {
+  font-size: 20px;
+}
+
+/* Hero Text Animation */
+.hero-animate {
+  opacity: 0;
+}
+
+@keyframes heroFast {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.animate-hero-fast {
+  animation: heroFast .8s cubic-bezier(.25,1,.5,1) forwards;
+}
+
+/* ===== Floating Social Panel ===== */
+.social-panel {
+  transition: width .45s ease, opacity .35s ease, transform .45s ease;
+  opacity: 0;
+  transform: translateX(50%) scale(.85);
+}
+
+.social-panel.open {
+  width: 56px;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
 
 /* Floating Button muncul setelah video */
 @keyframes floatingIn {
-  0% { opacity: 0; transform: translateX(100%) scale(0.8); }
-  60% { opacity: 1; transform: translateX(-10px) scale(1.05); }
-  80% { transform: translateX(5px) scale(0.97); }
+  0%   { opacity: 0; transform: translateX(100%) scale(.8); }
+  60%  { opacity: 1; transform: translateX(-10px) scale(1.05); }
+  80%  { transform: translateX(5px) scale(.97); }
   100% { opacity: 1; transform: translateX(0) scale(1); }
 }
-.animate-floating {
-  animation: floatingIn 0.9s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-}
-</style>
 
-{{--  --}}
+.animate-floating {
+  animation: floatingIn .9s cubic-bezier(.25,1,.5,1) forwards;
+}
+
+</style>

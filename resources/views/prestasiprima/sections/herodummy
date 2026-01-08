@@ -1,231 +1,274 @@
-<!-- ================= HERO SECTION (VIDEO) ================= -->
-<section id="heroVideoSection" 
-         class="relative h-screen w-full overflow-hidden bg-cover bg-center"
-         style="background-image: url('{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}');">
+<!-- ================= HERO VIDEO ================= -->
+<section id="heroVideoSection"
+  class="relative h-screen w-full overflow-hidden bg-cover bg-center"
+  style="background-image:url('{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}');">
 
   <!-- Overlay -->
   <div class="absolute inset-0 bg-black/40 z-10"></div>
 
-  <!-- Hero Video -->
-  <video id="heroVideo" preload="auto" autoplay muted playsinline 
+  <!-- Video -->
+  <video id="heroVideo"
+    autoplay
+    muted
+    playsinline
+    preload="auto"
     poster="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}"
     class="absolute inset-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-700">
     <source src="{{ asset('assets/videos/videos2.mp4') }}" type="video/mp4">
-    Browsermu tidak mendukung video.
-  </video>  
+  </video>
 
-  <!-- Tombol Lewati -->
-  <div id="skipBtnContainer" 
-       class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 w-full flex justify-center">
-    <button id="skipBtn"
-            class="bg-purple-500 hover:bg-purple-700 text-white px-4 py-2 rounded-md shadow-md text-sm font-medium transition w-full max-w-[120px] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-purple-200 focus-visible:ring-offset-purple-500">
-      <span class="sr-only">Lewati video intro</span>
-      <span aria-hidden="true">Lewati</span>
+  <!-- Controls: Sound & Play -->
+  <div class="absolute bottom-6 left-6 z-30 flex gap-3">
+    <button id="soundBtn" class="control-btn" aria-label="Toggle sound">
+      <i class="ri-volume-mute-line"></i>
+    </button>
+
+    <button id="playPauseBtn" class="control-btn" aria-label="Play / Pause">
+      <i class="ri-pause-line"></i>
     </button>
   </div>
+
+  <!-- Skip Button -->
+  <button id="skipBtn"
+    class="absolute bottom-6 right-6 z-30
+           bg-purple-600 hover:bg-purple-700
+           text-white font-semibold
+           px-5 py-2 rounded-full
+           shadow-lg transition">
+    Lewati Video
+  </button>
 </section>
 
 <!-- ================= HERO CONTENT ================= -->
 <section id="heroContentSection"
-         class="relative w-full min-h-screen md:h-[90vh] items-center text-white pt-8 overflow-hidden hidden">
+  class="relative hidden min-h-screen text-white overflow-hidden">
 
-  <!-- Background Slideshow -->
-  <div class="absolute inset-0 hero-slide-wrapper z-0">
-    <img src="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}" alt="Hero Background" class="w-full h-full object-cover" loading="lazy">
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <!-- Background Carousel -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div id="heroBgSlider" class="relative w-full h-full">
+      <img src="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}" class="hero-bg active" alt="">
+      <img src="{{ asset('assets/prestasiprima/fotbarguru2.jpg') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/images/kurikulum/hero.png') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/DSC00052.JPG') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/images/kurikulum/image1.png') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}" class="hero-bg" alt="">
+      <img src="{{ asset('assets/prestasiprima/basket1.jpg') }}" class="hero-bg" alt="">
+    </div>
+
+    <div class="absolute inset-0 bg-black/50 z-10"></div>
   </div>
 
-  <!-- Content Wrapper -->
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 flex flex-col items-center md:items-start text-center md:text-left">
-    <!-- Logo + Nama (Mobile) -->
-    <div class="flex items-center space-x-2 mb-6 md:hidden hero-animate">
-      <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo SMA Prestasi Prima" class="w-8 h-8 object-contain" loading="lazy">
-      <span class="font-semibold text-white text-lg">SMA Prestasi Prima</span>
-    </div>
-    <!-- Hero Text -->
-    <p class="italic text-sm md:text-base mb-3 hero-animate">"If better is possible, good is not enough"</p>
-    <h1 class="text-3xl md:text-6xl font-extrabold leading-tight mb-4 hero-animate">PRESTASI PRIMA</h1>
-    <p class="text-sm md:text-lg mb-6 max-w-xl hero-animate">
-      Kami berkomitmen menyelenggarakan pendidikan berkualitas tinggi yang membentuk generasi unggul, berkarakter,
-      dan siap menghadapi tantangan masa depan.
-    </p>
-    <!-- Button -->
-    <a href="https://spmb.prestasiprima.sch.id/"
-       class="inline-block bg-purple-500 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-200 focus-visible:ring-offset-2 focus-visible:ring-offset-black/40 hero-animate" target="_blank">
-      <span class="sr-only">Buka halaman pendaftaran</span>
-      <span aria-hidden="true">Daftar Sekarang</span>
+  <!-- ================= FLOATING SOCIAL ================= -->
+<div id="floatingSocial"
+  class="absolute top-28 right-0 md:top-32 z-30 flex flex-col items-end space-y-3 pointer-events-none">
+
+  <!-- Toggle Button -->
+  <button id="toggleSocial"
+    aria-label="Buka panel sosial"
+    class="bg-purple-600 hover:bg-purple-700 text-white
+           w-12 h-12 md:w-14 md:h-14
+           rounded-l-2xl shadow-lg
+           flex items-center justify-center
+           transition opacity-0
+           pointer-events-auto">
+    <i class="ri-share-forward-line text-xl"></i>
+  </button>
+
+  <!-- Panel -->
+  <div id="socialPanel"
+    class="social-panel bg-white bg-opacity-95
+           rounded-l-2xl shadow-lg
+           flex flex-col items-center
+           py-3 space-y-4
+           w-0 overflow-hidden
+           pointer-events-auto">
+
+    <a href="{{ url('/') }}" aria-label="Home"
+      class="bg-white rounded-xl shadow p-2
+             flex items-center justify-center
+             w-10 h-10 md:w-12 md:h-12">
+      <img src="{{ asset('assets/logo_sma.png') }}"
+        alt="Logo SMA Prestasi Prima"
+        class="w-6 h-6 md:w-8 md:h-8 object-contain" loading="lazy">
+    </a>
+
+    <a href="https://wa.me/6289599439033" target="_blank" aria-label="WhatsApp"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-whatsapp-line text-lg md:text-xl"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-instagram-line text-lg md:text-xl"></i>
+    </a>
+
+    <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-youtube-line text-lg md:text-xl"></i>
+    </a>
+
+    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+      class="text-purple-600 hover:text-purple-700">
+      <i class="ri-tiktok-fill text-lg md:text-xl"></i>
     </a>
   </div>
+</div>
 
+
+  <!-- Content -->
+  <div class="relative z-20 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
+    <div>
+      <p class="italic mb-2 hero-animate">
+        "If better is possible, good is not enough"
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 hero-animate">
+        PRESTASI PRIMA
+      </h1>
+
+      <p class="max-w-xl mb-6 hero-animate">
+        Kami berkomitmen menyelenggarakan pendidikan berkualitas tinggi
+        yang membentuk generasi unggul dan berkarakter.
+      </p>
+
+      <a href="https://spmb.prestasiprima.sch.id/"
+        target="_blank"
+        class="inline-block bg-purple-500 hover:bg-purple-700
+               px-6 py-3 rounded-lg shadow-lg hero-animate">
+        Daftar Sekarang
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- ================= SCRIPT ================= -->
 <script>
 (() => {
-  const initHeroVideo = () => {
-    const videoSection = document.getElementById("heroVideoSection");
-    const video = document.getElementById("heroVideo");
-    const skipBtn = document.getElementById("skipBtn");
-    const skipBtnContainer = document.getElementById("skipBtnContainer");
-    const contentSection = document.getElementById("heroContentSection");
+  const $ = id => document.getElementById(id);
 
-    if (!videoSection || !video || !skipBtn || !skipBtnContainer || !contentSection) return;
+  /* ===== VIDEO INTRO ===== */
+  const video     = $("heroVideo");
+  const wrapper   = $("heroVideoSection");
+  const content   = $("heroContentSection");
+  const skipBtn   = $("skipBtn");
+  const soundBtn  = $("soundBtn");
+  const playBtn   = $("playPauseBtn");
 
-    const toggleBtn = document.getElementById("toggleSocial");
-    const panel = document.getElementById("socialPanel");
-
-    // ===================== Hero Background Slideshow =====================
-    const heroImages = [
-  "{{ asset('assets/prestasiprima/fotbarguru2.jpg') }}",
-  "{{ asset('assets/prestasiprima/gedungsiswa.jpg') }}",
-  "{{ asset('assets/images/DSC00015.JPG') }}",
-  "{{ asset('assets/images/kurikulum/hero.png') }}",
-  "{{ asset('assets/prestasiprima/gedungzoom.jpg') }}",
-  "{{ asset('assets/prestasiprima/dance.jpg') }}",
-  "{{ asset('assets/prestasiprima/DSC00052.JPG') }}"
-];
-
-let currentIndex = 0;
-let slideshowInterval = null;
-
-const wrapper = contentSection.querySelector(".hero-slide-wrapper");
-const mainImg = wrapper.querySelector("img");
-
-const showNextImage = () => {
-  const nextIndex = (currentIndex + 1) % heroImages.length;
-  
-  // preload gambar
-  const nextImg = new Image();
-  nextImg.src = heroImages[nextIndex];
-  nextImg.onload = () => {
-    // style untuk animasi
-    nextImg.style.position = "absolute";
-    nextImg.style.top = 0;
-    nextImg.style.left = 0;
-    nextImg.style.width = "100%";
-    nextImg.style.height = "100%";
-    nextImg.style.objectFit = "cover";
-    nextImg.style.transform = "translateX(100%)";
-    nextImg.style.transition = "transform 0.8s ease";
-
-    wrapper.appendChild(nextImg);
-
-    // trigger animasi di next frame
-    requestAnimationFrame(() => {
-      nextImg.style.transform = "translateX(0)";
-      mainImg.style.transform = "translateX(-100%)";
-    });
-
-    setTimeout(() => {
-      mainImg.src = nextImg.src;   // update mainImg
-      mainImg.style.transition = "none";
-      mainImg.style.transform = "translateX(0)";
-      wrapper.removeChild(nextImg); // hapus elemen temp
-      currentIndex = nextIndex;
-    }, 850);
-  };
-};
-
-const startSlideshow = () => {
-  if (slideshowInterval) clearInterval(slideshowInterval);
-  slideshowInterval = setInterval(showNextImage, 5000);
-};
-
-    const stopSlideshow = () => {
-      if (slideshowInterval) clearInterval(slideshowInterval);
-      slideshowInterval = null;
-    };
-
-    // ===================== Hero Video =====================
-    const resetState = () => {
-      videoSection.style.display = "";
-      videoSection.style.opacity = "";
-      skipBtnContainer.style.display = "";
-      contentSection.classList.add("hidden");
-      contentSection.classList.remove("flex");
-      contentSection.style.opacity = 0;
-      stopSlideshow();
-    };
-
-    const ensureVideoVisible = () => {
-      video.classList.add("opacity-100");
-      video.classList.remove("opacity-0");
-      videoSection.style.opacity = 1;
-    };
+  if (video) {
+    const showVideo = () =>
+      video.classList.replace("opacity-0", "opacity-100");
 
     const showContent = () => {
-      if (video.dataset.heroContentShown === "1") return;
-      video.dataset.heroContentShown = "1";
-      window.clearTimeout(video._heroFallbackTimer);
-      videoSection.style.transition = "opacity 0.5s";
-      videoSection.style.opacity = 0;
+      wrapper.style.opacity = 0;
 
       setTimeout(() => {
         video.pause();
-        video.currentTime = 0;
-        videoSection.style.display = "none";
-        skipBtnContainer.style.display = "none";
-        contentSection.classList.remove("hidden");
-        contentSection.classList.add("flex");
-        contentSection.style.opacity = 1;
+        wrapper.remove();
 
-        document.querySelectorAll(".hero-animate").forEach((el, idx) => {
-          el.style.animationDelay = `${idx * 0.12}s`;
+        content.classList.remove("hidden");
+        content.classList.add("block");
+
+        document.querySelectorAll(".hero-animate").forEach((el, i) => {
+          el.style.animationDelay = `${i * 0.12}s`;
           el.classList.add("animate-hero-fast");
         });
-
-        startSlideshow();
       }, 500);
     };
 
-    const bindUnique = (el, event, handler, key) => {
-      if (!el) return;
-      const storeKey = `_hero_${key}`;
-      if (el[storeKey]) el.removeEventListener(event, el[storeKey]);
-      el.addEventListener(event, handler);
-      el[storeKey] = handler;
-    };
-
-    ["loadeddata", "canplay", "canplaythrough", "playing"].forEach(event =>
-      bindUnique(video, event, ensureVideoVisible, `visible_${event}`)
+    ["canplay", "playing", "loadeddata"].forEach(e =>
+      video.addEventListener(e, showVideo)
     );
-    bindUnique(video, "error", ensureVideoVisible, "visible_error");
-    bindUnique(video, "ended", showContent, "ended");
-    bindUnique(skipBtn, "click", showContent, "skip");
-  };
 
-  const cleanupHeroVideo = () => {
-    const video = document.getElementById("heroVideo");
-    if (video) {
-      video.pause();
-      video.currentTime = 0;
-      video.classList.remove("opacity-100");
-      video.classList.add("opacity-0");
-      delete video.dataset.heroContentShown;
-      clearTimeout(video._heroFallbackTimer);
-    }
-  };
+    video.addEventListener("ended", showContent);
+    skipBtn.addEventListener("click", showContent);
 
-  if (document.readyState !== "loading") initHeroVideo();
-  else document.addEventListener("DOMContentLoaded", initHeroVideo, { once: true });
+    soundBtn.addEventListener("click", () => {
+      video.muted = !video.muted;
+      soundBtn.innerHTML = video.muted
+        ? '<i class="ri-volume-mute-line"></i>'
+        : '<i class="ri-volume-up-line"></i>';
+    });
+
+    playBtn.addEventListener("click", () => {
+      if (video.paused) {
+        video.play();
+        playBtn.innerHTML = '<i class="ri-pause-line"></i>';
+      } else {
+        video.pause();
+        playBtn.innerHTML = '<i class="ri-play-line"></i>';
+      }
+    });
+
+    video.play().catch(showVideo);
+  }
+
+  /* ===== HERO BACKGROUND SLIDER ===== */
+  const slides = document.querySelectorAll("#heroBgSlider .hero-bg");
+  let index = 0;
+
+  if (slides.length) {
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 4000);
+  }
 })();
 </script>
 
 <!-- ================= STYLE ================= -->
 <style>
-.hero-animate { opacity: 0; }
-@keyframes heroSlideInFast {
-  0% { opacity: 0; transform: translateX(-80px) scale(0.95); filter: blur(4px); }
-  60% { opacity: 1; transform: translateX(10px) scale(1.02); filter: blur(0); }
-  80% { transform: translateX(-4px) scale(0.98); }
-  100% { opacity: 1; transform: translateX(0) scale(1); }
+/* Background Slider */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
 }
-.animate-hero-fast { animation: heroSlideInFast 0.9s cubic-bezier(0.25,1,0.5,1) forwards; }
 
-/* Slideshow */
-.hero-slide-wrapper { position: absolute; inset:0; width:100%; height:100%; overflow:hidden; z-index:0; }
-.hero-slide-wrapper img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; transition: transform 0.8s ease; }
+.hero-bg.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
 
-/* Optional overlay for readability */
-.hero-slide-wrapper > div { position:absolute; inset:0; background:rgba(0,0,0,0.5); z-index:1; }
+/* Video Controls */
+.control-btn {
+  background: rgba(0,0,0,.6);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .25s ease, transform .2s ease;
+}
+
+.control-btn:hover {
+  background: rgba(0,0,0,.85);
+  transform: translateY(-2px);
+}
+
+.control-btn i {
+  font-size: 20px;
+}
+
+/* Hero Text Animation */
+.hero-animate {
+  opacity: 0;
+}
+
+@keyframes heroFast {
+  from { opacity: 0; transform: translateX(-60px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.animate-hero-fast {
+  animation: heroFast .8s cubic-bezier(.25,1,.5,1) forwards;
+}
 </style>
