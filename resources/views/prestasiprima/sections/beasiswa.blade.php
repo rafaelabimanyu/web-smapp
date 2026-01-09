@@ -2,29 +2,36 @@
 <section id="beasiswa" class="relative py-24 bg-gradient-to-b from-purple-50 via-white to-white overflow-hidden">
 
     <!-- Background Decoration -->
-    <div
-        class="absolute top-0 left-0 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply opacity-20 blur-3xl animate-pulse">
-    </div>
-    <div
-        class="absolute -bottom-24 right-0 w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply opacity-15 blur-3xl animate-pulse">
-    </div>
+    <div class="absolute top-0 left-0 w-64 h-64 bg-purple-300 rounded-full opacity-20 blur-3xl"></div>
+    <div class="absolute -bottom-24 right-0 w-96 h-96 bg-pink-300 rounded-full opacity-15 blur-3xl"></div>
 
     <div class="relative max-w-7xl mx-auto px-4 md:px-8">
 
         <!-- Header -->
-        <header class="mb-16 text-center" data-aos="fade-up">
-            <p class="text-sm md:text-lg font-semibold text-purple-600 uppercase tracking-widest">
-                Beasiswa Prestasi
-            </p>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mt-3 mb-4">
-                Raih Impianmu & Bersinar Bersama Kami
-            </h2>
-            <div class="w-24 h-1 bg-purple-500 mx-auto rounded-full"></div>
-            <p class="text-gray-700 mt-4 max-w-2xl mx-auto">
-                SMA Prestasi Prima memberikan kesempatan bagi calon siswa berprestasi untuk menempuh pendidikan dengan
-                dukungan beasiswa.
-            </p>
-        </header>
+<header class="mb-12 sm:mb-16 text-center" data-aos="fade-up">
+
+  <p class="text-xs sm:text-sm md:text-lg font-semibold
+            text-purple-600 uppercase
+            tracking-wider sm:tracking-widest">
+    Beasiswa Prestasi
+  </p>
+
+  <h2 class="text-2xl sm:text-3xl md:text-5xl
+             font-extrabold text-gray-900
+             mt-2 sm:mt-3 mb-3 sm:mb-4 leading-tight">
+    Raih Impianmu & Bersinar Bersama Kami
+  </h2>
+
+  <div class="w-16 sm:w-20 md:w-24 h-1 bg-purple-500 mx-auto rounded-full"></div>
+
+  <p class="text-sm sm:text-base text-gray-700
+            mt-3 sm:mt-4 max-w-xl sm:max-w-2xl mx-auto leading-relaxed">
+    SMA Prestasi Prima memberikan kesempatan bagi calon siswa berprestasi
+    untuk menempuh pendidikan dengan dukungan beasiswa.
+  </p>
+
+</header>
+
 
         @php
             $kategoriBeasiswa = [
@@ -34,7 +41,7 @@
                     'deskripsi' => 'Program Beasiswa Akademik Olimpiade (PPOC) ditujukan bagi siswa kelas IX SMP/MTs yang memiliki prestasi akademik atau olimpiade.',
                     'syarat' => [
                         'Siswa kelas IX SMP/MTs',
-                        'Memiliki prestasi akademik / olimpiade',
+                        'Prestasi akademik / olimpiade',
                         'Tidak sedang menerima beasiswa lain',
                         'Seleksi administrasi',
                         'Tes akademik',
@@ -48,12 +55,11 @@
                 [
                     'nama' => 'Karya Ilmiah Remaja (KIR)',
                     'ringkas' => 'Beasiswa prestasi di bidang karya ilmiah dan sains.',
-                    'deskripsi' => 'Beasiswa Karya Ilmiah Remaja (KIR) diberikan kepada siswa kelas IX SMP/sederajat yang berprestasi di bidang karya ilmiah atau cerdas cermat sains.',
+                    'deskripsi' => 'Beasiswa KIR diberikan kepada siswa kelas IX SMP/sederajat yang berprestasi di bidang karya ilmiah atau sains.',
                     'syarat' => [
-                        'Murid aktif kelas IX SMP/sederajat',
-                        'Tahun akademik 2025–2026',
-                        'Berprestasi KIR / Cerdas Cermat Sains',
-                        'Tidak sedang menerima beasiswa lain',
+                        'Murid aktif kelas IX',
+                        'Prestasi KIR / Sains',
+                        'Tidak menerima beasiswa lain',
                         'Seleksi administrasi',
                         'Tes keterampilan',
                         'Wawancara',
@@ -66,41 +72,74 @@
                 [
                     'nama' => 'Seni Tari Tradisional',
                     'ringkas' => 'Beasiswa bagi siswa berprestasi seni tari tradisional.',
-                    'deskripsi' => 'Program Beasiswa Seni Tari Tradisional ditujukan bagi pelajar SMP/MTs yang memiliki prestasi di bidang tari tradisional.',
+                    'deskripsi' => 'Program beasiswa seni tari tradisional bagi pelajar SMP/MTs.',
                     'syarat' => [
-                        'Pelajar aktif tingkat SMP/MTs',
-                        'Berprestasi di bidang Tari Tradisional',
-                        'Tidak sedang menerima beasiswa lain',
+                        'Pelajar aktif SMP/MTs',
+                        'Prestasi seni tari',
+                        'Tidak menerima beasiswa lain',
                         'Seleksi administrasi',
-                        'Tes keterampilan tari',
+                        'Tes keterampilan',
                         'Wawancara',
                     ],
                     'pendaftaran' => '22 November – 1 Desember',
-                    'kontak' => 'Informasi melalui panitia sekolah',
+                    'kontak' => 'Panitia Sekolah',
                     'link' => 'https://spmb.prestasiprima.sch.id/',
                     'poster' => 'assets/images/beasiswa/beasiswa3.webp',
                 ],
             ];
         @endphp
 
-        <!-- Card Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- ================= MOBILE CAROUSEL ================= -->
+        <div class="md:hidden">
+            <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4
+                        scroll-smooth touch-pan-x
+                        [-ms-overflow-style:none] [scrollbar-width:none]"
+                 style="scrollbar-width:none;">
+                 
+                @foreach($kategoriBeasiswa as $b)
+                    <div class="snap-center shrink-0 w-[85%]">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+
+                            <div class="h-56 overflow-hidden">
+                                <img src="{{ asset($b['poster']) }}" alt="{{ $b['nama'] }}"
+                                     class="w-full h-full object-cover">
+                            </div>
+
+                            <div class="p-5 flex flex-col">
+                                <h3 class="text-lg font-bold mb-1">{{ $b['nama'] }}</h3>
+                                <p class="text-sm text-gray-600 mb-4">{{ $b['ringkas'] }}</p>
+
+                                <button onclick='openModal(@json($b))'
+                                        class="mt-auto px-4 py-2 text-sm font-semibold
+                                               text-purple-600 bg-purple-100 rounded-full">
+                                    Lihat Detail
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+        <!-- ================= DESKTOP GRID ================= -->
+        <div class="hidden md:grid grid-cols-3 gap-8">
             @foreach($kategoriBeasiswa as $b)
-                <div class="group bg-white rounded-2xl shadow-lg overflow-hidden
-                               hover:-translate-y-3 hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden
+                            hover:-translate-y-2 hover:shadow-xl transition">
 
                     <div class="h-[300px] overflow-hidden">
                         <img src="{{ asset($b['poster']) }}" alt="{{ $b['nama'] }}"
-                            class="w-full h-full object-cover group-hover:scale-105 transition">
+                            class="w-full h-full object-cover">
                     </div>
 
                     <div class="p-6 flex flex-col">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">{{ $b['nama'] }}</h3>
+                        <h3 class="text-xl font-bold mb-2">{{ $b['nama'] }}</h3>
                         <p class="text-sm text-gray-600 mb-4">{{ $b['ringkas'] }}</p>
 
-                        <button onclick='openModal(@json($b))' class="mt-auto px-5 py-2 text-sm font-semibold
-                                       text-purple-600 bg-purple-100 rounded-full
-                                       hover:bg-purple-200 transition">
+                        <button onclick='openModal(@json($b))'
+                                class="mt-auto px-5 py-2 text-sm font-semibold
+                                    text-purple-600 bg-purple-100 rounded-full
+                                    hover:bg-purple-200 transition">
                             Lihat Detail
                         </button>
                     </div>
@@ -109,13 +148,20 @@
         </div>
 
         <!-- CTA -->
-        <div class="mt-16 text-center" data-aos="fade-up">
-            <a href="https://spmb.prestasiprima.sch.id/" target="_blank" class="inline-block px-10 py-4 font-semibold text-white
-                      bg-gradient-to-r from-purple-600 to-purple-400
-                      rounded-full shadow-lg hover:scale-105 transition">
-                Daftar Sekarang
-            </a>
-        </div>
+<div class="mt-10 sm:mt-16 text-center">
+  <a href="https://spmb.prestasiprima.sch.id/" target="_blank"
+     class="inline-block
+            px-6 py-3 text-sm
+            sm:px-8 sm:py-3.5 sm:text-base
+            md:px-10 md:py-4 md:text-lg
+            font-semibold text-white
+            bg-gradient-to-r from-purple-600 to-purple-400
+            rounded-full shadow
+            hover:scale-105 transition">
+    Daftar Sekarang
+  </a>
+</div>
+
 
     </div>
 </section>

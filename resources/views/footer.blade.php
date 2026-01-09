@@ -153,8 +153,9 @@
           <li><a href="/siswa/prestasi" class="hover:text-purple-400 transition">Prestasi</a></li>
           <li><a href="/informasi/testimoni" class="hover:text-purple-400 transition">Testimoni</a></li>
           <li><a href="https://spmb.prestasiprima.sch.id/" class="hover:text-purple-400 transition">Pendaftaran</a></li>
-          <li><a href="/presmaboard" class="hover:text-purple-400 transition">Presmaboard</a></li>
+          <li><a href="/virtual-tour" class="hover:text-purple-400 transition">Presmatour</a></li>
           <li><a href="/siswa/ekstrakurikuler" class="hover:text-purple-400 transition">Ekstrakurikuler</a></li>
+          <li><a href="/presmacontact" class="hover:text-purple-400 transition">Presmacontact</a></li>
         </ul>
       </div>
 
@@ -276,26 +277,81 @@
         <span>© {{ date('Y') }} SMA Prestasi Prima</span>
         <span class="mx-2 text-white/30">|</span>
         <span>
-          <a href="https://www.instagram.com/orensolutionspresma/"
-            target="_blank"
-            class="font-medium text-white hover:underline">
-            Oren Solution
-          </a>
-          - <span class="font-medium text-white">Version 2.0</span>
-        </span>
+  <a href="https://www.instagram.com/orensolutionspresma/"
+     target="_blank"
+     class="font-medium text-white hover:text-orange-600 transition-colors duration-300 hover:underline">
+    Oren Solution
+  </a>
+  - <span class="font-medium text-white">Version 2.0</span>
+</span>
+
       </p>
       
-      <p class="text-gray-500 text-sm text-center md:text-right">
-  Developed by :
+      
+      <p class="text-sm text-center md:text-right flex flex-wrap justify-center md:justify-end items-center gap-1">
+  
+  <!-- Developed by -->
   <a href="https://www.instagram.com/r.abimanyyy/"
      target="_blank"
-     class="font-bold text-purple-400 hover:text-purple-600 transition">
-    Rafael Abimanyu
+     class="gradient-text-bold">
+    Developed by | Rafael Abimanyu
   </a>
-  <span class="text-gray-400"> · XI PPLG 1</span>
+
+  <!-- Separator -->
+  <span class="text-gray-400">·</span>
+
+  <!-- Kelas -->
+  <a href="https://www.instagram.com/xi_pplg1_/"
+     target="_blank"
+     class="kelas-link">
+    XI PPLG 1
+  </a>
+
 </p>
 
 
     </div>
   </div>
 </footer>
+
+<style>/* ===== Gradient RGB Halus ===== */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.gradient-text-bold {
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #ec4899,
+    #8b5cf6,
+    #22c55e,
+    #3b82f6,
+    #ec4899
+  );
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 5s linear infinite;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.gradient-text-bold:hover {
+  opacity: 0.85;
+}
+
+/* ===== Kelas Link ===== */
+.kelas-link {
+  font-weight: 700;
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.kelas-link:hover {
+  opacity: 0.85;
+}
+</style>

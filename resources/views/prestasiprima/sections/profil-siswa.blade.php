@@ -97,21 +97,28 @@
         </div>
 
         {{-- CTA --}}
-        <div class="flex flex-col sm:flex-row gap-3">
-          <a href="#prestasi"
-             class="px-6 py-2.5 rounded-lg text-sm font-semibold text-white
-                    bg-gradient-to-r from-purple-600 to-indigo-600
-                    shadow hover:scale-105 transition">
-            Prestasi Siswa
-          </a>
+        <div class="flex gap-3">
+  <a href="/siswa/prestasi"
+     class="px-4 py-2 sm:px-6 sm:py-2.5
+            rounded-lg
+            text-xs sm:text-sm
+            font-semibold text-white
+            bg-gradient-to-r from-purple-600 to-indigo-600
+            shadow hover:scale-105 transition">
+    Prestasi Siswa
+  </a>
 
-          <a href="#ppdb"
-             class="px-6 py-2.5 rounded-lg text-sm font-semibold
-                    border border-purple-600 text-purple-600
-                    hover:bg-purple-50 transition">
-            Informasi Pendaftaran
-          </a>
-        </div>
+  <a href="https://spmb.prestasiprima.sch.id/"
+     class="px-4 py-2 sm:px-6 sm:py-2.5
+            rounded-lg
+            text-xs sm:text-sm
+            font-semibold
+            border border-purple-600 text-purple-600
+            hover:bg-purple-50 transition">
+    Informasi Pendaftaran
+  </a>
+</div>
+
 
       </div>
     </div>

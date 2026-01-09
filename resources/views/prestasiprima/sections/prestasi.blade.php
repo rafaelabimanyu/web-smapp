@@ -1,20 +1,20 @@
 <!-- ================= SECTION PRESTASI ================= -->
-<section id="prestasi" class="relative py-24 bg-white overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 md:px-8">
+<section id="prestasi" class="relative py-16 md:py-24 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
 
     <!-- ===== Header ===== -->
-    <header class="mb-14 text-center">
+    <header class="mb-10 md:mb-14 text-center">
       <img src="{{ asset('assets/logo_sma.png') }}"
            alt="Logo SMA"
-           class="mx-auto h-14 mb-4"
+           class="mx-auto h-12 md:h-14 mb-3 md:mb-4"
            data-aos="zoom-in">
 
-      <h3 class="text-lg font-semibold text-gray-700 mb-1"
+      <h3 class="text-sm md:text-lg font-semibold text-gray-700 mb-1"
           data-aos="fade-up" data-aos-delay="100">
         Prestasi Kami
       </h3>
 
-      <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900"
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 leading-snug"
           data-aos="fade-up" data-aos-delay="200">
         Mengabadikan momen di balik setiap
         <span class="text-purple-600 glow-text">kemenangan</span>
@@ -24,9 +24,9 @@
     <!-- ===== Swiper Wrapper ===== -->
     <div class="relative">
 
-      <!-- Navigation (LUAR GAMBAR) -->
-      <button class="swiper-button-prev custom-nav"></button>
-      <button class="swiper-button-next custom-nav"></button>
+      <!-- Navigation -->
+      <button class="swiper-button-prev custom-nav hidden sm:flex"></button>
+      <button class="swiper-button-next custom-nav hidden sm:flex"></button>
 
       <!-- Swiper -->
       <div class="swiper prestasiSwiper">
@@ -46,23 +46,22 @@
         </div>
       </div>
 
-      <!-- Pagination (LUAR GAMBAR) -->
-      <div class="swiper-pagination mt-8 text-center"></div>
-      
-      <!-- Button Lihat Semua -->
-<div class="mt-12 flex justify-center">
-  <a href="{{ url('/siswa/prestasi') }}"
-     class="prestasi-btn group">
-    <span>Lihat Semua Prestasi</span>
-    <svg xmlns="http://www.w3.org/2000/svg"
-         class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"
-         fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M9 5l7 7-7 7" />
-    </svg>
-  </a>
-</div>
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-6 md:mt-8 text-center"></div>
 
+      <!-- Button -->
+      <div class="mt-8 md:mt-12 flex justify-center">
+        <a href="{{ url('/siswa/prestasi') }}"
+           class="prestasi-btn group text-sm md:text-base">
+          <span>Lihat Semua Prestasi</span>
+          <svg xmlns="http://www.w3.org/2000/svg"
+               class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"
+               fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
 
     </div>
 
@@ -70,7 +69,7 @@
 </section>
 
 <style>
-  /* === Card mengikuti gambar === */
+  /* === Card === */
 .prestasi-card {
   display: inline-block;
   border-radius: 1rem;
@@ -80,15 +79,16 @@
   transition: transform .35s ease, box-shadow .35s ease;
 }
 
-.prestasi-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 18px 36px rgba(124,58,237,.25);
+@media (hover:hover) {
+  .prestasi-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 18px 36px rgba(124,58,237,.25);
+  }
 }
 
-/* Image natural size */
+/* Image */
 .prestasi-img {
   display: block;
-  width: auto;
   max-width: 100%;
   height: auto;
 }
@@ -97,6 +97,7 @@
 .glow-text {
   text-shadow: 0 0 6px rgba(124,58,237,.45);
 }
+
 /* === Navigation === */
 .custom-nav {
   position: absolute;
@@ -112,8 +113,8 @@
   transition: all .25s ease;
 }
 
-.swiper-button-prev { left: -48px; }
-.swiper-button-next { right: -48px; }
+.swiper-button-prev { left: -42px; }
+.swiper-button-next { right: -42px; }
 
 .custom-nav::after {
   font-size: 14px;
@@ -129,18 +130,18 @@
 /* Pagination */
 .swiper-pagination-bullet {
   background: #7c3aed;
-  opacity: .4;
+  opacity: .35;
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
-  transform: scale(1.3);
+  transform: scale(1.25);
 }
 
-/* === Button Prestasi === */
+/* === Button === */
 .prestasi-btn {
   display: inline-flex;
   align-items: center;
-  padding: 0.85rem 2rem;
+  padding: 0.7rem 1.6rem;
   border-radius: 9999px;
   font-weight: 600;
   color: #7c3aed;
@@ -157,35 +158,48 @@
   transform: translateY(-2px);
 }
 
+/* === Mobile Optimization === */
+@media (max-width: 640px) {
+  .prestasi-card {
+    border-radius: 0.85rem;
+  }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .swiper-button-prev { left: -12px; }
-  .swiper-button-next { right: -12px; }
+  .prestasi-btn {
+    padding: 0.6rem 1.4rem;
+  }
 }
 
 </style>
 
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-
   new Swiper('.prestasiSwiper', {
-    slidesPerView: 1,
-    spaceBetween: 24,
+    slidesPerView: 1.1,
+    spaceBetween: 16,
     loop: true,
-    autoplay: { delay: 3500, disableOnInteraction: false },
-    pagination: { el: '.swiper-pagination', clickable: true },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     },
-    preloadImages: false,
-    lazy: true,
     breakpoints: {
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      }
     }
   });
-
 });
 </script>

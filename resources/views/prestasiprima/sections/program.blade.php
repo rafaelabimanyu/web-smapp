@@ -148,65 +148,92 @@
       </div>
 
       <!-- Kanan: Video Jurusan -->
-      <div class="bg-white rounded-2xl shadow-xl border border-gray-200 p-5 sm:p-6 md:p-8 flex flex-col justify-between h-auto relative overflow-hidden">
-        <div class="absolute -top-12 -right-12 sm:-top-16 sm:-right-16 w-48 sm:w-64 h-48 sm:h-64 bg-purple-100 rounded-full opacity-30 blur-2xl"></div>
+      <div class="bg-white rounded-2xl shadow-xl border border-gray-200
+            p-5 sm:p-6 md:p-8
+            flex flex-col justify-between h-auto
+            relative overflow-hidden">
 
-        <div class="relative text-center mb-4 sm:mb-6">
-          <h3 class="text-xl sm:text-2xl font-bold text-purple-600 mb-2 flex items-center justify-center gap-2">
-            <i class="ph ph-video-camera text-lg sm:text-2xl"></i> Video kegiatan Menarik
-          </h3>
-          <p class="text-gray-600 italic text-sm sm:text-base max-w-sm mx-auto">
-            Yuk kenali lebih dekat jurusan unggulan di SMA Prestasi Prima!
+  <!-- Decorative blur -->
+  <div class="absolute -top-12 -right-12 sm:-top-16 sm:-right-16
+              w-48 sm:w-64 h-48 sm:h-64
+              bg-purple-100 rounded-full opacity-30 blur-2xl"></div>
+
+  <!-- Header -->
+  <div class="relative text-center mb-4 sm:mb-6">
+    <h3 class="text-xl sm:text-2xl font-bold text-purple-600 mb-2
+               flex items-center justify-center gap-2">
+      <i class="ph ph-video-camera text-lg sm:text-2xl"></i>
+      Video Kegiatan Menarik
+    </h3>
+    <p class="text-gray-600 italic text-sm sm:text-base max-w-sm mx-auto">
+      Yuk kenali lebih dekat jurusan unggulan di SMA Prestasi Prima!
+    </p>
+  </div>
+
+  @php
+    $programVideoCards = [
+      [
+        'id' => 'Asi93VHxRgs',
+        'title' => 'Study & Career Expo 2025',
+        'description' => 'Pameran karya dan inovasi siswa dari berbagai jurusan.',
+        'gradient' => 'from-purple-500 via-purple-400 to-purple-600',
+        'thumbnail' => 'assets/images/video-thumbnails/study.webp',
+      ],
+      [
+        'id' => 'zQYlLdHDCOI',
+        'title' => 'Saintek Semua Jurusan',
+        'description' => 'Kolaborasi siswa lintas jurusan dalam ajang lomba teknologi.',
+        'gradient' => 'from-sky-500 via-blue-500 to-indigo-600',
+        'thumbnail' => 'assets/images/video-thumbnails/saintek.webp',
+      ],
+    ];
+  @endphp
+
+  <!-- Video Grid (UPDATED) -->
+  <div class="grid grid-cols-2 gap-3 sm:gap-6 relative z-10">
+
+    @foreach ($programVideoCards as $video)
+      <div class="bg-white rounded-xl sm:rounded-2xl
+                  shadow-md border border-gray-100
+                  hover:shadow-xl transition
+                  focus-within:ring-2 focus-within:ring-purple-300">
+
+        @include('components.youtube-lite', [
+          'videoId' => $video['id'],
+          'title' => $video['title'],
+          'gradient' => $video['gradient'],
+          'thumbnailPath' => $video['thumbnail'],
+          'wrapperClass' => 'cursor-pointer',
+          'behavior' => 'modal'
+        ])
+
+        <div class="p-2 sm:p-3 text-center">
+          <h4 class="font-semibold text-gray-800 text-xs sm:text-sm">
+            {{ $video['title'] }}
+          </h4>
+          <p class="text-[11px] sm:text-xs text-gray-500">
+            {{ $video['description'] }}
           </p>
         </div>
 
-        @php
-          $programVideoCards = [
-            [
-              'id' => 'Asi93VHxRgs',
-              'title' => 'Study & Career Expo 2025',
-              'description' => 'Pameran karya dan inovasi siswa dari berbagai jurusan.',
-              'gradient' => 'from-purple-500 via-purple-400 to-purple-600',
-              'thumbnail' => 'assets/images/video-thumbnails/study.webp',
-            ],
-            [
-              'id' => 'zQYlLdHDCOI',
-              'title' => 'Saintek Semua Jurusan',
-              'description' => 'Kolaborasi siswa lintas jurusan dalam ajang lomba teknologi.',
-              'gradient' => 'from-sky-500 via-blue-500 to-indigo-600',
-              'thumbnail' => 'assets/images/video-thumbnails/saintek.webp',
-            ],
-          ];
-        @endphp
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 relative z-10">
-          @foreach ($programVideoCards as $video)
-            <div class="bg-white rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition focus-within:ring-2 focus-within:ring-purple-300">
-              @include('components.youtube-lite', [
-                  'videoId' => $video['id'],
-                  'title' => $video['title'],
-                  'gradient' => $video['gradient'],
-                  'thumbnailPath' => $video['thumbnail'],
-                  'wrapperClass' => 'cursor-pointer',
-                  'behavior' => 'modal'
-              ])
-              <div class="p-3 text-center">
-                <h4 class="font-semibold text-gray-800 text-sm">{{ $video['title'] }}</h4>
-                <p class="text-xs text-gray-500">{{ $video['description'] }}</p>
-              </div>
-            </div>
-          @endforeach
-        </div>
-
-        @include('components.youtube-lite-script')
-
-        <div class="relative text-center mt-5 sm:mt-6">
-          <a href="#galeri-video"
-            class="inline-block text-purple-600 font-semibold text-sm hover:text-purple-700">
-            Lihat semua video →
-          </a>
-        </div>
       </div>
+    @endforeach
+
+  </div>
+
+  @include('components.youtube-lite-script')
+
+  <!-- Footer CTA -->
+  <div class="relative text-center mt-5 sm:mt-6">
+    <a href="#galeri-video"
+       class="inline-block text-purple-600 font-semibold text-sm
+              hover:text-purple-700 transition">
+      Lihat semua video →
+    </a>
+  </div>
+
+</div>
+
     </div>
   </div>
 

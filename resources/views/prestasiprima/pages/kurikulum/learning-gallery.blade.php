@@ -136,6 +136,13 @@
         width: 26px;
         background: #7c3aed;
     }
+
+    #galleryTrack {
+        touch-action: pan-y;
+        user-select: none;
+        will-change: transform;
+    }
+
 </style>
 
 {{-- ================= SCRIPT (SWIPE + DRAG) ================= --}}
@@ -143,13 +150,23 @@
     const track = document.getElementById('galleryTrack');
     const dots = document.querySelectorAll('#galleryDots .dot');
     const totalSlides = dots.length;
-    let currentSlide = 0;
 
+    let currentSlide = 0;
     let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
     let isDragging = false;
 
+    function setPosition() {
+        track.style.transform = `translateX(${currentTranslate}px)`;
+    }
+
     function updateSlide() {
-        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        currentTranslate = -currentSlide * track.clientWidth;
+        prevTranslate = currentTranslate;
+        track.style.transition = 'transform .45s ease';
+        setPosition();
+
         dots.forEach((dot, i) =>
             dot.classList.toggle('active', i === currentSlide)
         );
@@ -165,26 +182,42 @@
         updateSlide();
     }
 
-    /* Swipe / Drag Support */
+    /* ================= DRAG & SWIPE ================= */
+
     track.addEventListener('pointerdown', e => {
         startX = e.clientX;
         isDragging = true;
-        track.style.cursor = 'grabbing';
+        track.style.transition = 'none';
+        track.setPointerCapture(e.pointerId);
+        track.classList.add('grabbing');
+    });
+
+    track.addEventListener('pointermove', e => {
+        if (!isDragging) return;
+        const diff = e.clientX - startX;
+        currentTranslate = prevTranslate + diff;
+        setPosition();
     });
 
     track.addEventListener('pointerup', e => {
-        if (!isDragging) return;
-        const diff = e.clientX - startX;
-        if (diff < -50) nextSlide();
-        if (diff > 50) prevSlide();
+        track.releasePointerCapture(e.pointerId);
         isDragging = false;
-        track.style.cursor = 'grab';
+        track.classList.remove('grabbing');
+
+        const movedBy = currentTranslate - prevTranslate;
+
+        if (movedBy < -80) nextSlide();
+        else if (movedBy > 80) prevSlide();
+        else updateSlide();
     });
 
     track.addEventListener('pointerleave', () => {
+        if (!isDragging) return;
         isDragging = false;
-        track.style.cursor = 'grab';
+        updateSlide();
     });
+
+    /* ================= DOT CLICK ================= */
 
     dots.forEach((dot, i) => {
         dot.addEventListener('click', () => {
@@ -192,4 +225,6 @@
             updateSlide();
         });
     });
+
+    window.addEventListener('resize', updateSlide);
 </script>
