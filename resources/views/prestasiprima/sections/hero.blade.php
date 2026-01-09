@@ -14,7 +14,7 @@
     preload="auto"
     poster="{{ asset('assets/prestasiprima/gedungprestasiprima.webp') }}"
     class="absolute inset-0 w-full h-full object-cover z-20 opacity-0 transition-opacity duration-700">
-    <source src="{{ asset('assets/videos/videos.mp4') }}" type="video/mp4">
+    <source src="{{ asset('assets/videos/videos2.mp4') }}" type="video/mp4">
   </video>
 
   <!-- Controls: Sound & Play -->
@@ -95,22 +95,22 @@
         class="w-6 h-6 md:w-8 md:h-8 object-contain" loading="lazy">
     </a>
 
-    <a href="https://wa.me/6289599439033" target="_blank" aria-label="WhatsApp"
+    <a href="https://wa.me/6285195928886" target="_blank" aria-label="WhatsApp"
       class="text-purple-600 hover:text-purple-700">
       <i class="ri-whatsapp-line text-lg md:text-xl"></i>
     </a>
 
-    <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+    <a href="https://www.instagram.com/sma_prestasiprima/" target="_blank" aria-label="Instagram"
       class="text-purple-600 hover:text-purple-700">
       <i class="ri-instagram-line text-lg md:text-xl"></i>
     </a>
 
-    <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+    <a href="https://www.youtube.com/@SEKOLAHPRESTASIPRIMA" target="_blank" aria-label="YouTube"
       class="text-purple-600 hover:text-purple-700">
       <i class="ri-youtube-line text-lg md:text-xl"></i>
     </a>
 
-    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"
+    <a href="https://www.tiktok.com/@smaprestasiprima" target="_blank" aria-label="TikTok"
       class="text-purple-600 hover:text-purple-700">
       <i class="ri-tiktok-fill text-lg md:text-xl"></i>
     </a>

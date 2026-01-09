@@ -23,7 +23,121 @@ class PrestasiprimaNewsSeeder extends Seeder
                 'slug' => 'tim-imagine-presma-raih-juara-2-nasional-jhic-2025',
                 'thumbnail' => 'uploads/thumbnails/tim-imagine-presma-juara-2-jhic-2025.jpeg',
                 'excerpt' => 'Tim Imagine Presma dari SMK Prestasi Prima Jakarta Timur berhasil meraih Juara 2 Nasional dalam ajang Jagoan Hosting Infrastructure Competition (JHIC) 2025 di Surabaya.',
-                'content' => "Tim Imagine Presma dari SMK Prestasi Prima Jakarta Timur kembali menorehkan prestasi membanggakan di tingkat nasional dengan meraih **Juara 2 Nasional** dalam ajang **Jagoan Hosting Infrastructure Competition (JHIC) 2025**. Kompetisi bergengsi ini diselenggarakan oleh Jagoan Hosting bekerja sama dengan Komdigi serta Maspion IT, dan puncak final nasional digelar secara offline di **Atrium IT Lantai 1 Maspion Square, Surabaya**, pada **Sabtu, 8 November 2025**.\r\n\r\nSebanyak **185 siswa dari 30 tim finalis terbaik** se-Indonesia beradu kemampuan dalam membangun website sekolah berbasis teknologi cloud. Para finalis mempresentasikan karya mereka di hadapan dewan juri yang terdiri dari **Bonda Sisephaputra, M.Kom.** (Kaprodi S1 Informatika PSDKU Universitas Negeri Surabaya), **Indra Mayati, S.Kom., M.Kom.** (Kaprodi Sistem Informasi Universitas Ciputra Surabaya), serta **Tri Puspa Rinjeni, S.Kom., M.Kom.** (Dosen Sistem Informasi UPN Veteran Jawa Timur).\r\n\r\nDari lebih dari **1.200 peserta di tahap awal**, hanya 30 tim terbaik yang lolos ke babak final nasional. Tim Imagine Presma tampil impresif dengan menghadirkan website sekolah berbasis cloud yang unggul dari sisi **UI/UX, performa server, keamanan data, serta manajemen infrastruktur digital**.\r\n\r\nAdapun susunan pemenang JHIC 2025 adalah sebagai berikut:\r\n- **Juara 1:** Semicolon – SMK Telkom Sidoarjo\r\n- **Juara 2:** Imagine Presma – SMK Prestasi Prima Jakarta Timur\r\n- **Juara 3:** Aicademy – SMK Telkom Purwokerto\r\n\r\nTim Imagine Presma terdiri dari kolaborasi siswa program **PPLG SMK Prestasi Prima** bersama siswa SMA, dengan anggota:\r\n1. **Muhammad Aulia Ardy Al Banna** (X PPLG 1)\r\n2. **Rafael Abimanyu** (XI PPLG 1)\r\n3. **Zwingli Savanarola Lubis** (XI PPLG 1)\r\n4. **Andi Gibran** (XI PPLG 2)\r\n5. **Marchia Diandra Gusti** (XI 8)\r\n\r\nGeneral Manager Jagoan Hosting, **Andy Novianto, S.Ikom., M.M.**, menyampaikan bahwa JHIC bukan sekadar kompetisi, melainkan wadah pembinaan agar siswa SMK mampu belajar langsung dari industri dan menghasilkan karya nyata yang berdampak. Sebelum final, para peserta juga mengikuti **bootcamp intensif** yang membekali mereka dengan pemahaman teknologi cloud, keamanan website, serta optimasi performa menggunakan Jagoan Cloud.\r\n\r\nPrestasi ini menjadi bukti bahwa siswa SMK Prestasi Prima mampu bersaing di level nasional dan siap menghadapi tantangan **Industri 4.0**. Sekolah berharap capaian ini dapat menjadi motivasi bagi seluruh siswa untuk terus berinovasi, berkarya, dan mengharumkan nama sekolah di tingkat nasional.\r\n\r\n**Selamat kepada Tim Imagine Presma atas raihan Juara 2 Nasional JHIC 2025. Terus melangkah, berprestasi, dan menginspirasi!**",
+                'content' => '
+                <article class="prose prose-lg max-w-none text-gray-800">
+
+  <p class="font-semibold">
+    Semangat kolaborasi lintas jenjang pendidikan kembali mengantarkan prestasi gemilang.
+    <strong>Tim Imagine Presma</strong>, hasil sinergi siswa
+    <strong>SMK Prestasi Prima</strong> dan <strong>SMA Prestasi Prima Jakarta Timur</strong>,
+    sukses meraih
+    <strong class="text-purple-600">Juara 2 Nasional</strong>
+    dalam ajang bergengsi
+    <strong>Jagoan Hosting Infrastructure Competition (JHIC) 2025</strong>.
+  </p>
+
+  <p>
+    Capaian ini menjadi bukti nyata bahwa kolaborasi antara pendidikan vokasi dan akademik
+    mampu melahirkan inovasi digital yang kompetitif di tingkat nasional.
+    Kompetisi ini diselenggarakan oleh <strong>Jagoan Hosting</strong> bekerja sama dengan
+    <strong>Komdigi</strong> serta <strong>Maspion IT</strong>.
+    Puncak final nasional dilaksanakan secara offline di
+    <strong>Atrium IT Lantai 1 Maspion Square, Surabaya</strong>,
+    pada <strong>Sabtu, 8 November 2025</strong>.
+  </p>
+
+  <blockquote class="border-l-4 border-purple-500 pl-4 italic text-gray-600 bg-purple-50 rounded-r-lg py-3">
+    Ajang ini diikuti oleh <strong>185 siswa dari 30 tim finalis terbaik se-Indonesia</strong>
+    yang beradu kemampuan dalam merancang dan membangun
+    website sekolah berbasis teknologi cloud modern.
+  </blockquote>
+
+  <p>
+    Pada babak final, seluruh tim mempresentasikan karya mereka di hadapan dewan juri profesional
+    yang terdiri dari:
+  </p>
+
+  <ul>
+    <li><strong>Bonda Sisephaputra, M.Kom.</strong> – Kaprodi S1 Informatika PSDKU Universitas Negeri Surabaya</li>
+    <li><strong>Indra Mayati, S.Kom., M.Kom.</strong> – Kaprodi Sistem Informasi Universitas Ciputra Surabaya</li>
+    <li><strong>Tri Puspa Rinjeni, S.Kom., M.Kom.</strong> – Dosen Sistem Informasi UPN Veteran Jawa Timur</li>
+  </ul>
+
+  <p>
+    Dari lebih dari <strong>1.200 peserta</strong> di tahap penyisihan,
+    hanya <strong>30 tim terbaik</strong> yang berhasil melaju ke final nasional.
+    Tim Imagine Presma tampil menonjol dengan menghadirkan
+    website sekolah berbasis cloud yang unggul dari sisi
+    <strong>UI/UX, performa server, keamanan data</strong>,
+    serta <strong>manajemen infrastruktur digital</strong>.
+  </p>
+
+  <h3 class="text-purple-700">🏆 Daftar Pemenang JHIC 2025</h3>
+
+  <ul>
+    <li>🥇 <strong>Juara 1:</strong> Semicolon – SMK Telkom Sidoarjo</li>
+    <li>🥈 <strong class="text-purple-600">Juara 2:</strong> Imagine Presma – Kolaborasi SMK & SMA Prestasi Prima</li>
+    <li>🥉 <strong>Juara 3:</strong> Aicademy – SMK Telkom Purwokerto</li>
+  </ul>
+
+  <h3 class="text-purple-700">👨‍💻 Tim Kolaborasi Imagine Presma</h3>
+
+  <p>
+    Keunikan Tim Imagine Presma terletak pada kolaborasi lintas jenjang antara siswa
+    <strong>SMK Prestasi Prima</strong> dan <strong>SMA Prestasi Prima</strong>,
+    yang menyatukan kompetensi teknis, kreativitas, serta sudut pandang akademik.
+  </p>
+
+  <ol>
+    <li><strong>Muhammad Aulia Ardy Al Banna</strong> (X PPLG 1 – SMK)</li>
+    <li><strong>Rafael Abimanyu</strong> (XI PPLG 1 – SMK)</li>
+    <li><strong>Zwingli Savanarola Lubis</strong> (XI PPLG 1 – SMK)</li>
+    <li><strong>Andi Gibran</strong> (XI PPLG 2 – SMK)</li>
+    <li>
+      <strong>Marchia Diandra Gusti</strong> (XI 8 – SMA)  
+      <span class="text-gray-600 italic">
+        sebagai representasi kolaborasi lintas jenjang SMA Prestasi Prima
+      </span>
+    </li>
+  </ol>
+
+  <p>
+    General Manager Jagoan Hosting,
+    <strong>Andy Novianto, S.Ikom., M.M.</strong>,
+    menyampaikan bahwa JHIC tidak hanya berfokus pada kompetisi,
+    tetapi juga sebagai wadah pembinaan agar siswa SMK dan SMA
+    dapat belajar langsung dari industri serta menghasilkan
+    karya digital yang relevan dan berdampak.
+  </p>
+
+  <p>
+    Sebelum babak final, seluruh peserta mengikuti
+    <strong>bootcamp intensif</strong>
+    yang membekali mereka dengan pemahaman mendalam terkait
+    teknologi cloud, keamanan website, serta optimasi performa
+    menggunakan ekosistem <strong>Jagoan Cloud</strong>.
+  </p>
+
+  <div class="mt-6 p-5 bg-purple-50 border border-purple-200 rounded-xl">
+    <p class="font-semibold text-purple-700 mb-2">
+      🎉 Simbol Kolaborasi & Prestasi
+    </p>
+    <p>
+      Prestasi ini menjadi simbol keberhasilan kolaborasi antara
+      <strong>SMK dan SMA Prestasi Prima</strong>
+      dalam mencetak generasi muda yang adaptif, inovatif,
+      dan siap menghadapi tantangan
+      <strong>Industri 4.0 dan transformasi digital</strong>.
+    </p>
+  </div>
+
+  <p class="mt-6 font-semibold text-center text-purple-700">
+    Selamat kepada Tim Imagine Presma atas raihan
+    <strong>Juara 2 Nasional JHIC 2025</strong>.
+    Kolaborasi hari ini, inovasi untuk masa depan! 🚀
+  </p>
+
+</article>',
                 'published_at' => Carbon::parse('2025-11-08 20:00:00'),
                 'created_at' => Carbon::parse('2025-11-08 20:00:00'),
                 'updated_at' => Carbon::parse('2025-11-08 20:00:00'),
@@ -31,11 +145,11 @@ class PrestasiprimaNewsSeeder extends Seeder
             [
                 'id' => 7,
                 'category_id' => 5,
-                'title' => 'Peringatan Maulid Nabi Muhammad SAW 1447 H di SMK Prestasi Prima',
+                'title' => 'Peringatan Maulid Nabi Muhammad SAW 1447 H di SMA Prestasi Prima',
                 'slug' => 'peringatan-maulid-nabi-muhammad-saw-1447-h-di-smk-prestasi-prima',
                 'thumbnail' => 'uploads/thumbnails/1760922773_🌙✨ Selamat Memperingati Maulid Nabi Muhammad SAW ✨🌙12 Rabiul Awal 1447 HHari penuh berkah unt.webp',
                 'excerpt' => null,
-                'content' => "Dalam rangka memperingati Maulid Nabi Muhammad SAW 12 Rabiul Awal 1447 H, SMK Prestasi Prima menyelenggarakan kegiatan penuh makna sebagai bentuk rasa syukur dan cinta kepada Rasulullah.\r\n\r\nMelalui kegiatan ini, seluruh warga sekolah diajak untuk meneladani akhlak mulia Nabi Muhammad SAW — mulai dari kejujuran, kasih sayang, hingga semangat menebarkan kebaikan kepada sesama.\r\n\r\nPeringatan Maulid Nabi juga menjadi momen penting untuk memperkuat nilai spiritual, mempererat silaturahmi antar siswa, guru, dan staf, serta menanamkan semangat religius dalam kehidupan sehari-hari.\r\n\r\nDengan tema dan semangat kebersamaan, kegiatan ini diharapkan dapat menumbuhkan karakter siswa yang berakhlak mulia, berempati, dan menjadi generasi yang membawa keberkahan bagi lingkungan sekitarnya.",
+                'content' => "Dalam rangka memperingati Maulid Nabi Muhammad SAW 12 Rabiul Awal 1447 H, SMA Prestasi Prima menyelenggarakan kegiatan penuh makna sebagai bentuk rasa syukur dan cinta kepada Rasulullah.\r\n\r\nMelalui kegiatan ini, seluruh warga sekolah diajak untuk meneladani akhlak mulia Nabi Muhammad SAW — mulai dari kejujuran, kasih sayang, hingga semangat menebarkan kebaikan kepada sesama.\r\n\r\nPeringatan Maulid Nabi juga menjadi momen penting untuk memperkuat nilai spiritual, mempererat silaturahmi antar siswa, guru, dan staf, serta menanamkan semangat religius dalam kehidupan sehari-hari.\r\n\r\nDengan tema dan semangat kebersamaan, kegiatan ini diharapkan dapat menumbuhkan karakter siswa yang berakhlak mulia, berempati, dan menjadi generasi yang membawa keberkahan bagi lingkungan sekitarnya.",
                 'published_at' => null,
                 'created_at' => Carbon::parse('2025-10-19 13:01:32'),
                 'updated_at' => Carbon::parse('2025-10-19 18:12:53'),
@@ -53,35 +167,11 @@ class PrestasiprimaNewsSeeder extends Seeder
                 'updated_at' => Carbon::parse('2025-10-19 18:12:35'),
             ],
             [
-                'id' => 9,
-                'category_id' => 1,
-                'title' => 'Tim Imagine Presma Lolos 100 Besar dari 300 Tim di JHIC 2025',
-                'slug' => 'tim-imagine-presma-lolos-100-besar-dari-300-tim-di-jhic-2025',
-                'thumbnail' => 'uploads/thumbnails/1760922737_Tim Imagine Presma Lolos 100 Besar dari 300 Tim di JHIC 2025.jpeg',
-                'excerpt' => null,
-                'content' => "Tim Imagine Presma dari SMK Prestasi Prima berhasil menembus 100 besar dari sekitar 300 tim peserta yang mengikuti Jagoan Hosting Infra Competition 2025 (JHIC 2025). Lomba ini diadakan oleh Jagoan Hosting bersama mitra seperti Maspion IT dan Komdigi, dan terbuka untuk siswa-SMK aktif yang berminat di bidang IT serta pengembangan website sekolah. \r\n\r\n\r\nMenurut panduan lomba, setiap tim terdiri dari 3-5 siswa dan memiliki guru pembimbing; dalam kompetisi ini juga ada tahapan preliminary (online/hybrid) dan final yang dilaksanakan secara offline di Surabaya bagi tim terpilih. \r\n\r\n\r\nAnggota tim Imagine Presma terdiri dari: Abi, Ardy, Zwingli, Gibran (semuanya dari SMK) dan Marchia (juga dari SMK). Guru pembimbingnya adalah Sir Ilham, selaku guru bidang keahlian di SMK Prestasi Prima. Saat pengumuman lolos, Sir Ilham menyampaikan:\r\n\r\n“Saya sangat bangga dengan kerja keras lima siswa ini. Mereka menunjukkan bahwa dengan kolaborasi, kreativitas dan konsistensi, sekolah kejuruan pun bisa bersaing di level nasional.”\r\n\r\nTim tersebut berhasil masuk tahap 100 besar dari total kira-kira 318 tim peserta yang tercatat dalam JHIC 2025. \r\n\r\nDengan lolos tahap ini, tim kini menantikan pengumuman selanjutnya — bila mereka berhasil menembus 30 besar final, maka akan dipanggil ke Surabaya untuk sesi final offline dan pitching langsung. Panduan lomba menyebut bahwa final dilaksanakan secara offline di Maspion IT, Surabaya, untuk tim yang lolos 30 besar. \r\n\r\n\r\nDalam perjalanannya, tim Imagine Presma fokus pada pengembangan website sekolah yang tidak hanya menarik secara visual namun juga memuat performa teknis, manajemen server atau elemen infrastruktur yang kuat — sesuai dengan kriteria lomba yang menilai aspek UI/UX, admin infrastruktur, dan strateginya. \r\n\r\n\r\nSir Ilham juga menambahkan bahwa “Pengalaman di lomba ini bukan hanya soal menang, tetapi soal pembelajaran nyata untuk siswa: bagaimana caranya mereka bisa menerapkan skill-TI di dunia nyata, mulai dari coding, UI/UX, hingga deployment server dan optimasi website.”\r\n\r\nKe depan, tim Imagine Presma dan SMK Prestasi Prima berharap dapat menembus final 30 besar, sehingga bisa hadir di Surabaya untuk tahap final dan membawa nama baik sekolah ke kancah nasional. “Target kami sederhana: masuk final 30 besar dan terus naik hingga juara,” ujar salah satu anggota tim, Abi.\r\nSekolah pun telah menyediakan fasilitas pendukung seperti lab komputer, koneksi internet cepat, mentor tambahan, agar tim bisa mempersiapkan diri sebaik mungkin.\r\n\r\nKami mengucapkan selamat kepada tim Imagine Presma dan SMK Prestasi Prima atas pencapaian ini — semoga sukses menembus final dan membawa prestasi lebih lanjut bagi sekolah dan komunitas kejuruan.",
-                'published_at' => null,
-                'created_at' => Carbon::parse('2025-10-19 13:03:43'),
-                'updated_at' => Carbon::parse('2025-10-19 18:12:17'),
-            ],
-            [
-                'id' => 10,
-                'category_id' => 1,
-                'title' => 'SMK Prestasi Prima Gelar Kegiatan Kokurikuler: Satu Minggu Penuh Belajar Praktik Sesuai Jurusan',
-                'slug' => 'smk-prestasi-prima-gelar-kegiatan-kokurikuler-satu-minggu-penuh-belajar-praktik-sesuai-jurusan',
-                'thumbnail' => 'uploads/thumbnails/1760922715_SMK Prestasi Prima Gelar Kegiatan Kokurikuler Satu Minggu Penuh Belajar Praktik Sesuai Jurusan.jpeg',
-                'excerpt' => null,
-                'content' => "SMK Prestasi Prima kembali melaksanakan Kegiatan Kokurikuler sebagai bagian dari penguatan pembelajaran berbasis praktik di lingkungan sekolah. Kegiatan ini berlangsung selama satu minggu penuh, dimulai dari Senin, 13 Oktober hingga Jumat, 17 Oktober 2025, dengan melibatkan seluruh jurusan di SMK Prestasi Prima.\r\n\r\nBerbeda dari pembelajaran teori di kelas, kegiatan kokurikuler ini berfokus pada penerapan langsung ilmu sesuai bidang keahlian masing-masing jurusan. Siswa PPLG (Pengembangan Perangkat Lunak dan Gim) belajar membuat aplikasi sederhana serta gim edukatif menggunakan bahasa pemrograman dasar. Jurusan TJKT (Teknik Jaringan Komputer dan Telekomunikasi) mempraktikkan perakitan perangkat jaringan dan uji konektivitas antar-komputer. Sementara itu, siswa DKV (Desain Komunikasi Visual) menyalurkan kreativitasnya melalui pembuatan poster digital bertema “Inovasi dan Kemandirian Siswa SMK”, dan jurusan Broadcasting & Film (BCF) membuat liputan dokumenter tentang seluruh rangkaian kegiatan.\r\n\r\nKepala Sekolah Sir Hendry Kurniawan menyampaikan apresiasinya atas semangat para siswa dan guru yang telah menyukseskan kegiatan tersebut. “Kegiatan kokurikuler ini menjadi ajang siswa untuk mengasah keterampilan nyata di bidangnya masing-masing. Di sinilah mereka belajar memecahkan masalah, bekerja sama, dan menunjukkan kreativitas. Semua ini adalah bagian penting dari pembentukan karakter siswa SMK Prestasi Prima,” tutur Sir Hendry saat meninjau kegiatan di Lab Multimedia. Ia juga menegaskan bahwa meskipun kegiatan berlangsung intens selama satu minggu penuh, jam pulang siswa tetap seperti biasa, agar rutinitas belajar tetap seimbang dan teratur.\r\n\r\nKegiatan kokurikuler ini diakhiri dengan pameran hasil karya siswa dari setiap jurusan, yang menampilkan inovasi dan kreativitas mereka selama proses belajar. Melalui kegiatan ini, SMK Prestasi Prima menegaskan komitmennya untuk mencetak lulusan yang kompeten, berkarakter, dan siap menghadapi dunia kerja maupun pendidikan lanjut.",
-                'published_at' => null,
-                'created_at' => Carbon::parse('2025-10-19 13:04:20'),
-                'updated_at' => Carbon::parse('2025-10-19 18:11:55'),
-            ],
-            [
                 'id' => 11,
                 'category_id' => 1,
                 'title' => 'Ratusan Siswa SMA-SMK Prestasi Prima Hadiri Sosialisasi Jalur Masuk UPNVJ',
                 'slug' => 'ratusan-siswa-sma-smk-prestasi-prima-hadiri-sosialisasi-jalur-masuk-upnvj',
-                'thumbnail' => 'uploads/thumbnails/1760922640_SMK Prestasi Prima Jakarta Kunjungi Universitas Amikom Membuka Wawasan Dunia Pendidikan Tinggi dan Industri Kreatif.jpeg',
+                'thumbnail' => 'uploads/thumbnails/520.webp',
                 'excerpt' => null,
                 'content' => "Memasuki masa penerimaan mahasiswa baru, Universitas Pembangunan Nasional “Veteran” Jakarta (UPNVJ) kembali menerima undangan sosialisasi tentang jalur masuk UPNVJ yang berlangsung di SMA-SMK Prestasi Prima, Jakarta Timur, pada Senin, 24 Februari 2025.\r\n\r\nTidak hanya ratusan siswa, sosialisasi ini juga dihadiri perwakilan guru dari SMA-SMK Prestasi Prima.\r\n\r\nAntuasiasme luar biasa juga ditunjukkan para siswa/siswi yang serentak menyimak penjelasan dari Kepala Humas UPNVJ Dr Witanti Prihatiningsih dan Anisa Triselia selaku staf Humas UPNVJ saat menjelaskan tentang fakultas juga jalur masuk yang tersedia di UPNVJ.\r\n\r\nAgenda ini bersifat dua arah, sehingga, narasumber dan peserta bisa melakukan tanya jawab seara langsung dengan tujuan membantu siswa memahami proses penerimaan jalur masuk dan memberikan pemahaman komprehensif kepada siswa tentang tahapan, syarat, dan strategi mengikuti seleksi masuk UPNVJ 2025. \r\n\r\n“Sosialisasi semacam ini penting untuk membantu siswa mempersiapkan diri dengan baik dalam menghadapi seleksi masuk perguruan tinggi. Melalui kegiatan ini, siswa dapat memperoleh informasi yang akurat mengenai prosedur dan mekanisme masuk UPNVJ, serta strategi pemilihan program studi yang mereka minati,” ujar Witanti.\r\n\r\nTidak hanya UPNVJ, puluhan perguruan tinggi negeri dan swasta lainnya juga ikut meramaikan sosialisasi penerimaan mahasiswa baru yang digelar oleh SMA-SMK Prestasi Prima. Diharapkan lewat acara ini, penyebaran informasi dan kepeminatan siswauntuk naik ke jenjang perguruan tinggi dapat meningkat.",
                 'published_at' => null,
@@ -101,41 +191,152 @@ class PrestasiprimaNewsSeeder extends Seeder
                 'updated_at' => Carbon::parse('2025-10-19 18:07:36'),
             ],
             [
-                'id' => 13,
-                'category_id' => 5,
-                'title' => 'SMK Prestasi Prima Terima Program Makan Bergizi Gratis dari Pemerintah',
-                'slug' => 'smk-prestasi-prima-terima-program-makan-bergizi-gratis-dari-pemerintah',
-                'thumbnail' => 'uploads/thumbnails/1760922613_SMK Prestasi Prima Terima Program Makan Bergizi Gratis dari Pemerintah.jpeg',
-                'excerpt' => null,
-                'content' => "Jakarta Timur, 19 Oktober 2025 — SMK Prestasi Prima menjadi salah satu sekolah kejuruan yang menerima Program Makan Bergizi Gratis (MBG) dari pemerintah pusat. Program nasional yang digagas oleh Presiden Prabowo Subianto ini resmi diluncurkan di sejumlah sekolah di Jakarta Timur, termasuk SMK Prestasi Prima yang berlokasi di Cilangkap.\r\n\r\nKepala Sekolah SMK Prestasi Prima, Sir Hendry Kurniawan, menyampaikan apresiasinya terhadap program tersebut. “Kami merasa sangat bersyukur dan berterima kasih kepada pemerintah, khususnya Bapak Presiden Prabowo Subianto, atas perhatian besar beliau terhadap pendidikan dan kesehatan siswa,” ujar Sir Hendry saat ditemui di aula sekolah, seusai acara peresmian program. “Program makan bergizi gratis ini bukan sekadar memberikan makanan, tetapi juga energi dan semangat bagi anak-anak kami untuk belajar dan berprestasi lebih baik.”\r\n\r\nSir Hendry juga menegaskan bahwa program MBG memiliki dampak langsung terhadap kualitas pembelajaran siswa. Menurutnya, banyak siswa yang sebelumnya datang ke sekolah tanpa sarapan karena keterbatasan ekonomi. Dengan adanya makanan bergizi setiap hari, siswa kini lebih fokus dan aktif di kelas. “Kami melihat perubahan nyata. Anak-anak lebih bersemangat mengikuti pelajaran, tidak mudah lelah, dan suasana belajar pun menjadi jauh lebih positif. Ini bukti nyata bahwa perhatian terhadap gizi berpengaruh langsung terhadap kualitas pendidikan,” tambahnya.\r\n\r\nSelain SMK Prestasi Prima, beberapa sekolah lain di wilayah Jakarta Timur juga ikut menerima program MBG tahap pertama ini. Setiap sekolah mendapatkan pasokan bahan makanan bergizi, meliputi nasi, lauk pauk, sayuran segar, buah, dan susu. Pemerintah bekerja sama dengan berbagai pihak, termasuk UMKM lokal, untuk memastikan suplai makanan tetap higienis dan memenuhi standar gizi nasional.\r\n\r\n“Harapan kami, program ini terus berjalan dan bahkan ditingkatkan cakupannya. Dengan tubuh sehat dan pikiran kuat, siswa-siswa Indonesia akan siap menjadi generasi emas tahun 2045,” tutup Sir Hendry optimistis.",
-                'published_at' => null,
-                'created_at' => Carbon::parse('2025-10-19 13:06:07'),
-                'updated_at' => Carbon::parse('2025-10-19 18:10:13'),
-            ],
+    'id' => 13,
+    'category_id' => 5,
+    'title' => 'SMA Prestasi Prima Terima Program Makan Bergizi Gratis dari Pemerintah',
+    'slug' => 'sma-prestasi-prima-terima-program-makan-bergizi-gratis-dari-pemerintah',
+    'thumbnail' => 'uploads/thumbnails/1760879945_SMK Prestasi Prima Terima Program Makan Bergizi Gratis dari Pemerintah.jpeg',
+    'excerpt' => null,
+    'content' => '
+        <p>
+            <strong>Jakarta Timur, 19 Oktober 2025</strong> — 
+            <strong>SMA Prestasi Prima</strong> menjadi salah satu sekolah swasta berakreditasi A
+            yang menerima <strong>Program Makan Bergizi Gratis (MBG)</strong> dari pemerintah pusat.
+            Program nasional yang digagas oleh Presiden
+            <strong>Prabowo Subianto</strong> ini resmi diluncurkan di sejumlah sekolah
+            di wilayah Jakarta Timur, termasuk SMA Prestasi Prima yang berlokasi di
+            <strong>Cilangkap</strong>.
+        </p>
+
+        <p>
+            Kepala Sekolah <strong>SMA Prestasi Prima</strong>, 
+            <strong>Sir David</strong>, menyampaikan apresiasi atas terselenggaranya
+            program tersebut. Ia menilai program MBG merupakan bentuk perhatian nyata
+            pemerintah terhadap <strong>kesehatan dan kualitas pendidikan peserta didik</strong>.
+        </p>
+
+        <blockquote>
+            <p>
+                “Kami merasa sangat bersyukur dan berterima kasih kepada pemerintah,
+                khususnya Bapak Presiden Prabowo Subianto, atas perhatian besar beliau
+                terhadap dunia pendidikan. Program makan bergizi gratis ini bukan hanya
+                sekadar menyediakan makanan, tetapi juga menjadi sumber energi dan
+                motivasi bagi siswa-siswi kami untuk belajar dan berprestasi lebih baik,”
+                ujar <strong>Sir David</strong> saat ditemui di aula sekolah.
+            </p>
+        </blockquote>
+
+        <p>
+            Menurut Sir David, program MBG memberikan dampak langsung terhadap
+            <strong>konsentrasi dan semangat belajar siswa</strong>. Ia mengungkapkan
+            bahwa sebelum adanya program ini, sebagian siswa datang ke sekolah tanpa
+            sarapan akibat keterbatasan ekonomi keluarga.
+        </p>
+
+        <p>
+            “Kini kami melihat perubahan yang signifikan. Siswa menjadi lebih fokus,
+            lebih aktif di kelas, dan tidak mudah lelah. Suasana belajar pun terasa
+            jauh lebih positif. Ini membuktikan bahwa pemenuhan gizi memiliki
+            pengaruh besar terhadap kualitas pembelajaran,” tambahnya.
+        </p>
+
+        <p>
+            Selain <strong>SMA Prestasi Prima</strong>, sejumlah sekolah lain di wilayah
+            Jakarta Timur juga menerima program MBG tahap pertama ini. Setiap sekolah
+            mendapatkan pasokan makanan bergizi yang terdiri dari:
+        </p>
+
+        <ul>
+            <li>Nasi</li>
+            <li>Lauk pauk bernutrisi</li>
+            <li>Sayuran segar</li>
+            <li>Buah-buahan</li>
+            <li>Susu</li>
+        </ul>
+
+        <p>
+            Dalam pelaksanaannya, pemerintah bekerja sama dengan berbagai pihak,
+            termasuk <strong>UMKM lokal</strong>, untuk memastikan seluruh bahan makanan
+            diproses secara higienis dan memenuhi <strong>standar gizi nasional</strong>.
+        </p>
+
+        <p>
+            Menutup pernyataannya, Sir David berharap program ini dapat terus berlanjut
+            dan diperluas jangkauannya ke lebih banyak sekolah di Indonesia.
+        </p>
+
+        <p>
+            “Dengan tubuh yang sehat dan pikiran yang kuat, kami optimistis siswa-siswi
+            Indonesia akan tumbuh menjadi generasi unggul dan siap menyongsong
+            <strong>Indonesia Emas 2045</strong>,” tutupnya.
+        </p>
+    ',
+    'published_at' => null,
+    'created_at' => Carbon::parse('2025-10-19 13:06:07'),
+    'updated_at' => Carbon::parse('2025-10-19 18:10:13'),
+],
+
             [
-                'id' => 14,
-                'category_id' => 5,
-                'title' => 'SMK Prestasi Prima Resmikan Kantin Baru di Belakang Sekolah, Sediakan Meja dan Kursi Nyaman untuk Siswa',
-                'slug' => 'smk-prestasi-prima-resmikan-kantin-baru-di-belakang-sekolah-sediakan-meja-dan-kursi-nyaman-untuk-siswa',
-                'thumbnail' => 'uploads/thumbnails/1760922592_SMK Prestasi Prima Resmikan Kantin Baru di Belakang Sekolah, Sediakan Meja dan Kursi Nyaman untuk Siswa.jpeg',
-                'excerpt' => null,
-                'content' => "Jakarta Timur, 4 Oktober 2025 — Dalam upaya meningkatkan kenyamanan dan ketertiban lingkungan sekolah, SMK Prestasi Prima resmi membuka kantin baru yang berlokasi di belakang gedung sekolah. Kehadiran kantin tambahan ini menjadi solusi dari keterbatasan tempat duduk di kantin utama, yang sebelumnya sering membuat siswa makan di lorong-lorong kelas.\r\n\r\nKantin baru tersebut dilengkapi dengan meja dan kursi yang tertata rapi, serta area yang cukup luas untuk menampung lebih banyak siswa saat jam istirahat. Dengan suasana yang lebih terbuka dan nyaman, pihak sekolah berharap kebiasaan makan di tempat yang kurang tepat, seperti di depan kelas atau di tangga, tidak lagi terjadi. “Kami ingin seluruh siswa memiliki tempat yang layak dan bersih untuk makan. Dengan adanya kantin baru ini, aktivitas makan siang bisa lebih tertib, nyaman, dan tentu saja lebih higienis,” ujar Sir Irham, selaku guru bidang Kesiswaan SMK Prestasi Prima.\r\n\r\nSir Irham juga menambahkan bahwa penambahan fasilitas ini merupakan bagian dari pembinaan karakter disiplin dan tanggung jawab siswa. “Kami terus berupaya menciptakan lingkungan belajar yang positif. Salah satu caranya adalah dengan menata ulang area makan siswa agar lebih teratur. Sekolah menyediakan sarana, dan kami berharap siswa pun menjaga kebersihan serta ketertiban bersama,” tuturnya.\r\n\r\nKepala Sekolah Sir Hendry Kurniawan turut menyambut baik inisiatif tersebut. Ia menilai bahwa pembangunan kantin baru ini tidak hanya soal fasilitas, tetapi juga bagian dari upaya membangun budaya sekolah yang sehat dan beretika. “Tempat makan yang baik akan menciptakan kebiasaan yang baik pula. Kami ingin siswa-siswi SMK Prestasi Prima tidak hanya cerdas, tetapi juga berperilaku santun dan menjaga lingkungan sekolah,” ujarnya.\r\n\r\nDengan adanya kantin baru ini, kini siswa-siswi SMK Prestasi Prima memiliki dua area kantin aktif yang siap melayani kebutuhan makan dan minum selama jam istirahat. Suasana sekolah pun terlihat lebih tertib dan nyaman, mendukung semangat belajar setiap harinya.",
-                'published_at' => null,
-                'created_at' => Carbon::parse('2025-10-19 13:06:47'),
-                'updated_at' => Carbon::parse('2025-10-19 18:09:52'),
-            ],
-            [
-                'id' => 16,
-                'category_id' => 2,
-                'title' => 'SMK Prestasi Prima Kembangkan Sistem Absensi Digital Berbasis ID Card Multifungsi',
-                'slug' => 'smk-prestasi-prima-kembangkan-sistem-absensi-digital-berbasis-id-card-multifungsi',
-                'thumbnail' => 'uploads/thumbnails/1760922561_SMK Prestasi Prima Kembangkan Sistem Absensi Digital Berbasis ID Card Multifungsi.jpeg',
-                'excerpt' => null,
-                'content' => "Inovasi digital kembali hadir dari siswa dan guru SMK Prestasi Prima, Jakarta Timur. Kali ini, tim teknologi sekolah berhasil mengembangkan sebuah sistem absensi otomatis berbasis ID Card elektronik (e-ID) yang multifungsi. Sistem ini tidak hanya digunakan untuk kehadiran siswa, tetapi juga terintegrasi dengan sistem pembayaran non-tunai dan fungsi transportasi publik layaknya e-money.\r\n\r\nPerangkat utama dari sistem ini berupa box absensi digital, yaitu kotak pintar yang dilengkapi sensor RFID (Radio Frequency Identification). Di dalam setiap kartu identitas siswa, terdapat chip yang mampu melakukan tap-in ke perangkat tersebut. Saat siswa menempelkan ID Card mereka di permukaan box, sistem langsung merekam waktu kedatangan dan pulang secara otomatis ke database sekolah. Teknologi ini juga dirancang agar terhubung dengan jaringan Wi-Fi sekolah, sehingga data absensi bisa dipantau secara real-time oleh guru dan wali kelas melalui dashboard khusus.\r\n\r\nYang membuat sistem ini unik adalah fungsi ganda yang dimiliki oleh ID Card siswa. Kartu tersebut tidak hanya berfungsi untuk absensi, tetapi juga bisa digunakan layaknya e-money, seperti untuk membayar transportasi umum (TransJakarta, MRT, dan tol), serta bertransaksi di kantin sekolah. “Kami ingin menciptakan satu kartu serbaguna yang tidak hanya memudahkan kehadiran, tetapi juga mendukung gaya hidup digital siswa,” ujar Sir Ilham, guru pembimbing dari jurusan Teknik Jaringan Komputer dan Telekomunikasi (TJKT) yang turut memimpin proyek ini.\r\n\r\nProyek sistem absensi digital ini dikembangkan oleh tim gabungan dari jurusan PPLG (Pengembangan Perangkat Lunak dan Gim) dan TJKT, dengan melibatkan siswa dalam seluruh tahap pembuatan — mulai dari pemrograman database, desain perangkat keras, hingga integrasi dengan sistem pembayaran digital. Kepala sekolah, Sir Hendry Kurniawan, menyampaikan bahwa inovasi seperti ini adalah bukti nyata dari penerapan kurikulum berbasis proyek di SMK Prestasi Prima. “Kami ingin siswa belajar bukan hanya teori, tetapi juga bagaimana teknologi dapat diterapkan untuk kebutuhan nyata sekolah dan masyarakat,” ujarnya.\r\n\r\nSistem absensi berbasis ID Card multifungsi ini rencananya akan mulai diuji coba di lingkungan sekolah pada semester berikutnya. Dengan penerapan teknologi ini, SMK Prestasi Prima berharap dapat menjadi pelopor sistem sekolah cerdas (smart school) di wilayah Jakarta Timur, sekaligus mendukung gerakan cashless society dan efisiensi administrasi pendidikan berbasis digital.",
-                'published_at' => null,
-                'created_at' => Carbon::parse('2025-10-19 13:07:39'),
-                'updated_at' => Carbon::parse('2025-10-19 18:09:21'),
-            ],
+    'id' => 14,
+    'category_id' => 5,
+    'title' => 'SMA Prestasi Prima Resmikan Kantin Baru di Belakang Sekolah, Sediakan Meja dan Kursi Nyaman untuk Siswa',
+    'slug' => 'sma-prestasi-prima-resmikan-kantin-baru-di-belakang-sekolah-sediakan-meja-dan-kursi-nyaman-untuk-siswa',
+    'thumbnail' => 'uploads/thumbnails/1760922592_SMK Prestasi Prima Resmikan Kantin Baru di Belakang Sekolah, Sediakan Meja dan Kursi Nyaman untuk Siswa.jpeg',
+    'excerpt' => null,
+    'content' => '
+        <p>
+            <strong>Jakarta Timur, 4 Oktober 2025</strong> — 
+            Dalam upaya meningkatkan kenyamanan dan ketertiban lingkungan sekolah,
+            <strong>SMA Prestasi Prima</strong> resmi meresmikan kantin baru yang
+            berlokasi di belakang gedung sekolah. Kehadiran fasilitas ini menjadi
+            solusi atas keterbatasan tempat duduk di kantin utama yang sebelumnya
+            kerap membuat siswa makan di lorong-lorong kelas.
+        </p>
+
+        <p>
+            Kantin baru tersebut dilengkapi dengan <strong>meja dan kursi yang tertata rapi</strong>
+            serta area yang lebih luas sehingga mampu menampung lebih banyak siswa
+            pada jam istirahat. Dengan suasana yang lebih terbuka, bersih, dan nyaman,
+            pihak sekolah berharap kebiasaan makan di area yang kurang tepat,
+            seperti di depan kelas atau di tangga, tidak lagi terjadi.
+        </p>
+
+        <blockquote>
+            <p>
+                “Kami ingin seluruh siswa memiliki tempat yang layak, bersih, dan nyaman
+                untuk makan. Dengan adanya kantin baru ini, aktivitas makan siang dapat
+                berlangsung lebih tertib, nyaman, dan tentunya lebih higienis,”
+                ujar <strong>Sir David</strong>, selaku guru bidang Kesiswaan
+                <strong>SMA Prestasi Prima</strong>.
+            </p>
+        </blockquote>
+
+        <p>
+            Sir David menambahkan bahwa penambahan fasilitas kantin ini juga merupakan
+            bagian dari upaya pembinaan <strong>karakter disiplin dan tanggung jawab siswa</strong>.
+            Sekolah tidak hanya menyediakan sarana, tetapi juga menanamkan kesadaran
+            kepada siswa untuk menjaga kebersihan dan ketertiban bersama.
+        </p>
+
+        <p>
+            “Kami terus berupaya menciptakan lingkungan belajar yang positif.
+            Dengan penataan area makan yang lebih baik, diharapkan siswa dapat
+            membiasakan diri untuk hidup tertib, bertanggung jawab, dan peduli
+            terhadap lingkungan sekolah,” tuturnya.
+        </p>
+
+        <p>
+            Pihak sekolah menyampaikan bahwa dengan hadirnya kantin baru ini,
+            <strong>SMA Prestasi Prima</strong> kini memiliki dua area kantin aktif
+            yang siap melayani kebutuhan makan dan minum siswa selama jam istirahat.
+            Keberadaan fasilitas ini turut menciptakan suasana sekolah yang
+            lebih nyaman, tertib, dan mendukung semangat belajar siswa setiap hari.
+        </p>
+    ',
+    'published_at' => null,
+    'created_at' => Carbon::parse('2025-10-19 13:06:47'),
+    'updated_at' => Carbon::parse('2025-10-19 18:09:52'),
+],
             [
                 'id' => 17,
                 'category_id' => 4,
@@ -149,40 +350,16 @@ class PrestasiprimaNewsSeeder extends Seeder
                 'updated_at' => Carbon::parse('2025-10-19 18:09:00'),
             ],
             [
-                'id' => 20,
-                'category_id' => 2,
-                'title' => 'Pekan Kokurikuler SMK Prestasi Prima 2025',
-                'slug' => 'pekan-kokurikuler-smk-prestasi-prima-2025',
-                'thumbnail' => 'uploads/thumbnails/1760922515_Pekan Kokurikuler SMK Prestasi Prima 2025.webp',
-                'excerpt' => null,
-                'content' => "Pekan Kokurikuler SMK Prestasi Prima 2025 merupakan rangkaian kegiatan pembelajaran berbasis proyek dan kreativitas yang melibatkan seluruh siswa kelas X dan XI dari berbagai jurusan — PPLG, TJKT, DKV, dan BCF.\r\n\r\nKegiatan ini bertujuan untuk mengasah kemampuan kolaboratif, inovatif, serta penerapan ilmu yang telah dipelajari di kelas ke dalam bentuk nyata. Selama lima hari pelaksanaan, siswa berpartisipasi dalam berbagai proyek, presentasi, dan kegiatan kolaborasi lintas jurusan yang mendorong kreativitas serta pengembangan soft skill.\r\n\r\nMelalui Pekan Kokurikuler, SMK Prestasi Prima berkomitmen menumbuhkan karakter mandiri, berintegritas, dan siap bersaing di dunia industri serta masyarakat global.",
-                'published_at' => null,
-                'created_at' => Carbon::parse('2025-10-19 13:10:55'),
-                'updated_at' => Carbon::parse('2025-10-19 18:08:35'),
-            ],
-            [
                 'id' => 21,
                 'category_id' => 1,
-                'title' => 'SMK Prestasi Prima: Sekolah Berakreditasi A dengan Komitmen Mutu dan Inovasi Pendidikan',
-                'slug' => 'smk-prestasi-prima-sekolah-berakreditasi-a-dengan-komitmen-mutu-dan-inovasi-pendidikan',
-                'thumbnail' => 'uploads/thumbnails/1760922479_SMK Prestasi Prima Sekolah Berakreditasi A dengan Komitmen Mutu dan Inovasi Pendidikan.jpeg',
+                'title' => 'SMA Prestasi Prima Perkuat Pendidikan Berkualitas melalui Kurikulum Nasional, Internasional, dan Pendekatan STEAM',
+                'slug' => 'SMA Prestasi Prima Perkuat Pendidikan Berkualitas melalui Kurikulum Nasional, Internasional, dan Pendekatan STEAM',
+                'thumbnail' => 'uploads/thumbnails/DSC00052.JPG',
                 'excerpt' => null,
-                'content' => "SMK Prestasi Prima merupakan salah satu sekolah kejuruan unggulan di Jakarta Timur yang telah meraih akreditasi “A” dari Badan Akreditasi Nasional Sekolah/Madrasah (BAN-S/M). Pencapaian ini menegaskan kualitas tinggi yang dimiliki sekolah, baik dalam bidang manajemen, proses pembelajaran, tenaga pendidik, maupun sarana dan prasarana yang tersedia. Akreditasi “A” menjadi bukti konkret bahwa SMK Prestasi Prima telah memenuhi seluruh standar mutu pendidikan nasional dengan hasil yang sangat memuaskan.\r\n\r\nBerlokasi di Jalan Hankam Raya No. 89, Cilangkap, Cipayung, Jakarta Timur, SMK Prestasi Prima berdiri di bawah naungan Yayasan Wahana Prestasi Prima. Sekolah ini dikenal luas sebagai SMK berbasis Teknologi Informasi dan Komunikasi (ICT) terbaik di Jakarta Timur. Dengan luas area lebih dari 6.000 meter persegi, sekolah ini dilengkapi dengan berbagai fasilitas modern seperti laboratorium komputer, studio broadcasting, laboratorium jaringan, serta ruang desain kreatif yang mendukung proses pembelajaran berbasis praktik industri.\r\n\r\nSMK Prestasi Prima memiliki beberapa program keahlian unggulan, di antaranya Pengembangan Perangkat Lunak dan Gim (PPLG), Teknik Jaringan Komputer dan Telekomunikasi (TJKT), Desain Komunikasi Visual (DKV), dan Broadcasting & Film (BCF). Setiap jurusan dirancang agar siswa mampu bersaing di dunia industri 4.0 yang menuntut keterampilan teknologi, komunikasi, dan kreativitas tingkat tinggi. Melalui pendekatan “learning by doing”, siswa tidak hanya diajarkan teori, tetapi juga praktik langsung dalam proyek dan kolaborasi lintas jurusan.\r\n\r\nKepala sekolah, Sir Hendry Kurniawan, menyampaikan bahwa keberhasilan meraih akreditasi “A” bukanlah tujuan akhir, melainkan awal dari komitmen untuk terus berinovasi. “Kami tidak berhenti di angka akreditasi. Fokus kami adalah memastikan setiap lulusan SMK Prestasi Prima memiliki karakter kuat, kemampuan teknis yang relevan, dan semangat untuk terus berkembang,” ujarnya dalam sambutan kegiatan akademik sekolah.\r\n\r\nKeberhasilan ini turut didukung oleh sistem manajemen mutu yang terencana, pembinaan guru secara berkelanjutan, serta kolaborasi dengan industri dan perguruan tinggi. Dengan akreditasi “A” dan reputasi sebagai sekolah berbasis ICT, SMK Prestasi Prima telah menjadi sekolah rujukan dan inspirasi bagi lembaga pendidikan kejuruan lainnya di Indonesia.",
+                'content' => "SMA Prestasi Prima merupakan sekolah swasta berakreditasi A yang berlokasi di Cilangkap, Jakarta Timur. Sebagai institusi pendidikan menengah atas, SMA Prestasi Prima menyelenggarakan program pendidikan 3 tahun yang mengintegrasikan kurikulum nasional dan internasional, guna mempersiapkan peserta didik menghadapi tantangan pendidikan tinggi dan dunia global. Dalam upaya mengakomodasi minat, bakat, serta rencana karier siswa, SMA Prestasi Prima menghadirkan berbagai pilihan program peminatan, baik di bidang sains maupun sosial. Pada Program IPA (Ilmu Pengetahuan Alam), pembelajaran difokuskan pada mata pelajaran Matematika, Fisika, Kimia, dan Biologi. Program ini dirancang untuk siswa yang bercita-cita melanjutkan studi dan berkarier di bidang Kedokteran, Teknik, Farmasi, maupun Sains Murni, dengan tujuan universitas unggulan seperti Fakultas Kedokteran Universitas Indonesia (FK UI), Institut Teknologi Bandung (ITB), Institut Teknologi Sepuluh Nopember (ITS), dan Universitas Gadjah Mada (UGM). Sementara itu, Program IPS (Ilmu Pengetahuan Sosial) menitikberatkan pembelajaran pada Ekonomi, Sosiologi, Geografi, dan Sejarah. Program ini membuka peluang karier di bidang Ekonomi, Hukum, Bisnis, hingga Politik, dengan universitas tujuan antara lain FEB UI, FH UGM, dan FISIP Universitas Padjadjaran (Unpad). Menjawab kebutuhan pendidikan global, SMA Prestasi Prima juga menyediakan Program IPA Bilingual dan IPS Bilingual. Pada program IPA Bilingual, kurikulum sains diajarkan menggunakan Bahasa Indonesia dan Bahasa Inggris, sehingga siswa tidak hanya unggul secara akademik tetapi juga memiliki kompetensi bahasa yang kuat. Lulusan program ini dipersiapkan untuk melanjutkan studi di program bilingual atau internasional, seperti FK UI (Bilingual), ITB Program Internasional, hingga universitas luar negeri. Adapun Program IPS Bilingual dirancang dengan pengantar bilingual dan perspektif global, khususnya dalam kajian ekonomi, sosial, dan kebijakan publik. Program ini membuka peluang karier di bidang Hubungan Internasional, Ekonomi, Hukum, dan Bisnis Internasional, dengan tujuan pendidikan tinggi seperti FISIP UI (Bilingual), FH UGM Program Internasional, serta universitas luar negeri. Dalam pelaksanaannya, SMA Prestasi Prima menerapkan Kurikulum Merdeka berbasis STEAM (Science, Technology, Engineering, Art, and Mathematics). Pendekatan ini diintegrasikan dengan penguatan Profil Pelajar Pancasila, nilai kewirausahaan, serta literasi digital sebagai bekal menghadapi tantangan abad ke-21. Melalui pembelajaran yang adaptif dan kontekstual, penguatan karakter serta kreativitas, dan orientasi masa depan serta global, SMA Prestasi Prima berkomitmen untuk mencetak lulusan yang tidak hanya unggul secara akademik, tetapi juga siap bersaing di tingkat nasional maupun internasional.",
                 'published_at' => null,
                 'created_at' => Carbon::parse('2025-10-19 13:13:00'),
                 'updated_at' => Carbon::parse('2025-10-19 18:07:59'),
-            ],
-            [
-                'id' => 23,
-                'category_id' => 3,
-                'title' => 'Hindia Ramaikan Pembukaan Exponer 2025 di SMK Prestasi Prima',
-                'slug' => 'hindia-ramaikan-pembukaan-exponer-2025-di-smk-prestasi-prima',
-                'thumbnail' => 'uploads/thumbnails/1760922295_Hindia Ramaikan Pembukaan Exponer 2025 di SMK Prestasi Prima.jpeg',
-                'excerpt' => null,
-                'content' => "Jakarta Timur, 14 Oktober 2025 — Suasana halaman SMK Prestasi Prima sore itu berubah menjadi lautan sorak dan tepuk tangan saat penyanyi kenamaan Indonesia, Hindia, naik ke atas panggung membawakan lagu andalannya untuk membuka acara Exponer 2025. Acara tahunan bergengsi ini menjadi wadah kreativitas dan kompetisi bagi para siswa SMP se-Jabodetabek, yang diadakan oleh SMA dan SMK Prestasi Prima sebagai bentuk kontribusi terhadap dunia pendidikan dan pengembangan bakat generasi muda.\r\n\r\nExponer 2025 mengusung tema “Explore Your Future Through Innovation and Art”, dengan berbagai lomba antar-SMP seperti kompetisi desain poster digital, futsal, tari modern, dan coding challenge. Kegiatan ini berlangsung di area terpadu SMA–SMK Prestasi Prima, Jakarta Timur, selama lima hari penuh. Pembukaan acara tahun ini menjadi momen istimewa karena menghadirkan Hindia, musisi muda dengan lagu-lagu penuh makna yang digemari oleh banyak pelajar. Dengan lagu seperti Evaluasi, Secukupnya, dan Wejangan Mama, Hindia berhasil menciptakan suasana hangat, penuh semangat, dan inspiratif.\r\n\r\nKepala Sekolah SMK Prestasi Prima, Sir Hendry Kurniawan, menyampaikan rasa terima kasih atas kehadiran Hindia dalam pembukaan Exponer 2025. “Kami ingin menunjukkan bahwa sekolah bukan hanya tempat belajar akademik, tetapi juga ruang bagi siswa untuk berkembang, berekspresi, dan menemukan potensi mereka. Kehadiran Hindia menjadi simbol bahwa kreativitas dan pendidikan bisa berjalan beriringan,” ujarnya dalam sambutan resmi.\r\n\r\nSelain konser pembuka, Exponer 2025 juga menghadirkan berbagai bazar karya siswa, pameran teknologi, dan booth interaktif dari jurusan PPLG, TJKT, DKV, serta Broadcasting & Film. Para pengunjung, terutama peserta dari SMP, diajak untuk mengenal lebih dekat dunia pendidikan kejuruan dan teknologi yang dikembangkan oleh SMK Prestasi Prima.\r\n\r\nAcara berjalan meriah namun tetap tertib, dengan dukungan penuh dari tim OSIS, guru pembina, dan seluruh panitia sekolah. Penampilan Hindia pun menutup hari pertama dengan pesan penuh motivasi:\r\n\r\n“Jangan pernah takut gagal di usia muda. Justru di sinilah kalian punya ruang untuk mencoba sebanyak-banyaknya,” ujar Hindia di tengah penampilannya, disambut tepuk tangan panjang dari para peserta.\r\n\r\nDengan konser pembuka yang spektakuler ini, Exponer 2025 resmi dibuka — menjadi awal dari pekan kompetisi yang seru, edukatif, dan penuh semangat kolaborasi antar pelajar. SMK Prestasi Prima kembali membuktikan diri sebagai sekolah yang tidak hanya unggul dalam teknologi, tetapi juga peduli pada pengembangan karakter dan kreativitas generasi muda.",
-                'published_at' => null,
-                'created_at' => Carbon::parse('2025-10-19 13:13:47'),
-                'updated_at' => Carbon::parse('2025-10-19 18:04:55'),
             ],
         ]);
     }

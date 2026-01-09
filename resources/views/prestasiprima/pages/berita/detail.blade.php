@@ -18,7 +18,7 @@
             </h1>
             <div class="flex items-center space-x-4 text-gray-500 text-sm">
               <span>{{ $news->category->name ?? 'Umum' }}</span>
-              <span>â€¢</span>
+              <span>•</span>
               <span>{{ $news->created_at->format('d M Y') }}</span>
             </div>
           </div>

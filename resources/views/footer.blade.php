@@ -110,7 +110,7 @@
       <a href="https://www.facebook.com/p/SMA-Prestasi-PRIMA-100035392916117/"
         class="bg-purple-500/90 hover:bg-purple-600 w-10 h-10 flex items-center justify-center rounded-full transition shadow-md"
         aria-label="Facebook SMA Prestasi Prima"><i class="ri-facebook-fill text-lg"></i></a>
-      <a href="https://www.instagram.com/smkprestasiprima/"
+      <a href="https://www.instagram.com/sma_prestasiprima/"
         class="bg-purple-500/90 hover:bg-purple-600 w-10 h-10 flex items-center justify-center rounded-full transition shadow-md"
         aria-label="Instagram SMA Prestasi Prima"><i class="ri-instagram-line text-lg"></i></a>
       <a href="https://www.youtube.com/@SEKOLAHPRESTASIPRIMA"
@@ -147,14 +147,14 @@
         </h3>
         <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-gray-400 mt-4">
           <li><a href="/" class="hover:text-purple-400 transition">Beranda</a></li>
-          <li><a href="#tentang" class="hover:text-purple-400 transition">Tentang</a></li>
-          <li><a href="/tentang/program" class="hover:text-purple-400 transition">Program</a></li>
           <li><a href="/dokumentasi/berita" class="hover:text-purple-400 transition">Berita</a></li>
-          <li><a href="/dokumentasi/prestasi" class="hover:text-purple-400 transition">Prestasi</a></li>
+          <li><a href="/informasi/testimoni" class="hover:text-purple-400 transition">Program</a></li>
           <li><a href="/dokumentasi/gallery" class="hover:text-purple-400 transition">Gallery</a></li>
+          <li><a href="/siswa/prestasi" class="hover:text-purple-400 transition">Prestasi</a></li>
+          <li><a href="/informasi/testimoni" class="hover:text-purple-400 transition">Testimoni</a></li>
           <li><a href="https://spmb.prestasiprima.sch.id/" class="hover:text-purple-400 transition">Pendaftaran</a></li>
           <li><a href="/presmaboard" class="hover:text-purple-400 transition">Presmaboard</a></li>
-          <li><a href="/presmalancer" class="hover:text-purple-400 transition">Presmalancer</a></li>
+          <li><a href="/siswa/ekstrakurikuler" class="hover:text-purple-400 transition">Ekstrakurikuler</a></li>
         </ul>
       </div>
 
@@ -168,7 +168,8 @@
         <ul class="text-sm text-gray-400 space-y-3 mt-4">
           <li><a href="/dokumentasi/kegiatan" class="hover:text-purple-400 transition">Kegiatan Sekolah</a></li>
           <li><a href="{{ url('/#beasiswa') }}" class="hover:text-purple-400 transition">Beasiswa & Prestasi</a></li>
-          <li><a href="/informasi/lulusan-ptn" class="hover:text-purple-400 transition">Lulusan PTN</a></li>
+          <li><a href="/informasi/lulusan-ptn" class="hover:text-purple-400 transition">Alumni Lulusan PTN</a></li>
+          <li><a href="/tentang/kurikulum" class="hover:text-purple-400 transition">Kurikulum & Metode Pembelajaran</a></li>
           <li><a href="{{ asset('assets/files/brosur.pdf') }}" download  class="hover:text-purple-400 transition">Download Brosur</a></li>
         </ul>
       </div>
@@ -195,7 +196,7 @@
     <li>
       <span class="font-medium text-white">Ingin tahu info lebih lanjut?</span><br>
       Kunjungi 
-      <a href="/presmacontact" class="text-purple-400 hover:underline">Hubungi Kami</a> 
+      <a href="https://spmb.prestasiprima.sch.id/" class="text-purple-400 hover:underline">Hubungi Kami</a> 
       untuk informasi lengkap.
     </li>
   </ul>
@@ -274,11 +275,27 @@
       <p class="flex items-center gap-2 text-gray-400">
         <span>© {{ date('Y') }} SMA Prestasi Prima</span>
         <span class="mx-2 text-white/30">|</span>
-        <span>Oren Solution - <span class="font-medium text-white">Version 2.0</span></span>
+        <span>
+          <a href="https://www.instagram.com/orensolutionspresma/"
+            target="_blank"
+            class="font-medium text-white hover:underline">
+            Oren Solution
+          </a>
+          - <span class="font-medium text-white">Version 2.0</span>
+        </span>
       </p>
+      
       <p class="text-gray-500 text-sm text-center md:text-right">
-        Dibuat oleh: <span class="text-purple-400 font-medium">R. Abimanyu XI PPLG 1</span>
-      </p>
+  Developed by :
+  <a href="https://www.instagram.com/r.abimanyyy/"
+     target="_blank"
+     class="font-bold text-purple-400 hover:text-purple-600 transition">
+    Rafael Abimanyu
+  </a>
+  <span class="text-gray-400"> · XI PPLG 1</span>
+</p>
+
+
     </div>
   </div>
 </footer>

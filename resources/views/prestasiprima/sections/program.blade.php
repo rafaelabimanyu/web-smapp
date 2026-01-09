@@ -60,9 +60,9 @@
       </h3>
 
       <!-- Tombol -->
-      <a href="{{ route('program.' . $key) }}"
-         class="mt-3 inline-block text-xs sm:text-sm text-purple-300 font-semibold hover:underline">
-        Lihat Selengkapnya
+      <a href="/tentang/program"
+        class="mt-3 inline-block text-xs sm:text-sm text-purple-300 font-semibold hover:underline">
+          Lihat Selengkapnya
       </a>
 
     </div>
