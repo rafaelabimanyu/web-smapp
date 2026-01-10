@@ -12,40 +12,63 @@
     </div>
 
 
-    <div class="relative z-10 text-center max-w-3xl mx-auto px-4" data-aos="fade-down">
-        <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo SMA Prestasi Prima"
-             class="w-24 h-24 mx-auto mb-5">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-            Karya & Proyek Siswa
-        </h1>
-        <p class="text-white/90 text-lg italic">
-            Temukan ide, inovasi, dan hasil karya siswa
-            <strong>SMA Prestasi Prima</strong>
-            yang telah terwujud dalam karya nyata dan membanggakan.
-        </p>
-    </div>
+    <div class="relative z-10 text-center max-w-3xl mx-auto px-4 md:px-6"
+     data-aos="fade-down">
+
+    <!-- Logo -->
+    <img src="{{ asset('assets/logo_sma.png') }}"
+         alt="Logo SMA Prestasi Prima"
+         class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4 md:mb-5">
+
+    <!-- Judul -->
+    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 md:mb-4">
+        Karya & Proyek Siswa
+    </h1>
+
+    <!-- Deskripsi -->
+    <p class="text-white/90 text-sm sm:text-base md:text-lg leading-relaxed italic">
+        Temukan ide, inovasi, dan hasil karya siswa
+        <strong>SMA Prestasi Prima</strong>
+        yang telah terwujud dalam karya nyata dan membanggakan.
+    </p>
+
+</div>
+
+
+
 </section>
 
 <!-- ====================== SECTION: KARYA UNGGULAN ====================== -->
-<section class="py-24 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6">
+<section class="py-16 md:py-24 bg-gray-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-4">
+        <!-- Header -->
+        <div class="text-center mb-12 md:mb-16"
+             data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-once="true">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-800 mb-3 md:mb-4">
                 Karya Unggulan Siswa
             </h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
+            <p class="text-gray-600 max-w-xl md:max-w-2xl mx-auto text-sm sm:text-base">
                 Karya siswa yang telah diterbitkan secara resmi dan tersedia
                 di marketplace nasional sebagai bentuk prestasi dan kreativitas nyata.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
             <!-- Cover -->
-            <div class="relative group" data-aos="zoom-in">
-                <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-25"></div>
-                <div class="relative bg-white rounded-2xl overflow-hidden shadow-xl">
+            <div class="relative group mx-auto max-w-sm sm:max-w-md"
+                 data-aos="fade-up"
+                 data-aos-duration="800"
+                 data-aos-once="true">
+                <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500
+                            rounded-2xl blur opacity-20"></div>
+
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-xl
+                            transition-transform duration-500 md:hover:scale-105">
                     <img src="{{ asset('assets/images/karya-proyek/buku.jpg') }}"
                          alt="Antologi Cerpen Jejak Tanpa Akhir 2"
                          class="w-full object-cover">
@@ -53,22 +76,29 @@
             </div>
 
             <!-- Detail -->
-            <div data-aos="fade-left">
-                <span class="inline-block mb-4 px-4 py-1 rounded-full text-sm font-semibold bg-purple-100 text-purple-700">
-                    📚 Buku Resmi Siswa
+            <div data-aos="fade-up"
+                 data-aos-duration="700"
+                 data-aos-delay="100"
+                 data-aos-once="true">
+
+                <span class="inline-block mb-3 px-4 py-1 rounded-full
+                             text-xs sm:text-sm font-semibold
+                             bg-purple-100 text-purple-700">
+                    📚 Buku Resmi Karya Siswa
                 </span>
 
-                <h3 class="text-3xl font-extrabold text-gray-800 mb-4">
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-4">
                     Antologi Cerpen: Jejak Tanpa Akhir 2
                 </h3>
 
-                <p class="text-gray-600 mb-6 leading-relaxed">
+                <p class="text-gray-600 mb-6 leading-relaxed text-sm sm:text-base">
                     Buku kumpulan cerpen karya siswa-siswi
                     <strong>SMA Prestasi Prima</strong> yang menyajikan kisah
                     penuh makna tentang harapan, perjuangan, cinta, dan kenangan.
                 </p>
 
-                <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
+                <!-- Info -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-sm">
                     @php
                         $info = [
                             ['Jenis Karya', 'Antologi Cerpen'],
@@ -79,28 +109,42 @@
                     @endphp
 
                     @foreach($info as [$label, $value])
-                        <div class="bg-white p-4 rounded-xl shadow">
-                            <p class="text-gray-500">{{ $label }}</p>
+                        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100"
+                             data-aos="fade-up"
+                             data-aos-delay="50"
+                             data-aos-once="true">
+                            <p class="text-gray-500 text-xs">{{ $label }}</p>
                             <p class="font-semibold text-gray-800">{{ $value }}</p>
                         </div>
                     @endforeach
                 </div>
 
-                <div class="flex flex-wrap gap-4">
+                <!-- Action -->
+                <div class="flex flex-col sm:flex-row gap-4"
+                     data-aos="fade-up"
+                     data-aos-delay="150"
+                     data-aos-once="true">
                     <a href="https://bit.ly/JTA2GUEPEDIA" target="_blank"
-                       class="px-6 py-3 rounded-xl bg-purple-600 text-white font-semibold shadow hover:bg-purple-700 transition">
+                       class="text-center px-6 py-3 rounded-xl
+                              bg-purple-600 text-white font-semibold
+                              shadow hover:bg-purple-700 transition">
                         Beli di Guepedia
                     </a>
                     <a href="https://bit.ly/JTA2SHOPEE" target="_blank"
-                       class="px-6 py-3 rounded-xl bg-white border border-purple-600 text-purple-600 font-semibold hover:bg-purple-50 transition">
+                       class="text-center px-6 py-3 rounded-xl
+                              bg-white border border-purple-600
+                              text-purple-600 font-semibold
+                              hover:bg-purple-50 transition">
                         Marketplace Lainnya
                     </a>
                 </div>
+
             </div>
 
         </div>
     </div>
 </section>
+
 
 <!-- ====================== CTA ====================== -->
 <section class="py-24 bg-gradient-to-r from-purple-600 to-pink-500 text-white text-center">
@@ -170,3 +214,4 @@ document.getElementById('btn-toggle-karya').addEventListener('click', function (
 });
 </script>
 @endsection
+

@@ -15,9 +15,10 @@
     <div class="relative z-10 text-center max-w-3xl mx-auto px-4" data-aos="fade-down">
         <img src="{{ asset('assets/logo_sma.png') }}" alt="Logo SMA Prestasi Prima"
              class="w-24 h-24 mx-auto mb-5">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-            SMA <span class="text-white">Prestasi Prima</span>
-        </h1>
+        <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4">
+    SMA <span class="text-white">Prestasi Prima</span>
+</h1>
+
         <p class="text-white/90 text-lg italic">
             "If better is possible, good is not enough"
         </p>
@@ -71,74 +72,136 @@
 </section>
 
 <!-- ====================== VISI & MISI ====================== -->
-<section class="py-28 bg-gradient-to-tr from-purple-100 via-white to-purple-50">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6 items-center">
+<section class="py-20 sm:py-24 md:py-28 
+                bg-gradient-to-tr from-purple-100 via-white to-purple-50">
+  <div class="max-w-7xl mx-auto 
+              grid grid-cols-1 md:grid-cols-2 
+              gap-10 md:gap-14 
+              px-4 sm:px-6 md:px-10 
+              items-center">
 
-        <div data-aos="fade-right">
-            <img src="{{ asset('assets/prestasiprima/gedungtinggi.webp') }}"
-                 class="rounded-3xl shadow-2xl hover:scale-105 transition duration-700">
-        </div>
+    {{-- GAMBAR --}}
+    <div data-aos="fade-up" class="order-1">
+      <img src="{{ asset('assets/prestasiprima/gedungtinggi.webp') }}"
+           class="rounded-2xl md:rounded-3xl 
+                  shadow-xl md:shadow-2xl
+                  w-full h-64 sm:h-80 md:h-auto
+                  object-cover
+                  transition duration-700 
+                  hover:scale-[1.03]">
+    </div>
 
-        <div data-aos="fade-left">
-            <h2 class="text-4xl font-extrabold mb-8">
-                Visi & <span class="text-purple-600">Misi</span> Sekolah
-            </h2>
+    {{-- KONTEN --}}
+    <div data-aos="fade-up" class="order-2">
 
-            <div class="mb-8">
-                <h3 class="text-xl font-semibold text-purple-600 mb-3">Visi</h3>
-                <p class="bg-purple-50 p-5 rounded-2xl shadow-md border border-purple-100">
-                    Mewujudkan lulusan SMA yang unggul secara akademik, berkarakter, berwawasan global,
-                    dan berlandaskan nilai Pancasila.
-                </p>
-            </div>
+      {{-- JUDUL --}}
+      <h2 class="text-3xl sm:text-4xl font-extrabold 
+                 mb-6 md:mb-8 
+                 text-center md:text-left">
+        Visi & <span class="text-purple-600">Misi</span> Sekolah
+      </h2>
 
-            <div>
-                <h3 class="text-xl font-semibold text-purple-600 mb-4">Misi</h3>
-                <ul class="space-y-4">
-                    @foreach ([
-                        'Menyelenggarakan pembelajaran akademik berkualitas dan berorientasi prestasi.',
-                        'Membentuk karakter siswa yang berintegritas dan berdaya saing global.',
-                        'Mengembangkan potensi peserta didik melalui kegiatan intrakurikuler dan ekstrakurikuler.',
-                        'Menanamkan nilai keimanan, etika, dan kepemimpinan.'
-                    ] as $misi)
-                    <li class="flex gap-3 bg-white p-4 rounded-xl border border-purple-100 shadow-md">
-                        <span class="w-3 h-3 mt-2 bg-purple-500 rounded-full"></span>
-                        <p>{{ $misi }}</p>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
+      {{-- VISI --}}
+      <div class="mb-6 md:mb-8">
+        <h3 class="text-lg sm:text-xl font-semibold text-purple-600 mb-3">
+          Visi
+        </h3>
+        <p class="bg-purple-50 
+                  p-4 sm:p-5 
+                  rounded-xl md:rounded-2xl 
+                  shadow-sm md:shadow-md 
+                  border border-purple-100
+                  text-sm sm:text-base
+                  leading-relaxed">
+          Mewujudkan lulusan SMA yang unggul secara akademik, berkarakter,
+          berwawasan global, dan berlandaskan nilai Pancasila.
+        </p>
+      </div>
+
+      {{-- MISI --}}
+      <div>
+        <h3 class="text-lg sm:text-xl font-semibold text-purple-600 mb-4">
+          Misi
+        </h3>
+        <ul class="space-y-3 sm:space-y-4">
+          @foreach ([
+            'Menyelenggarakan pembelajaran akademik berkualitas dan berorientasi prestasi.',
+            'Membentuk karakter siswa yang berintegritas dan berdaya saing global.',
+            'Mengembangkan potensi peserta didik melalui kegiatan intrakurikuler dan ekstrakurikuler.',
+            'Menanamkan nilai keimanan, etika, dan kepemimpinan.'
+          ] as $misi)
+          <li class="flex items-start gap-3 
+                     bg-white 
+                     p-4 
+                     rounded-xl 
+                     border border-purple-100 
+                     shadow-sm md:shadow-md
+                     text-sm sm:text-base
+                     leading-relaxed">
+            <span class="mt-2 w-2.5 h-2.5 bg-purple-500 rounded-full flex-shrink-0"></span>
+            <p>{{ $misi }}</p>
+          </li>
+          @endforeach
+        </ul>
+      </div>
 
     </div>
+
+  </div>
 </section>
 
+
 <!-- ====================== KEPALA SEKOLAH ====================== -->
-<section class="relative py-24 text-white overflow-hidden">
+<section class="relative py-20 md:py-24 text-white overflow-hidden">
+    
+    <!-- Background -->
     <div class="absolute inset-0">
         <img src="{{ asset('assets/prestasiprima/gedungprestasiprima.avif') }}"
-             class="w-full h-full object-cover opacity-20"> <!-- opacity dikurangi untuk membuat warna lebih soft -->
-                <div class="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 mix-blend-multiply"></div>    </div>
-    <div class="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 z-10 items-center">
-        <img src="{{ asset('assets/prestasiprima/kepsek.png') }}"
-             class="mx-auto w-80 rounded-none shadow-none"> <!-- hilangkan border/shadow -->
+             class="w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-br 
+                    from-purple-600 via-purple-500 to-purple-400 
+                    mix-blend-multiply"></div>
+    </div>
 
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 
+                grid grid-cols-1 md:grid-cols-2 
+                gap-10 md:gap-16 
+                z-10 items-center">
+
+        <!-- ================= JUDUL MOBILE ================= -->
+<h2 class="block md:hidden text-2xl font-bold text-center">
+    Sambutan <span class="text-purple-100">Kepala Sekolah</span>
+</h2>
+
+
+        <!-- ================= FOTO KEPALA SEKOLAH ================= -->
+        <img src="{{ asset('assets/prestasiprima/kepsek.png') }}"
+             alt="Kepala Sekolah SMA Prestasi Prima"
+             class="mx-auto w-64 sm:w-72 md:w-80 rounded-none shadow-none">
+
+        <!-- ================= KONTEN TEKS ================= -->
         <div>
-            <h2 class="text-4xl font-extrabold mb-5">
+
+            <!-- JUDUL DESKTOP -->
+            <h2 class="hidden md:block text-4xl font-extrabold mb-5">
                 Sambutan <span class="text-purple-100">Kepala Sekolah</span>
             </h2>
-            <p class="text-purple-50 mb-6 text-justify">
+
+            <p class="text-purple-50 mb-6 text-sm sm:text-base text-justify leading-relaxed">
                 SMA Prestasi Prima berkomitmen membangun generasi unggul secara akademik,
-                berkarakter kuat, dan siap menghadapi tantangan masa depan.
+                berkarakter kuat, serta memiliki kesiapan menghadapi tantangan masa depan
+                melalui pembelajaran yang bermakna dan berkelanjutan.
             </p>
 
-            <p class="font-semibold text-lg">
-                — <span class="text-purple-200">David H. Silaen, ST., MP.d</span><br>
+            <p class="font-semibold text-base sm:text-lg">
+                <span class="text-purple-200">David H. Silaen, ST., MP.d</span><br>
                 Kepala Sekolah SMA Prestasi Prima
             </p>
         </div>
+
     </div>
 </section>
+
 
 
 <!-- ====================== VIDEO ====================== -->

@@ -9,17 +9,21 @@
   <div class="max-w-7xl mx-auto px-4 md:px-8 text-center">
 
     <!-- ================= HEADER ================= -->
-    <div class="mb-12" data-aos="fade-down">
-      <img src="{{ asset('assets/logo_sma.png') }}"
-           alt="Logo Sekolah"
-           class="mx-auto h-14 mb-4">
+<div class="mb-16 md:mb-20 text-center" data-aos="fade-down">
 
-      <h3 class="text-lg font-bold text-gray-800">Prestasi Kami</h3>
+  <img src="{{ asset('assets/logo_sma.png') }}"
+       alt="Logo Sekolah"
+       class="mx-auto h-16 md:h-20 mb-6">
 
-      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
-        Galeri <span class="text-purple-600">Prestasi Siswa</span>
-      </h2>
-    </div>
+  <h3 class="text-xl md:text-2xl font-semibold text-gray-700 tracking-wide">
+    Prestasi Kami
+  </h3>
+
+  <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mt-3">
+    Galeri <span class="text-purple-600">Prestasi Siswa</span>
+  </h2>
+
+</div>
 
     <!-- ================= SWIPER ================= -->
     <div class="relative flex items-center justify-center"
