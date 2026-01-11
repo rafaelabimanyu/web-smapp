@@ -7,20 +7,39 @@
 <!-- =====================================================
 HEADER
 ===================================================== -->
-<section class="relative mt-[100px] min-h-[70vh] md:min-h-[80vh]
-               flex items-center justify-center text-center overflow-hidden"
-    style="background: url('{{ asset('assets/images/lulusanptn/herobg.png') }}') center/cover no-repeat;">
-    <div class="absolute inset-0 bg-purple-700/60"></div>
+<section
+    class="relative mt-[80px] sm:mt-[100px]
+           min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh]
+           flex items-center justify-center text-center overflow-hidden"
+    style="background: url('{{ asset('assets/images/lulusanptn/herobg.png') }}') center/cover no-repeat;"
+>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-purple-700/70"></div>
 
-    <div class="relative z-10 bg-white py-8 px-10 md:px-16 rounded-2xl shadow-xl">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-purple-600">
+    <!-- Content -->
+    <div
+        class="relative z-10 bg-white/95
+               py-6 px-6 sm:py-8 sm:px-10 md:px-16
+               rounded-xl sm:rounded-2xl
+               shadow-xl max-w-[90%] sm:max-w-xl md:max-w-2xl"
+    >
+        <h1
+            class="text-2xl sm:text-3xl md:text-5xl
+                   font-extrabold text-purple-600 tracking-tight"
+        >
             TESTIMONI ALUMNI
         </h1>
-        <p class="text-purple-500 mt-2 font-medium">
-            Cerita Inspiratif dari Alumni SMA Prestasi Prima
-        </p>
+
+       <p
+    class="text-xs sm:text-sm md:text-base
+           text-purple-500 mt-2 sm:mt-3 font-medium leading-relaxed"
+>
+    Cerita Inspiratif dari Alumni SMA Prestasi Prima
+</p>
+
     </div>
 </section>
+
 
 <!-- =====================================================
 TESTIMONI SLIDER

@@ -18,64 +18,67 @@
     </div>
 
     <!-- Content -->
-    <div class="relative z-10 text-center max-w-4xl mx-auto px-6" data-aos="fade-down">
+<div class="relative z-10 text-center max-w-2xl md:max-w-3xl mx-auto px-4 sm:px-6"
+     data-aos="fade-down">
 
-        <!-- Logo -->
-        <img src="{{ asset('assets/logo_sma.png') }}"
-             alt="Logo SMA Prestasi Prima"
-             class="w-24 h-24 mx-auto mb-6">
+    <!-- Logo -->
+    <img src="{{ asset('assets/logo_sma.png') }}"
+         alt="Logo SMA Prestasi Prima"
+         class="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto mb-4">
 
-        <!-- Title -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight">
-            Alumni SMA Prestasi Prima<br class="hidden sm:block">
-            <span class="text-white">Diterima di Perguruan Tinggi Negeri</span>
-        </h1>
+    <!-- Title -->
+    <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-3 leading-snug">
+        Alumni SMA Prestasi Prima<br class="hidden sm:block">
+        <span class="text-white">Diterima di Perguruan Tinggi Negeri</span>
+    </h1>
 
-        <!-- Description -->
-        <p class="text-white/90 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            SMA Prestasi Prima secara konsisten mencetak lulusan berkualitas yang berhasil
-            melanjutkan pendidikan ke berbagai <strong>Perguruan Tinggi Negeri (PTN)</strong>
-            ternama di Indonesia melalui jalur seleksi nasional seperti
-            <strong>SNBP, SNBT, dan jalur prestasi</strong>.
-        </p>
+    <!-- Description -->
+    <p class="text-white/90 text-xs sm:text-sm md:text-base leading-relaxed max-w-xl mx-auto">
+        SMA Prestasi Prima secara konsisten mencetak lulusan berkualitas yang berhasil
+        melanjutkan pendidikan ke berbagai <strong>PTN</strong> ternama melalui
+        <strong>SNBP, SNBT, dan jalur prestasi</strong>.
+    </p>
 
-        <!-- Highlight Info -->
-        <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <span class="px-5 py-2 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
-                <i data-lucide="graduation-cap" class="w-5 h-5 mr-2"></i>
-                Alumni Berprestasi
-            </span>
-            <span class="px-5 py-2 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
-                <i data-lucide="landmark" class="w-5 h-5 mr-2"></i>
-                PTN Favorit Nasional
-            </span>
-            <span class="px-5 py-2 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
-                <i data-lucide="trending-up" class="w-5 h-5 mr-2"></i>
-                Seleksi Nasional & Prestasi
-            </span>
-        </div>
+    <!-- Highlight Info -->
+    <div class="mt-5 flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
+        <span class="px-3 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
+            <i data-lucide="graduation-cap" class="w-4 h-4 mr-1.5"></i>
+            Alumni Berprestasi
+        </span>
+
+        <span class="px-3 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
+            <i data-lucide="landmark" class="w-4 h-4 mr-1.5"></i>
+            PTN Favorit Nasional
+        </span>
+
+        <span class="px-3 py-1.5 rounded-full bg-white/15 backdrop-blur border border-white/20 inline-flex items-center">
+            <i data-lucide="trending-up" class="w-4 h-4 mr-1.5"></i>
+            Seleksi Nasional & Prestasi
+        </span>
     </div>
+</div>
+
 </section>
 
 
 <!-- ========== LULUSAN PTN (GALLERY) ========== -->
-<section class="relative py-24 bg-gradient-to-b from-purple-50 to-white">
-  <div class="max-w-6xl mx-auto px-6">
+<section class="relative py-16 sm:py-20 bg-gradient-to-b from-purple-50 to-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
     <!-- Judul -->
-    <div class="text-center mb-14">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-purple-700">
+    <div class="text-center mb-10 sm:mb-14">
+      <h2 class="text-xl sm:text-2xl md:text-4xl font-extrabold text-purple-700">
         Lulusan Perguruan Tinggi Negeri
       </h2>
-      <p class="text-gray-600 mt-3">
+      <p class="text-gray-600 mt-2 text-sm sm:text-base">
         Prestasi siswa SMA Prestasi Prima di jalur SNBP
       </p>
     </div>
 
     <!-- Grid Gambar -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-10">
       @foreach (['image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jpg'] as $img)
-        <div class="rounded-3xl shadow-xl overflow-hidden cursor-pointer">
+        <div class="rounded-xl sm:rounded-2xl lg:rounded-3xl shadow-md sm:shadow-lg overflow-hidden cursor-pointer">
           <img
             src="{{ asset('assets/images/lulusanptn/' . $img) }}"
             alt="Lulusan PTN"
@@ -87,6 +90,7 @@
 
   </div>
 </section>
+
 
 <!-- ========== IMAGE MODAL ========== -->
 <div id="imageModal"

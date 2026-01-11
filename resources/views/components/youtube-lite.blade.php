@@ -27,7 +27,9 @@
          class="w-full aspect-video object-cover rounded-2xl">
   @else
     <div class="w-full aspect-video rounded-2xl bg-gradient-to-br {{ $gradient }} flex items-center justify-center px-6 text-center text-white font-semibold">
-      <span class="text-sm sm:text-base md:text-lg">{{ $title }}</span>
+<span class="text-[10px] sm:text-xs md:text-sm leading-tight line-clamp-2">
+    {{ $title }}
+</span>
     </div>
   @endif
 

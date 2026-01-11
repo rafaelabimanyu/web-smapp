@@ -148,14 +148,17 @@
         <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-gray-400 mt-4">
           <li><a href="/" class="hover:text-purple-400 transition">Beranda</a></li>
           <li><a href="/dokumentasi/berita" class="hover:text-purple-400 transition">Berita</a></li>
-          <li><a href="/informasi/testimoni" class="hover:text-purple-400 transition">Program</a></li>
-          <li><a href="/dokumentasi/gallery" class="hover:text-purple-400 transition">Gallery</a></li>
           <li><a href="/siswa/prestasi" class="hover:text-purple-400 transition">Prestasi</a></li>
+          <li><a href="/dokumentasi/gallery" class="hover:text-purple-400 transition">Gallery</a></li>
+          <li><a href="/informasi/testimoni" class="hover:text-purple-400 transition">Program</a></li>
           <li><a href="/informasi/testimoni" class="hover:text-purple-400 transition">Testimoni</a></li>
-          <li><a href="https://spmb.prestasiprima.sch.id/" class="hover:text-purple-400 transition">Pendaftaran</a></li>
+          <li><a href="/tentang/kurikulum" class="hover:text-purple-400 transition">Kurikulum</a></li>
           <li><a href="/virtual-tour" class="hover:text-purple-400 transition">Presmatour</a></li>
           <li><a href="/siswa/ekstrakurikuler" class="hover:text-purple-400 transition">Ekstrakurikuler</a></li>
+          <li><a href="https://spmb.prestasiprima.sch.id/" class="hover:text-purple-400 transition">Pendaftaran</a></li>
           <li><a href="/presmacontact" class="hover:text-purple-400 transition">Presmacontact</a></li>
+          <li><a href="/virtual-tour" class="hover:text-purple-400 transition">PresmaTour</a></li>
+
         </ul>
       </div>
 
@@ -184,8 +187,8 @@
   <ul class="space-y-3 text-sm text-gray-400 mt-4">
     <li>
       <span class="font-medium text-white">Bagaimana cara mendaftar?</span><br>
-      Pendaftaran dapat dilakukan melalui 
-      <a href="https://spmb.prestasiprima.sch.id/" class="text-purple-400 hover:underline">laman online</a> 
+      Pendaftaran dapat dilakukan melalui
+      <a href="https://spmb.prestasiprima.sch.id/" class="text-purple-400 hover:underline">laman online</a>
       atau langsung ke sekolah.
     </li>
 
@@ -196,8 +199,8 @@
 
     <li>
       <span class="font-medium text-white">Ingin tahu info lebih lanjut?</span><br>
-      Kunjungi 
-      <a href="https://spmb.prestasiprima.sch.id/" class="text-purple-400 hover:underline">Hubungi Kami</a> 
+      Kunjungi
+      <a href="https://spmb.prestasiprima.sch.id/" class="text-purple-400 hover:underline">Hubungi Kami</a>
       untuk informasi lengkap.
     </li>
   </ul>
@@ -234,7 +237,7 @@
           <span
             class="absolute left-0 -bottom-1 w-10 h-[2px] bg-gradient-to-r from-purple-500 to-purple-300 rounded-full"></span>
         </h2>
-        <form class="space-y-3">  
+        <form class="space-y-3">
           <label for="footer-contact-name" class="sr-only">Nama Anda</label>
           <input id="footer-contact-name" type="text" placeholder="Nama Anda"
             class="w-full px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-sm text-gray-200 focus:ring-2 focus:ring-purple-400 focus:outline-none">
@@ -276,20 +279,25 @@
       <p class="flex items-center gap-2 text-gray-400">
         <span>© {{ date('Y') }} SMA Prestasi Prima</span>
         <span class="mx-2 text-white/30">|</span>
-        <span>
-  <a href="https://www.instagram.com/orensolutionspresma/"
-     target="_blank"
-     class="font-medium text-white hover:text-orange-600 transition-colors duration-300 hover:underline">
-    Oren Solution
-  </a>
-  - <span class="font-medium text-white">Version 2.0</span>
+        <span class="inline-flex items-center gap-1
+             text-[11px] sm:text-sm font-semibold tracking-wide">
+    <a href="https://www.instagram.com/orensolutionspresma/"
+       target="_blank"
+       class="soft-gradient hover:underline">
+        Oren Solution
+    </a>
+
+    <span class="soft-gradient">
+        - Version 2.0
+    </span>
 </span>
 
+
       </p>
-      
-      
+
+
       <p class="text-sm text-center md:text-right flex flex-wrap justify-center md:justify-end items-center gap-1">
-  
+
   <!-- Developed by -->
   <a href="https://www.instagram.com/r.abimanyyy/"
      target="_blank"
@@ -354,4 +362,45 @@
 .kelas-link:hover {
   opacity: 0.85;
 }
+
+.soft-gradient {
+    background: linear-gradient(
+        90deg,
+        #ff8c2b,
+        #ffb347,
+        #ffd27d,
+        #ffb347,
+        #ff8c2b
+    );
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: softFlow 6s ease-in-out infinite;
+
+    text-shadow:
+        0 0 4px rgba(255, 140, 43, 0.35),
+        0 0 10px rgba(255, 179, 71, 0.25);
+}
+
+/* Gerakan gradasi pelan */
+@keyframes softFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover tetap elegan, tidak menyala berlebihan */
+.soft-gradient:hover {
+    text-shadow:
+        0 0 8px rgba(255, 140, 43, 0.6),
+        0 0 18px rgba(255, 179, 71, 0.4);
+}
+
 </style>

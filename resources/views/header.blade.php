@@ -54,13 +54,13 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </a>
-          <div class="dropdown-menu absolute left-0 hidden opacity-0 translate-y-3 bg-white shadow-lg border mt-2 rounded-lg w-56 text-gray-800">
+          <div class="dropdown-menu absolute left-0 hidden opacity-0 translate-y-3 bg-white shadow-lg border mt-2 rounded-lg w-max min-w-[200px] text-gray-800">
             <a href="/tentang/program" class="dropdown-item">Program</a>
             <a href="/tentang/kurikulum" class="dropdown-item">Kurikulum</a>
             <a href="/tentang/profile-sekolah" class="dropdown-item">Profile Sekolah</a>
             <a href="/tentang/fasilitas" class="dropdown-item">Fasilitas Sekolah</a>
             <a href="/tentang/staffmanagement" class="dropdown-item">Staff Management</a>
-            <a href="/tentang/sambutan" class="dropdown-item">Sambutan Pembina Yayasan</a>
+            <a href="/tentang/sambutan" class="dropdown-item">Sambutan Yayasan</a>
           </div>
         </div>
 
@@ -118,8 +118,8 @@
           </a>
           <div class="dropdown-menu absolute left-0 hidden opacity-0 translate-y-3 bg-white shadow-lg border mt-2 rounded-lg w-40 text-gray-800">
    
-            <a href="https://spmb.prestasiprima.sch.id/" class="dropdown-item" target="_blank">Presmastart</a>
             <a href="/virtual-tour" class="dropdown-item">Presmatour</a>
+            <a href="https://spmb.prestasiprima.sch.id/" class="dropdown-item" target="_blank">Presmastart</a>
             <a href="/presmacontact" class="dropdown-item">Presmacontact</a>
 
           </div>
@@ -165,7 +165,7 @@
         <a href="/tentang/profile-sekolah" class="mobile-subitem">Profile Sekolah</a>
         <a href="/tentang/fasilitas" class="mobile-subitem">Fasilitas Sekolah</a>
         <a href="/tentang/staffmanagement" class="mobile-subitem">Staff Management</a>
-        <a href="/tentang/sambutan" class="mobile-subitem">Sambutan Pembina Yayasan</a>
+        <a href="/tentang/sambutan" class="mobile-subitem">Sambutan Yayasan</a>
       </div>
 
       <button class="mobile-dropdown-btn">
@@ -213,8 +213,8 @@
         </svg>
       </button>
       <div class="mobile-submenu">
-        <a href="/presmalance" class="mobile-link">PresmaLance</a>
         <a href="/virtual-tour" class="mobile-link">Presmatour</a>
+        <a href="/presmalance" class="mobile-link">Presmastart</a>
         <a href="/presmacontact" class="mobile-link">Presmacontact</a>
       </div>
       
