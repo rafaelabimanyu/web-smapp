@@ -22,7 +22,8 @@ use App\Http\Controllers\prestasiprima\{
     TrafficController,
     FasilitasController,
     LulusanPtnController,
-    KurikulumController
+    KurikulumController,
+    SeragamController
 };
 
 /*
@@ -87,6 +88,8 @@ Route::prefix('informasi')->group(function () {
     Route::get('/penerimaan-siswa', function() {
         return redirect('https://spmb.prestasiprima.sch.id/');
     })->name('penerimaan.siswa');
+
+    Route::get('/seragam', [SeragamController::class, 'index'])->name('seragam');
 
     // Route::get('/traffic', [TrafficController::class, 'index'])->name('traffic');
     // Route::post('/traffic/calculate', [TrafficController::class, 'calculateDistance'])
