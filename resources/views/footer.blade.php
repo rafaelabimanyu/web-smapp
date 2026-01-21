@@ -272,6 +272,133 @@
     </div>
   </div>
 
+  <!-- =================== YAYASAN PRESTASI PRIMA =================== -->
+<!-- =================== YAYASAN PRESTASI PRIMA =================== -->
+<div class="relative z-10 border-t border-white/10 bg-gradient-to-b from-[#070b18] to-[#040713] py-12">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 text-center">
+
+    <!-- Logo Yayasan -->
+    <div class="flex justify-center mb-4">
+      <div
+        class="w-16 h-16 rounded-full bg-white flex items-center justify-center
+               shadow-md ring-2 ring-purple-500/20">
+        <img
+          src="{{ asset('assets/yayasan/logo-yayasan.png') }}"
+          alt="Logo Yayasan Prestasi Prima"
+          class="max-w-[65%] max-h-[65%] object-contain">
+      </div>
+    </div>
+
+    <!-- Heading -->
+    <h3 class="text-lg md:text-xl font-semibold text-white tracking-wide">
+      Yayasan Prestasi Prima
+    </h3>
+
+    <!-- Divider -->
+    <div class="flex justify-center mt-3">
+      <span
+        class="h-[2px] w-16 bg-gradient-to-r from-purple-500/70 to-purple-300/70 rounded-full">
+      </span>
+    </div>
+
+    <!-- Description -->
+    <p class="text-xs md:text-sm text-gray-400 mt-4 max-w-xl mx-auto leading-relaxed">
+      Yayasan Prestasi Prima menaungi dan mengelola unit pendidikan unggulan
+      dengan komitmen pada pengembangan karakter, kompetensi, dan prestasi.
+    </p>
+
+    <!-- Unit Pendidikan -->
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <!-- SMA -->
+      <div
+        class="group rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm
+               px-4 py-6 transition
+               hover:border-purple-500/30 hover:bg-white/[0.07]">
+        <div class="flex flex-col items-center gap-3">
+
+          <div
+            class="w-16 h-16 rounded-full bg-white flex items-center justify-center
+                   ring-2 ring-purple-500/20">
+            <img
+              src="{{ asset('assets/yayasan/logo_sma.png') }}"
+              alt="SMA Prestasi Prima"
+              class="max-w-[65%] max-h-[65%] object-contain">
+          </div>
+
+          <h4 class="text-white font-medium text-sm tracking-wide">
+            SMA Prestasi Prima
+          </h4>
+
+          <span
+            class="text-[11px] text-purple-300 bg-purple-500/10
+                   px-3 py-1 rounded-full">
+            Menengah Atas
+          </span>
+        </div>
+      </div>
+
+      <!-- SMK -->
+      <div
+        class="group rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm
+               px-4 py-6 transition
+               hover:border-purple-500/30 hover:bg-white/[0.07]">
+        <div class="flex flex-col items-center gap-3">
+
+          <div
+            class="w-16 h-16 rounded-full bg-white flex items-center justify-center
+                   ring-2 ring-purple-500/20">
+            <img
+              src="{{ asset('assets/yayasan/logo-smk.png') }}"
+              alt="SMK Prestasi Prima"
+              class="max-w-[65%] max-h-[65%] object-contain">
+          </div>
+
+          <h4 class="text-white font-medium text-sm tracking-wide">
+            SMK Prestasi Prima
+          </h4>
+
+          <span
+            class="text-[11px] text-purple-300 bg-purple-500/10
+                   px-3 py-1 rounded-full">
+            Kejuruan
+          </span>
+        </div>
+      </div>
+
+      <!-- Politeknik -->
+      <div
+        class="group rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm
+               px-4 py-6 transition
+               hover:border-purple-500/30 hover:bg-white/[0.07]">
+        <div class="flex flex-col items-center gap-3">
+
+          <div
+            class="w-16 h-16 rounded-full bg-white flex items-center justify-center
+                   ring-2 ring-purple-500/20">
+            <img
+              src="{{ asset('assets/yayasan/logo_politeknik.png') }}"
+              alt="Politeknik Prestasi Prima"
+              class="max-w-[65%] max-h-[65%] object-contain">
+          </div>
+
+          <h4 class="text-white font-medium text-sm tracking-wide">
+            Politeknik Prestasi Prima
+          </h4>
+
+          <span
+            class="text-[11px] text-purple-300 bg-purple-500/10
+                   px-3 py-1 rounded-full">
+            Vokasi
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
   <!-- =================== FOOTER BOTTOM =================== -->
   <div class="border-t border-white/10 bg-[#070b18]/90 py-4 relative z-10">
     <div
@@ -281,18 +408,15 @@
         <span class="mx-2 text-white/30">|</span>
         <span class="inline-flex items-center gap-1
              text-[11px] sm:text-sm font-semibold tracking-wide">
-    <a href="https://www.instagram.com/orensolutionspresma/"
-       target="_blank"
-       class="soft-gradient hover:underline">
-        Oren Solution
-    </a>
-
-    <span class="soft-gradient">
-        - Version 2.0
-    </span>
-</span>
-
-
+              <a href="https://www.instagram.com/orensolutionspresma/"
+                target="_blank"
+                class="soft-gradient hover:underline">
+                  Oren Solution
+              </a>
+          <span class="soft-gradient">
+              - Version 2.0
+          </span>
+        </span>
       </p>
 
 
@@ -405,4 +529,4 @@
 
 </style>
 
-{{--  --}}
+{{--  --}}	

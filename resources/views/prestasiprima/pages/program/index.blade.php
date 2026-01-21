@@ -226,7 +226,7 @@
      data-aos="fade-up" data-aos-delay="300">
 
   <div class="relative">
-    <img src="{{ asset('assets/program/output.JPG') }}"
+    <img src="{{ asset('assets/program/ipsremovebg.png') }}"
          alt="IPS Bilingual"
          class="w-full h-52 sm:h-60 md:h-72 object-cover transition-transform duration-500 hover:scale-105">
 
