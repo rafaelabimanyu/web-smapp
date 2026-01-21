@@ -89,7 +89,6 @@
             <a href="/informasi/faq" class="dropdown-item">FAQ</a>
             <a href="/informasi/testimoni" class="dropdown-item">Testimoni</a>
             <a href="/informasi/lulusan-ptn" class="dropdown-item">Lulusan PTN</a>
-            <a href="/informasi/seragam" class="dropdown-item">Seragam Siswa</a>
             <a href="https://spmb.prestasiprima.sch.id/" class="dropdown-item">Penerimaan Siswa</a>
           </div>
         </div>
@@ -203,7 +202,6 @@
         <a href="/informasi/faq" class="mobile-subitem">FAQ</a>
         <a href="/informasi/testimoni" class="mobile-subitem">Testimoni</a>
         <a href="/informasi/lulusan-ptn" class="mobile-subitem">Lulusan PTN</a>
-        <a href="/informasi/seragam" class="mobile-subitem">Seragam Siswa</a>
         <a href="https://spmb.prestasiprima.sch.id/" class="mobile-subitem">Penerimaan Siswa</a>
 
       </div>
